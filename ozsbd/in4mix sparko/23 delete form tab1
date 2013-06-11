@@ -1,0 +1,3 @@
+delete from db1_kr:tab1_kr where id>100 and id < 20000;
+
+truncate db1_kr:tab1_kr;

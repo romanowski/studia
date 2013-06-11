@@ -1,0 +1,1 @@
+cat lines.txt | scala  -J-Xmx512m  -cp classes Main

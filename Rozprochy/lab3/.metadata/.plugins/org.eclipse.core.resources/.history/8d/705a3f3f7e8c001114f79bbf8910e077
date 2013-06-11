@@ -1,0 +1,14 @@
+package org.corba.impl;
+
+import org.corba.generated.I2ExtPOA;
+
+public class I2ExtImpl //extends 
+{
+
+	@Override
+	public int opExt() {
+		System.out.println("I2Ext::opExt");
+		return 123000;
+	}
+
+}

@@ -1,0 +1,8 @@
+1333269458680	Rename type 'Task'
+1333282379876	Rename type 'ChatTopic'
+1333283014046	Rename type 'ChatRommImpl'
+1333283449287	Rename local variable 'listener'
+1333283458307	Rename local variable 'list'
+1333283919862	Rename type 'AbstractListener'
+1333284591788	Rename type 'AbstractSingleRoomListener'
+1333285052323	Rename type 'ChatServerImpl'

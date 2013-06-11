@@ -1,0 +1,73 @@
+package zad3;
+
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.InetAddress;
+import java.net.MulticastSocket;
+import java.net.UnknownHostException;
+
+class ToMuchErrorsException extends RuntimeException{
+	public ToMuchErrorsException() {
+		super("to much errors when recieving messages");
+	}
+}
+
+public class ChatClient {
+
+	private static final String host = "228.5.6.7";
+	private static final int port = 9989;
+	public static final int bufSize = 1024;
+	public static final int maxErrorCount = 16;
+
+	
+	public static void main(String[] args) {
+		
+		final  MulticastSocket socket;
+		 try {
+			InetAddress group = InetAddress.getByName(host);
+			socket = new MulticastSocket(port);
+			socket.joinGroup(group);
+			
+			final Thread mainThread = Thread.currentThread();
+			Thread listener = new Thread(){
+				
+				byte[] buf = new byte[bufSize];
+				
+				int errorCount = 0;
+				
+				public void run() {
+					while(true){
+						DatagramPacket packet = new DatagramPacket(buf, bufSize);
+						try {
+							socket.receive(packet);
+							printMessage(new String(buf, 0, packet.getLength()));
+						} catch (IOException e) {
+							e.printStackTrace();
+							if(errorCount++ > maxErrorCount){
+								//to much errors
+								mainThread.interrupt();
+							}
+						}
+					}
+				};
+			};
+			
+			
+			
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		
+		
+	}
+	public static void printMessage(String data){
+		System.out.println(data);
+	}
+	public static String prepareMessage(String message, String nick){
+		return message;
+	}
+	
+}

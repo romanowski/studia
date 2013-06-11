@@ -1,0 +1,4 @@
+Monitor-monitor1:SimpleMonitor
+Camera-camera1:SimpleCamera
+Monitor-monitor2:MegaMonitor
+Camera-camera2:MegaCamera

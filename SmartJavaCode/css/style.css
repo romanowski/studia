@@ -1,0 +1,37 @@
+* {
+    font-family: Courier New, monospace
+}
+
+.intent {
+    margin-left: 20px;
+}
+
+.intent > .line {
+    margin-left: 20px;
+}
+
+.operator {
+    color: red;
+}
+
+.floatingWindow {
+    position: absolute;
+    display: none;
+    border-style: dotted;
+    padding: 10px;
+    max-width: 400px;
+    background: #aaaaaa
+}
+
+.s-highlighted {
+    background-color: #adff2f;
+}
+
+.hide {
+    display: none;
+}
+
+.collapseButton {
+    position: relative;
+    left: -30px;
+}

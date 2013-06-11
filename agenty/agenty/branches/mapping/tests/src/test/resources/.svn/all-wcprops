@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/agenty/!svn/ver/75/branches/mapping/tests/src/test/resources
+END
+data1.ttl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/agenty/!svn/ver/75/branches/mapping/tests/src/test/resources/data1.ttl
+END
+data2.ttl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/agenty/!svn/ver/75/branches/mapping/tests/src/test/resources/data2.ttl
+END
+data3.ttl
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/agenty/!svn/ver/75/branches/mapping/tests/src/test/resources/data3.ttl
+END

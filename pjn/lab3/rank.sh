@@ -1,0 +1,1 @@
+./test.sh | python test/rank/rank.py -n norm.txt

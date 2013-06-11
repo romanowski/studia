@@ -1,0 +1,13 @@
+<project name="Antennae.imports">
+    <!--
+          ant.file.[projectname] is a built-in property that contains
+          the current file's full path. Each file must have a name
+          and each name must be unique for a project.
+    -->
+    <dirname property="Antennae.imports.dir" file="${ant.file.Antennae.imports}"/>
+
+    <property file="${Antennae.imports.dir}/build-user.properties" />
+    <import file="tools/build-common-imports.xml" />
+
+    <import file="build-assets.xml" />
+</project>

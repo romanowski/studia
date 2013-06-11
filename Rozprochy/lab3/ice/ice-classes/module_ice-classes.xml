@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_ice-classes" default="compile.module.ice-classes">
+  <dirname property="module.ice-classes.basedir" file="${ant.file.module_ice-classes}"/>
+  
+  <property name="module.jdk.home.ice-classes" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.ice-classes" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.ice-classes" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.ice-classes" value="${compiler.args}"/>
+  
+  <property name="ice-classes.output.dir" value="${module.ice-classes.basedir}/../ice-scala/out/production/Ice-classes"/>
+  <property name="ice-classes.testoutput.dir" value="${module.ice-classes.basedir}/../ice-scala/out/test/Ice-classes"/>
+  
+  <path id="ice-classes.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="ice-classes.module.production.classpath">
+    <path refid="${module.jdk.classpath.ice-classes}"/>
+    <pathelement location="${basedir}/../../../../../../../../usr/share/java/Ice.jar"/>
+  </path>
+  
+  <path id="ice-classes.runtime.production.module.classpath">
+    <pathelement location="${ice-classes.output.dir}"/>
+    <pathelement location="${basedir}/../../../../../../../../usr/share/java/Ice.jar"/>
+  </path>
+  
+  <path id="ice-classes.module.classpath">
+    <path refid="${module.jdk.classpath.ice-classes}"/>
+    <pathelement location="${ice-classes.output.dir}"/>
+    <pathelement location="${basedir}/../../../../../../../../usr/share/java/Ice.jar"/>
+  </path>
+  
+  <path id="ice-classes.runtime.module.classpath">
+    <pathelement location="${ice-classes.testoutput.dir}"/>
+    <pathelement location="${ice-classes.output.dir}"/>
+    <pathelement location="${basedir}/../../../../../../../../usr/share/java/Ice.jar"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.ice-classes">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.ice-classes">
+    <patternset refid="excluded.from.module.ice-classes"/>
+  </patternset>
+  
+  <path id="ice-classes.module.sourcepath">
+    <dirset dir="${module.ice-classes.basedir}">
+      <include name="generated"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.ice-classes" depends="compile.module.ice-classes.production,compile.module.ice-classes.tests" description="Compile module Ice-classes"/>
+  
+  <target name="compile.module.ice-classes.production" depends="register.custom.compilers" description="Compile module Ice-classes; production classes">
+    <mkdir dir="${ice-classes.output.dir}"/>
+    <javac2 destdir="${ice-classes.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.ice-classes}/javac">
+      <compilerarg line="${compiler.args.ice-classes}"/>
+      <bootclasspath refid="ice-classes.module.bootclasspath"/>
+      <classpath refid="ice-classes.module.production.classpath"/>
+      <src refid="ice-classes.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.ice-classes"/>
+    </javac2>
+    
+    <copy todir="${ice-classes.output.dir}">
+      <fileset dir="${module.ice-classes.basedir}/generated">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.ice-classes.tests" depends="register.custom.compilers,compile.module.ice-classes.production" description="compile module Ice-classes; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.ice-classes" description="cleanup module">
+    <delete dir="${ice-classes.output.dir}"/>
+    <delete dir="${ice-classes.testoutput.dir}"/>
+  </target>
+</project>

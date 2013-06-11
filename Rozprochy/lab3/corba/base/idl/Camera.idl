@@ -1,0 +1,12 @@
+#include   "Laboratory.idl"
+module  Recorder
+{
+
+ 	interface Camera: Laboratory::Dev{
+
+
+ 	    void rotate(in long xy, in long z);
+
+ 	    void zoom(in long zoomLevel);
+ 	};
+};

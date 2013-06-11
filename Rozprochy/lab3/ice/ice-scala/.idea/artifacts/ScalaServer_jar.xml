@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ScalaServer:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ScalaServer_jar</output-path>
+    <root id="archive" name="ScalaServer.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../ScalaServer/src/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="ScalaServer" />
+      <element id="extracted-dir" path="/usr/share/java/Ice.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/scala/lib/scala-library.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/scala/lib/scala-swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/scala/lib/scala-dbc.jar" path-in-jar="/" />
+      <element id="module-output" name="Ice-classes" />
+      <element id="directory" name="keys">
+        <element id="dir-copy" path="$PROJECT_DIR$/../ScalaServer/keys" />
+      </element>
+    </root>
+  </artifact>
+</component>

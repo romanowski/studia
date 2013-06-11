@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flexLibProperties version="1">
+<includeClasses>
+<classEntry path="pl.flexable.harmonix.errors.HarmonixError"/>
+<classEntry path="pl.flexable.harmonix.layout.AbstractLayout"/>
+<classEntry path="pl.flexable.harmonix.layout.CoverFlowLayout"/>
+<classEntry path="pl.flexable.harmonix.container.DataContainer"/>
+<classEntry path="pl.flexable.harmonix.events.ClipboardClientEvent"/>
+<classEntry path="pl.flexable.harmonix.layout.VerticalSeriesLayout"/>
+<classEntry path="pl.flexable.harmonix.ui.ResizeablePanel"/>
+<classEntry path="pl.flexable.harmonix.container.LayoutContainer"/>
+<classEntry path="pl.flexable.harmonix.common.Debug"/>
+<classEntry path="pl.flexable.harmonix.layout.LayoutMetrics"/>
+<classEntry path="pl.flexable.harmonix.interfaces.ISelectableContainer"/>
+<classEntry path="pl.flexable.harmonix.layout.HorizontalSeriesLayout"/>
+<classEntry path="pl.flexable.harmonix.clipboard.ClipboardManager"/>
+<classEntry path="pl.flexable.harmonix.clipboard.ClipboardClient"/>
+<classEntry path="pl.flexable.harmonix.events.ClipboardManagerEvent"/>
+</includeClasses>
+<includeResources/>
+<namespaceManifests/>
+</flexLibProperties>

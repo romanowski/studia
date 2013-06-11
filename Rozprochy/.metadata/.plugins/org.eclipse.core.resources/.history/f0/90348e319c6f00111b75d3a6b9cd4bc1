@@ -1,0 +1,27 @@
+package zad3;
+
+public class PartialChatMessage {
+
+	String author;
+	StringBuilder data;
+	int id;
+	boolean complete;
+	
+	public PartialChatMessage() {
+	}
+
+	public void addPart(byte data){
+		
+	}
+	
+	public boolean isAll(){
+		return complete;
+	}
+	
+	public ChatMessage createMessage(){
+		if(!isAll()){
+			throw new RuntimeException("Message is not complete!");
+		}
+		return new ChatMessage(message, author)
+	}
+}

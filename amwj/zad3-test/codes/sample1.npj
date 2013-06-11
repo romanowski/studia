@@ -1,0 +1,12 @@
+VarDeclS s1 "testMessage";
+VarDeclS s2 "test2";
+VarDeclS s3 "test3";
+Print "stringMessage";
+Print s1;
+Print s2;
+HeapAnalyze;
+Collect;
+Collect;
+HeapAnalyze;
+Print s1;
+Print s2;

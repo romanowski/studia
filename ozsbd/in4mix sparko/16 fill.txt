@@ -1,0 +1,7 @@
+CREATE PROCEDURE sampleData()
+  DEFINE i INTEGER;
+  FOR i = 1 TO 30000
+	INSERT INTO db1_kr:tab1_kr VALUES(i, "ala ma psa");
+  END FOR;
+END PROCEDURE;
+call sampleData();

@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact name="lab4:jar">
+    <output-path>$PROJECT_DIR$/../../../out/lab4_jar</output-path>
+    <root id="root">
+      <element id="archive" name="lab4.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/../../../out/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="lab4" />
+      </element>
+      <element id="library" level="project" name="scala-library" />
+      <element id="file-copy" path="/usr/share/java/Ice.jar" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,612 @@
+2012-06-19 12:01:16,881 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pl.edu.agh.sr:dtransactions:1.0.0-SNAPSHOT @ /home/jar/Pulpit/studia/Rozprochy/DistributedTransactionsDist/pom.xml.
+2012-06-19 12:01:18,072 [New I/O client worker #1-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/codehaus/btm/btm/2.1.0/btm-2.1.0.pom
+2012-06-19 12:01:18,458 [New I/O client worker #2-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/codehaus/btm/btm/2.1.0/btm-2.1.0.pom
+2012-06-19 12:01:18,632 [New I/O client worker #3-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/btm/btm/2.1.0/btm-2.1.0.pom
+2012-06-19 12:01:18,634 [New I/O client worker #3-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/btm/btm/2.1.0/btm-2.1.0.pom
+2012-06-19 12:01:18,918 [New I/O client worker #4-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/codehaus/btm/btm-parent/2.1.0/btm-parent-2.1.0.pom
+2012-06-19 12:01:19,185 [New I/O client worker #5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/codehaus/btm/btm-parent/2.1.0/btm-parent-2.1.0.pom
+2012-06-19 12:01:19,220 [New I/O client worker #6-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/btm/btm-parent/2.1.0/btm-parent-2.1.0.pom
+2012-06-19 12:01:19,222 [New I/O client worker #6-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/btm/btm-parent/2.1.0/btm-parent-2.1.0.pom
+2012-06-19 12:01:19,561 [New I/O client worker #7-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/javax/transaction/jta/1.1/jta-1.1.pom
+2012-06-19 12:01:19,816 [New I/O client worker #8-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/javax/transaction/jta/1.1/jta-1.1.pom
+2012-06-19 12:01:19,847 [New I/O client worker #9-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/javax/transaction/jta/1.1/jta-1.1.pom
+2012-06-19 12:01:19,849 [New I/O client worker #9-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/javax/transaction/jta/1.1/jta-1.1.pom
+2012-06-19 12:01:20,128 [New I/O client worker #10-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/slf4j/slf4j-api/1.6.0/slf4j-api-1.6.0.pom
+2012-06-19 12:01:20,390 [New I/O client worker #11-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/slf4j/slf4j-api/1.6.0/slf4j-api-1.6.0.pom
+2012-06-19 12:01:20,421 [New I/O client worker #12-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.6.0/slf4j-api-1.6.0.pom
+2012-06-19 12:01:20,421 [New I/O client worker #12-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.6.0/slf4j-api-1.6.0.pom
+2012-06-19 12:01:20,709 [New I/O client worker #13-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/slf4j/slf4j-parent/1.6.0/slf4j-parent-1.6.0.pom
+2012-06-19 12:01:20,966 [New I/O client worker #14-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/slf4j/slf4j-parent/1.6.0/slf4j-parent-1.6.0.pom
+2012-06-19 12:01:21,000 [New I/O client worker #15-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.6.0/slf4j-parent-1.6.0.pom
+2012-06-19 12:01:21,000 [New I/O client worker #15-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.6.0/slf4j-parent-1.6.0.pom
+2012-06-19 12:01:21,299 [New I/O client worker #16-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.pom
+2012-06-19 12:01:21,556 [New I/O client worker #17-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.pom
+2012-06-19 12:01:21,594 [New I/O client worker #18-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.pom
+2012-06-19 12:01:21,595 [New I/O client worker #18-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.pom
+2012-06-19 12:01:21,887 [New I/O client worker #19-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/apache/commons/commons-parent/12/commons-parent-12.pom
+2012-06-19 12:01:22,164 [New I/O client worker #20-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/apache/commons/commons-parent/12/commons-parent-12.pom
+2012-06-19 12:01:22,200 [New I/O client worker #21-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/commons/commons-parent/12/commons-parent-12.pom
+2012-06-19 12:01:22,202 [New I/O client worker #21-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/commons/commons-parent/12/commons-parent-12.pom
+2012-06-19 12:01:22,520 [New I/O client worker #22-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.pom
+2012-06-19 12:01:22,779 [New I/O client worker #23-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.pom
+2012-06-19 12:01:22,812 [New I/O client worker #24-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.pom
+2012-06-19 12:01:22,814 [New I/O client worker #24-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.pom
+2012-06-19 12:01:23,102 [New I/O client worker #25-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/commons-lang/commons-lang/2.5/commons-lang-2.5.pom
+2012-06-19 12:01:23,361 [New I/O client worker #26-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/commons-lang/commons-lang/2.5/commons-lang-2.5.pom
+2012-06-19 12:01:23,396 [New I/O client worker #27-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/commons-lang/commons-lang/2.5/commons-lang-2.5.pom
+2012-06-19 12:01:23,398 [New I/O client worker #27-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/commons-lang/commons-lang/2.5/commons-lang-2.5.pom
+2012-06-19 12:01:23,686 [New I/O client worker #28-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/cglib/cglib-nodep/2.2/cglib-nodep-2.2.pom
+2012-06-19 12:01:23,944 [New I/O client worker #29-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/cglib/cglib-nodep/2.2/cglib-nodep-2.2.pom
+2012-06-19 12:01:23,970 [New I/O client worker #30-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/cglib/cglib-nodep/2.2/cglib-nodep-2.2.pom
+2012-06-19 12:01:23,971 [New I/O client worker #30-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/cglib/cglib-nodep/2.2/cglib-nodep-2.2.pom
+2012-06-19 12:01:24,256 [New I/O client worker #31-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/springframework/spring-context-support/3.1.0.M2/spring-context-support-3.1.0.M2.pom
+2012-06-19 12:01:24,651 [New I/O client worker #32-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/milestone/org/springframework/spring-context-support/3.1.0.M2/spring-context-support-3.1.0.M2.pom
+2012-06-19 12:01:24,653 [New I/O client worker #32-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/springframework/spring-context-support/3.1.0.M2/spring-context-support-3.1.0.M2.pom
+2012-06-19 12:01:25,052 [New I/O client worker #33-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/springframework/spring-parent/3.1.0.M2/spring-parent-3.1.0.M2.pom
+2012-06-19 12:01:25,336 [New I/O client worker #34-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/milestone/org/springframework/spring-parent/3.1.0.M2/spring-parent-3.1.0.M2.pom
+2012-06-19 12:01:25,463 [New I/O client worker #34-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/springframework/spring-parent/3.1.0.M2/spring-parent-3.1.0.M2.pom
+2012-06-19 12:01:25,870 [New I/O client worker #35-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/springframework/spring-beans/3.1.0.M2/spring-beans-3.1.0.M2.pom
+2012-06-19 12:01:26,165 [New I/O client worker #36-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/milestone/org/springframework/spring-beans/3.1.0.M2/spring-beans-3.1.0.M2.pom
+2012-06-19 12:01:26,166 [New I/O client worker #36-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/springframework/spring-beans/3.1.0.M2/spring-beans-3.1.0.M2.pom
+2012-06-19 12:01:26,560 [New I/O client worker #37-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/springframework/spring-core/3.1.0.M2/spring-core-3.1.0.M2.pom
+2012-06-19 12:01:26,822 [New I/O client worker #38-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/milestone/org/springframework/spring-core/3.1.0.M2/spring-core-3.1.0.M2.pom
+2012-06-19 12:01:26,824 [New I/O client worker #38-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/springframework/spring-core/3.1.0.M2/spring-core-3.1.0.M2.pom
+2012-06-19 12:01:27,238 [New I/O client worker #39-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/springframework/spring-asm/3.1.0.M2/spring-asm-3.1.0.M2.pom
+2012-06-19 12:01:27,513 [New I/O client worker #40-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/milestone/org/springframework/spring-asm/3.1.0.M2/spring-asm-3.1.0.M2.pom
+2012-06-19 12:01:27,515 [New I/O client worker #40-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/springframework/spring-asm/3.1.0.M2/spring-asm-3.1.0.M2.pom
+2012-06-19 12:01:27,904 [New I/O client worker #41-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom
+2012-06-19 12:01:28,158 [New I/O client worker #42-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom
+2012-06-19 12:01:28,190 [New I/O client worker #43-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom
+2012-06-19 12:01:28,191 [New I/O client worker #43-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom
+2012-06-19 12:01:28,482 [New I/O client worker #44-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/apache/commons/commons-parent/5/commons-parent-5.pom
+2012-06-19 12:01:28,738 [New I/O client worker #45-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/apache/commons/commons-parent/5/commons-parent-5.pom
+2012-06-19 12:01:28,772 [New I/O client worker #46-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/commons/commons-parent/5/commons-parent-5.pom
+2012-06-19 12:01:28,774 [New I/O client worker #46-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/commons/commons-parent/5/commons-parent-5.pom
+2012-06-19 12:01:29,070 [New I/O client worker #47-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/springframework/spring-context/3.1.0.M2/spring-context-3.1.0.M2.pom
+2012-06-19 12:01:29,451 [New I/O client worker #48-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/milestone/org/springframework/spring-context/3.1.0.M2/spring-context-3.1.0.M2.pom
+2012-06-19 12:01:29,452 [New I/O client worker #48-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/springframework/spring-context/3.1.0.M2/spring-context-3.1.0.M2.pom
+2012-06-19 12:01:29,856 [New I/O client worker #49-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/springframework/spring-aop/3.1.0.M2/spring-aop-3.1.0.M2.pom
+2012-06-19 12:01:30,131 [New I/O client worker #50-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/milestone/org/springframework/spring-aop/3.1.0.M2/spring-aop-3.1.0.M2.pom
+2012-06-19 12:01:30,132 [New I/O client worker #50-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/springframework/spring-aop/3.1.0.M2/spring-aop-3.1.0.M2.pom
+2012-06-19 12:01:30,523 [New I/O client worker #51-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/aopalliance/aopalliance/1.0/aopalliance-1.0.pom
+2012-06-19 12:01:30,776 [New I/O client worker #52-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/aopalliance/aopalliance/1.0/aopalliance-1.0.pom
+2012-06-19 12:01:30,799 [New I/O client worker #53-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom
+2012-06-19 12:01:30,800 [New I/O client worker #53-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom
+2012-06-19 12:01:31,077 [New I/O client worker #54-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/springframework/spring-expression/3.1.0.M2/spring-expression-3.1.0.M2.pom
+2012-06-19 12:01:31,803 [New I/O client worker #55-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/milestone/org/springframework/spring-expression/3.1.0.M2/spring-expression-3.1.0.M2.pom
+2012-06-19 12:01:31,804 [New I/O client worker #55-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/springframework/spring-expression/3.1.0.M2/spring-expression-3.1.0.M2.pom
+2012-06-19 12:01:32,207 [New I/O client worker #56-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/springframework/spring-jdbc/3.1.0.M2/spring-jdbc-3.1.0.M2.pom
+2012-06-19 12:01:32,464 [New I/O client worker #57-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/milestone/org/springframework/spring-jdbc/3.1.0.M2/spring-jdbc-3.1.0.M2.pom
+2012-06-19 12:01:32,465 [New I/O client worker #57-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/springframework/spring-jdbc/3.1.0.M2/spring-jdbc-3.1.0.M2.pom
+2012-06-19 12:01:32,859 [New I/O client worker #58-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/springframework/spring-tx/3.1.0.M2/spring-tx-3.1.0.M2.pom
+2012-06-19 12:01:33,129 [New I/O client worker #59-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/milestone/org/springframework/spring-tx/3.1.0.M2/spring-tx-3.1.0.M2.pom
+2012-06-19 12:01:33,130 [New I/O client worker #59-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/springframework/spring-tx/3.1.0.M2/spring-tx-3.1.0.M2.pom
+2012-06-19 12:01:33,508 [New I/O client worker #60-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/slf4j/slf4j-api/1.5.10/slf4j-api-1.5.10.pom
+2012-06-19 12:01:33,759 [New I/O client worker #61-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/slf4j/slf4j-api/1.5.10/slf4j-api-1.5.10.pom
+2012-06-19 12:01:33,789 [New I/O client worker #62-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.5.10/slf4j-api-1.5.10.pom
+2012-06-19 12:01:33,790 [New I/O client worker #62-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.5.10/slf4j-api-1.5.10.pom
+2012-06-19 12:01:34,073 [New I/O client worker #63-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/slf4j/slf4j-parent/1.5.10/slf4j-parent-1.5.10.pom
+2012-06-19 12:01:34,327 [New I/O client worker #64-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/slf4j/slf4j-parent/1.5.10/slf4j-parent-1.5.10.pom
+2012-06-19 12:01:34,359 [New I/O client worker #65-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.5.10/slf4j-parent-1.5.10.pom
+2012-06-19 12:01:34,360 [New I/O client worker #65-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.5.10/slf4j-parent-1.5.10.pom
+2012-06-19 12:01:34,644 [New I/O client worker #66-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/slf4j/slf4j-log4j12/1.5.10/slf4j-log4j12-1.5.10.pom
+2012-06-19 12:01:34,900 [New I/O client worker #67-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/slf4j/slf4j-log4j12/1.5.10/slf4j-log4j12-1.5.10.pom
+2012-06-19 12:01:34,930 [New I/O client worker #68-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.5.10/slf4j-log4j12-1.5.10.pom
+2012-06-19 12:01:34,932 [New I/O client worker #68-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.5.10/slf4j-log4j12-1.5.10.pom
+2012-06-19 12:01:35,251 [New I/O client worker #69-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/log4j/log4j/1.2.14/log4j-1.2.14.pom
+2012-06-19 12:01:35,507 [New I/O client worker #70-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/log4j/log4j/1.2.14/log4j-1.2.14.pom
+2012-06-19 12:01:35,559 [New I/O client worker #71-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/log4j/log4j/1.2.14/log4j-1.2.14.pom
+2012-06-19 12:01:35,559 [New I/O client worker #71-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/log4j/log4j/1.2.14/log4j-1.2.14.pom
+2012-06-19 12:01:35,863 [New I/O client worker #72-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/release/org/aspectj/aspectjrt/1.6.9/aspectjrt-1.6.9.pom
+2012-06-19 12:01:35,864 [New I/O client worker #72-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/aspectj/aspectjrt/1.6.9/aspectjrt-1.6.9.pom
+2012-06-19 12:01:36,251 [New I/O client worker #73-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/log4j/log4j/1.2.9/log4j-1.2.9.pom
+2012-06-19 12:01:36,506 [New I/O client worker #74-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/log4j/log4j/1.2.9/log4j-1.2.9.pom
+2012-06-19 12:01:36,533 [New I/O client worker #75-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/log4j/log4j/1.2.9/log4j-1.2.9.pom
+2012-06-19 12:01:36,534 [New I/O client worker #75-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/log4j/log4j/1.2.9/log4j-1.2.9.pom
+2012-06-19 12:01:36,809 [New I/O client worker #76-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.pom
+2012-06-19 12:01:37,061 [New I/O client worker #77-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.pom
+2012-06-19 12:01:37,089 [New I/O client worker #78-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.pom
+2012-06-19 12:01:37,091 [New I/O client worker #78-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.pom
+2012-06-19 12:01:37,378 [New I/O client worker #79-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/junit/junit/4.8.2/junit-4.8.2.pom
+2012-06-19 12:01:37,635 [New I/O client worker #80-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/junit/junit/4.8.2/junit-4.8.2.pom
+2012-06-19 12:01:37,662 [New I/O client worker #81-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/junit/junit/4.8.2/junit-4.8.2.pom
+2012-06-19 12:01:37,663 [New I/O client worker #81-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/junit/junit/4.8.2/junit-4.8.2.pom
+2012-06-19 12:01:37,950 [New I/O client worker #82-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/com/atomikos/atomikos-util/3.6.4/atomikos-util-3.6.4.pom
+2012-06-19 12:01:38,256 [New I/O client worker #83-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/com/atomikos/atomikos-util/3.6.4/atomikos-util-3.6.4.pom
+2012-06-19 12:01:38,283 [New I/O client worker #84-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/atomikos/atomikos-util/3.6.4/atomikos-util-3.6.4.pom
+2012-06-19 12:01:38,285 [New I/O client worker #84-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/atomikos/atomikos-util/3.6.4/atomikos-util-3.6.4.pom
+2012-06-19 12:01:38,559 [New I/O client worker #85-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/com/atomikos/transactions-essentials-all/3.6.4/transactions-essentials-all-3.6.4.pom
+2012-06-19 12:01:38,813 [New I/O client worker #86-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/com/atomikos/transactions-essentials-all/3.6.4/transactions-essentials-all-3.6.4.pom
+2012-06-19 12:01:38,840 [New I/O client worker #87-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/atomikos/transactions-essentials-all/3.6.4/transactions-essentials-all-3.6.4.pom
+2012-06-19 12:01:38,842 [New I/O client worker #87-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/atomikos/transactions-essentials-all/3.6.4/transactions-essentials-all-3.6.4.pom
+2012-06-19 12:01:39,122 [New I/O client worker #88-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/com/atomikos/transactions-api/3.6.4/transactions-api-3.6.4.pom
+2012-06-19 12:01:39,377 [New I/O client worker #89-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/com/atomikos/transactions-api/3.6.4/transactions-api-3.6.4.pom
+2012-06-19 12:01:39,405 [New I/O client worker #90-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/atomikos/transactions-api/3.6.4/transactions-api-3.6.4.pom
+2012-06-19 12:01:39,407 [New I/O client worker #90-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/atomikos/transactions-api/3.6.4/transactions-api-3.6.4.pom
+2012-06-19 12:01:39,692 [New I/O client worker #91-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/com/atomikos/transactions-jdbc-deprecated/3.6.4/transactions-jdbc-deprecated-3.6.4.pom
+2012-06-19 12:01:39,945 [New I/O client worker #92-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/com/atomikos/transactions-jdbc-deprecated/3.6.4/transactions-jdbc-deprecated-3.6.4.pom
+2012-06-19 12:01:39,972 [New I/O client worker #93-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/atomikos/transactions-jdbc-deprecated/3.6.4/transactions-jdbc-deprecated-3.6.4.pom
+2012-06-19 12:01:39,973 [New I/O client worker #93-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/atomikos/transactions-jdbc-deprecated/3.6.4/transactions-jdbc-deprecated-3.6.4.pom
+2012-06-19 12:01:40,247 [New I/O client worker #94-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/com/atomikos/transactions/3.6.4/transactions-3.6.4.pom
+2012-06-19 12:01:40,522 [New I/O client worker #95-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/com/atomikos/transactions/3.6.4/transactions-3.6.4.pom
+2012-06-19 12:01:40,552 [New I/O client worker #96-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/atomikos/transactions/3.6.4/transactions-3.6.4.pom
+2012-06-19 12:01:40,552 [New I/O client worker #96-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/atomikos/transactions/3.6.4/transactions-3.6.4.pom
+2012-06-19 12:01:40,826 [New I/O client worker #97-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/com/atomikos/transactions-jdbc/3.6.4/transactions-jdbc-3.6.4.pom
+2012-06-19 12:01:41,086 [New I/O client worker #98-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/com/atomikos/transactions-jdbc/3.6.4/transactions-jdbc-3.6.4.pom
+2012-06-19 12:01:41,111 [New I/O client worker #99-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/atomikos/transactions-jdbc/3.6.4/transactions-jdbc-3.6.4.pom
+2012-06-19 12:01:41,111 [New I/O client worker #99-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/atomikos/transactions-jdbc/3.6.4/transactions-jdbc-3.6.4.pom
+2012-06-19 12:01:41,382 [New I/O client worker #100-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/com/atomikos/transactions-jta/3.6.4/transactions-jta-3.6.4.pom
+2012-06-19 12:01:41,651 [New I/O client worker #101-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/com/atomikos/transactions-jta/3.6.4/transactions-jta-3.6.4.pom
+2012-06-19 12:01:41,693 [New I/O client worker #102-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/atomikos/transactions-jta/3.6.4/transactions-jta-3.6.4.pom
+2012-06-19 12:01:41,693 [New I/O client worker #102-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/atomikos/transactions-jta/3.6.4/transactions-jta-3.6.4.pom
+2012-06-19 12:01:42,040 [New I/O client worker #103-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/apache/geronimo/specs/geronimo-jta_1.0.1B_spec/1.0.1/geronimo-jta_1.0.1B_spec-1.0.1.pom
+2012-06-19 12:01:42,295 [New I/O client worker #104-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/apache/geronimo/specs/geronimo-jta_1.0.1B_spec/1.0.1/geronimo-jta_1.0.1B_spec-1.0.1.pom
+2012-06-19 12:01:42,323 [New I/O client worker #105-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-jta_1.0.1B_spec/1.0.1/geronimo-jta_1.0.1B_spec-1.0.1.pom
+2012-06-19 12:01:42,324 [New I/O client worker #105-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-jta_1.0.1B_spec/1.0.1/geronimo-jta_1.0.1B_spec-1.0.1.pom
+2012-06-19 12:01:42,597 [New I/O client worker #106-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/apache/geronimo/specs/specs/1.1/specs-1.1.pom
+2012-06-19 12:01:42,854 [New I/O client worker #107-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/apache/geronimo/specs/specs/1.1/specs-1.1.pom
+2012-06-19 12:01:42,889 [New I/O client worker #108-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/geronimo/specs/specs/1.1/specs-1.1.pom
+2012-06-19 12:01:42,890 [New I/O client worker #108-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/geronimo/specs/specs/1.1/specs-1.1.pom
+2012-06-19 12:01:43,154 [New I/O client worker #109-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/apache/apache/1/apache-1.pom
+2012-06-19 12:01:43,405 [New I/O client worker #110-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/apache/apache/1/apache-1.pom
+2012-06-19 12:01:43,434 [New I/O client worker #111-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/apache/1/apache-1.pom
+2012-06-19 12:01:43,434 [New I/O client worker #111-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/apache/1/apache-1.pom
+2012-06-19 12:01:43,708 [New I/O client worker #112-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/com/atomikos/transactions-jms-deprecated/3.6.4/transactions-jms-deprecated-3.6.4.pom
+2012-06-19 12:01:43,959 [New I/O client worker #113-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/com/atomikos/transactions-jms-deprecated/3.6.4/transactions-jms-deprecated-3.6.4.pom
+2012-06-19 12:01:43,985 [New I/O client worker #114-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/atomikos/transactions-jms-deprecated/3.6.4/transactions-jms-deprecated-3.6.4.pom
+2012-06-19 12:01:43,986 [New I/O client worker #114-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/atomikos/transactions-jms-deprecated/3.6.4/transactions-jms-deprecated-3.6.4.pom
+2012-06-19 12:01:44,259 [New I/O client worker #115-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/com/atomikos/transactions-jms/3.6.4/transactions-jms-3.6.4.pom
+2012-06-19 12:01:44,513 [New I/O client worker #116-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/com/atomikos/transactions-jms/3.6.4/transactions-jms-3.6.4.pom
+2012-06-19 12:01:44,537 [New I/O client worker #117-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/atomikos/transactions-jms/3.6.4/transactions-jms-3.6.4.pom
+2012-06-19 12:01:44,538 [New I/O client worker #117-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/atomikos/transactions-jms/3.6.4/transactions-jms-3.6.4.pom
+2012-06-19 12:01:44,800 [New I/O client worker #118-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/com/atomikos/transactions-hibernate3/3.6.4/transactions-hibernate3-3.6.4.pom
+2012-06-19 12:01:45,052 [New I/O client worker #119-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/com/atomikos/transactions-hibernate3/3.6.4/transactions-hibernate3-3.6.4.pom
+2012-06-19 12:01:45,078 [New I/O client worker #120-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/atomikos/transactions-hibernate3/3.6.4/transactions-hibernate3-3.6.4.pom
+2012-06-19 12:01:45,079 [New I/O client worker #120-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/atomikos/transactions-hibernate3/3.6.4/transactions-hibernate3-3.6.4.pom
+2012-06-19 12:01:45,388 [New I/O client worker #121-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/hibernate/hibernate/3.2.5.ga/hibernate-3.2.5.ga.pom
+2012-06-19 12:01:45,642 [New I/O client worker #122-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/hibernate/hibernate/3.2.5.ga/hibernate-3.2.5.ga.pom
+2012-06-19 12:01:45,671 [New I/O client worker #123-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/hibernate/hibernate/3.2.5.ga/hibernate-3.2.5.ga.pom
+2012-06-19 12:01:45,673 [New I/O client worker #123-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/hibernate/hibernate/3.2.5.ga/hibernate-3.2.5.ga.pom
+2012-06-19 12:01:45,957 [New I/O client worker #124-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/net/sf/ehcache/ehcache/1.2.3/ehcache-1.2.3.pom
+2012-06-19 12:01:46,212 [New I/O client worker #125-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/net/sf/ehcache/ehcache/1.2.3/ehcache-1.2.3.pom
+2012-06-19 12:01:46,263 [New I/O client worker #126-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/net/sf/ehcache/ehcache/1.2.3/ehcache-1.2.3.pom
+2012-06-19 12:01:46,263 [New I/O client worker #126-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/net/sf/ehcache/ehcache/1.2.3/ehcache-1.2.3.pom
+2012-06-19 12:01:46,545 [New I/O client worker #127-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.pom
+2012-06-19 12:01:46,799 [New I/O client worker #128-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.pom
+2012-06-19 12:01:46,828 [New I/O client worker #129-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.pom
+2012-06-19 12:01:46,829 [New I/O client worker #129-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.pom
+2012-06-19 12:01:47,105 [New I/O client worker #130-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/commons-collections/commons-collections/2.1/commons-collections-2.1.pom
+2012-06-19 12:01:47,355 [New I/O client worker #131-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/commons-collections/commons-collections/2.1/commons-collections-2.1.pom
+2012-06-19 12:01:47,389 [New I/O client worker #132-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/commons-collections/commons-collections/2.1/commons-collections-2.1.pom
+2012-06-19 12:01:47,390 [New I/O client worker #132-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/commons-collections/commons-collections/2.1/commons-collections-2.1.pom
+2012-06-19 12:01:47,664 [New I/O client worker #133-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/javax/transaction/jta/1.0.1B/jta-1.0.1B.pom
+2012-06-19 12:01:47,920 [New I/O client worker #134-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/javax/transaction/jta/1.0.1B/jta-1.0.1B.pom
+2012-06-19 12:01:47,947 [New I/O client worker #135-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/javax/transaction/jta/1.0.1B/jta-1.0.1B.pom
+2012-06-19 12:01:47,948 [New I/O client worker #135-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/javax/transaction/jta/1.0.1B/jta-1.0.1B.pom
+2012-06-19 12:01:48,284 [New I/O client worker #136-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/asm/asm-attrs/1.5.3/asm-attrs-1.5.3.pom
+2012-06-19 12:01:48,540 [New I/O client worker #137-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/asm/asm-attrs/1.5.3/asm-attrs-1.5.3.pom
+2012-06-19 12:01:48,570 [New I/O client worker #138-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/asm/asm-attrs/1.5.3/asm-attrs-1.5.3.pom
+2012-06-19 12:01:48,571 [New I/O client worker #138-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/asm/asm-attrs/1.5.3/asm-attrs-1.5.3.pom
+2012-06-19 12:01:48,843 [New I/O client worker #139-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/dom4j/dom4j/1.6.1/dom4j-1.6.1.pom
+2012-06-19 12:01:49,103 [New I/O client worker #140-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/dom4j/dom4j/1.6.1/dom4j-1.6.1.pom
+2012-06-19 12:01:49,204 [New I/O client worker #141-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.pom
+2012-06-19 12:01:49,205 [New I/O client worker #141-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.pom
+2012-06-19 12:01:49,480 [New I/O client worker #142-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/antlr/antlr/2.7.6/antlr-2.7.6.pom
+2012-06-19 12:01:49,729 [New I/O client worker #143-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/antlr/antlr/2.7.6/antlr-2.7.6.pom
+2012-06-19 12:01:49,764 [New I/O client worker #144-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/antlr/antlr/2.7.6/antlr-2.7.6.pom
+2012-06-19 12:01:49,764 [New I/O client worker #144-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/antlr/antlr/2.7.6/antlr-2.7.6.pom
+2012-06-19 12:01:50,028 [New I/O client worker #145-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/cglib/cglib/2.1_3/cglib-2.1_3.pom
+2012-06-19 12:01:50,290 [New I/O client worker #146-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/cglib/cglib/2.1_3/cglib-2.1_3.pom
+2012-06-19 12:01:50,311 [New I/O client worker #147-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/cglib/cglib/2.1_3/cglib-2.1_3.pom
+2012-06-19 12:01:50,312 [New I/O client worker #147-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/cglib/cglib/2.1_3/cglib-2.1_3.pom
+2012-06-19 12:01:50,585 [New I/O client worker #148-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/asm/asm/1.5.3/asm-1.5.3.pom
+2012-06-19 12:01:50,842 [New I/O client worker #149-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/asm/asm/1.5.3/asm-1.5.3.pom
+2012-06-19 12:01:50,869 [New I/O client worker #150-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/asm/asm/1.5.3/asm-1.5.3.pom
+2012-06-19 12:01:50,870 [New I/O client worker #150-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/asm/asm/1.5.3/asm-1.5.3.pom
+2012-06-19 12:01:51,140 [New I/O client worker #151-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/commons-collections/commons-collections/2.1.1/commons-collections-2.1.1.pom
+2012-06-19 12:01:51,399 [New I/O client worker #152-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/commons-collections/commons-collections/2.1.1/commons-collections-2.1.1.pom
+2012-06-19 12:01:51,426 [New I/O client worker #153-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/commons-collections/commons-collections/2.1.1/commons-collections-2.1.1.pom
+2012-06-19 12:01:51,427 [New I/O client worker #153-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/commons-collections/commons-collections/2.1.1/commons-collections-2.1.1.pom
+2012-06-19 12:01:56,735 [New I/O client worker #154-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/javax/jms/jms/1.1/jms-1.1.pom
+2012-06-19 12:01:56,987 [New I/O client worker #155-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/javax/jms/jms/1.1/jms-1.1.pom
+2012-06-19 12:01:57,013 [New I/O client worker #156-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/javax/jms/jms/1.1/jms-1.1.pom
+2012-06-19 12:01:57,013 [New I/O client worker #156-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/javax/jms/jms/1.1/jms-1.1.pom
+2012-06-19 12:02:14,398 [New I/O client worker #157-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/apache/derby/derby/10.8.2.2/derby-10.8.2.2.pom
+2012-06-19 12:02:14,651 [New I/O client worker #158-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/apache/derby/derby/10.8.2.2/derby-10.8.2.2.pom
+2012-06-19 12:02:14,686 [New I/O client worker #159-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/derby/derby/10.8.2.2/derby-10.8.2.2.pom
+2012-06-19 12:02:14,687 [New I/O client worker #159-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/derby/derby/10.8.2.2/derby-10.8.2.2.pom
+2012-06-19 12:02:14,957 [New I/O client worker #160-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/apache/derby/derby-project/10.8.2.2/derby-project-10.8.2.2.pom
+2012-06-19 12:02:15,213 [New I/O client worker #161-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/apache/derby/derby-project/10.8.2.2/derby-project-10.8.2.2.pom
+2012-06-19 12:02:15,258 [New I/O client worker #162-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/derby/derby-project/10.8.2.2/derby-project-10.8.2.2.pom
+2012-06-19 12:02:15,258 [New I/O client worker #162-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/derby/derby-project/10.8.2.2/derby-project-10.8.2.2.pom
+2012-06-19 12:02:47,484 [New I/O client worker #163-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/codehaus/btm/btm/2.1.0/btm-2.1.0.jar
+2012-06-19 12:02:47,593 [New I/O client worker #163-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar
+2012-06-19 12:02:47,713 [New I/O client worker #163-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/commons-lang/commons-lang/2.5/commons-lang-2.5.jar
+2012-06-19 12:02:47,717 [New I/O client worker #163-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar
+2012-06-19 12:02:47,836 [New I/O client worker #163-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/cglib/cglib-nodep/2.2/cglib-nodep-2.2.jar
+2012-06-19 12:02:47,849 [New I/O client worker #163-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/springframework/spring-context-support/3.1.0.M2/spring-context-support-3.1.0.M2.jar
+2012-06-19 12:02:47,968 [New I/O client worker #163-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+2012-06-19 12:02:47,973 [New I/O client worker #163-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/springframework/spring-core/3.1.0.M2/spring-core-3.1.0.M2.jar
+2012-06-19 12:02:47,975 [New I/O client worker #163-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/springframework/spring-context/3.1.0.M2/spring-context-3.1.0.M2.jar
+2012-06-19 12:02:47,987 [New I/O client worker #163-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/springframework/spring-beans/3.1.0.M2/spring-beans-3.1.0.M2.jar
+2012-06-19 12:02:48,087 [New I/O client worker #163-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+2012-06-19 12:02:48,099 [New I/O client worker #163-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/springframework/spring-aop/3.1.0.M2/spring-aop-3.1.0.M2.jar
+2012-06-19 12:02:48,216 [New I/O client worker #163-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/slf4j/slf4j-api/1.5.10/slf4j-api-1.5.10.jar
+2012-06-19 12:02:48,218 [New I/O client worker #163-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/springframework/spring-expression/3.1.0.M2/spring-expression-3.1.0.M2.jar
+2012-06-19 12:02:48,219 [New I/O client worker #163-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/springframework/spring-asm/3.1.0.M2/spring-asm-3.1.0.M2.jar
+2012-06-19 12:02:48,220 [New I/O client worker #163-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/springframework/spring-jdbc/3.1.0.M2/spring-jdbc-3.1.0.M2.jar
+2012-06-19 12:02:48,221 [New I/O client worker #163-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/springframework/spring-tx/3.1.0.M2/spring-tx-3.1.0.M2.jar
+2012-06-19 12:02:48,226 [New I/O client worker #163-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/slf4j/slf4j-log4j12/1.5.10/slf4j-log4j12-1.5.10.jar
+2012-06-19 12:02:48,266 [New I/O client worker #163-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/release/org/aspectj/aspectjrt/1.6.9/aspectjrt-1.6.9.jar
+2012-06-19 12:02:48,347 [New I/O client worker #163-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/log4j/log4j/1.2.9/log4j-1.2.9.jar
+2012-06-19 12:02:48,352 [New I/O client worker #163-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/com/atomikos/transactions-jdbc-deprecated/3.6.4/transactions-jdbc-deprecated-3.6.4.jar
+2012-06-19 12:02:48,354 [New I/O client worker #163-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/junit/junit/4.8.2/junit-4.8.2.jar
+2012-06-19 12:02:48,356 [New I/O client worker #163-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar
+2012-06-19 12:02:48,356 [New I/O client worker #163-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/com/atomikos/transactions-jdbc/3.6.4/transactions-jdbc-3.6.4.jar
+2012-06-19 12:02:48,357 [New I/O client worker #163-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/javax/transaction/jta/1.1/jta-1.1.jar
+2012-06-19 12:02:48,358 [New I/O client worker #163-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/com/atomikos/atomikos-util/3.6.4/atomikos-util-3.6.4.jar
+2012-06-19 12:02:48,480 [New I/O client worker #163-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/hibernate/hibernate/3.2.5.ga/hibernate-3.2.5.ga.jar
+2012-06-19 12:02:48,481 [New I/O client worker #163-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/com/atomikos/transactions-hibernate3/3.6.4/transactions-hibernate3-3.6.4.jar
+2012-06-19 12:02:48,483 [New I/O client worker #163-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/com/atomikos/transactions-jms-deprecated/3.6.4/transactions-jms-deprecated-3.6.4.jar
+2012-06-19 12:02:48,485 [New I/O client worker #163-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/asm/asm-attrs/1.5.3/asm-attrs-1.5.3.jar
+2012-06-19 12:02:48,485 [New I/O client worker #163-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/net/sf/ehcache/ehcache/1.2.3/ehcache-1.2.3.jar
+2012-06-19 12:02:48,485 [New I/O client worker #163-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/com/atomikos/transactions-jms/3.6.4/transactions-jms-3.6.4.jar
+2012-06-19 12:02:48,491 [New I/O client worker #163-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
+2012-06-19 12:02:48,492 [New I/O client worker #163-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/antlr/antlr/2.7.6/antlr-2.7.6.jar
+2012-06-19 12:02:48,613 [New I/O client worker #163-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/asm/asm/1.5.3/asm-1.5.3.jar
+2012-06-19 12:02:48,616 [New I/O client worker #163-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/cglib/cglib/2.1_3/cglib-2.1_3.jar
+2012-06-19 12:02:48,617 [New I/O client worker #163-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/commons-collections/commons-collections/2.1.1/commons-collections-2.1.1.jar
+2012-06-19 12:02:48,619 [New I/O client worker #163-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/com/atomikos/transactions-api/3.6.4/transactions-api-3.6.4.jar
+2012-06-19 12:02:48,619 [New I/O client worker #163-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/com/atomikos/transactions/3.6.4/transactions-3.6.4.jar
+2012-06-19 12:02:48,621 [New I/O client worker #163-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/com/atomikos/transactions-jta/3.6.4/transactions-jta-3.6.4.jar
+2012-06-19 12:02:48,622 [New I/O client worker #163-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/apache/derby/derby/10.8.2.2/derby-10.8.2.2.jar
+2012-06-19 12:02:48,622 [New I/O client worker #163-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/apache/geronimo/specs/geronimo-jta_1.0.1B_spec/1.0.1/geronimo-jta_1.0.1B_spec-1.0.1.jar
+2012-06-19 12:02:48,912 [New I/O client worker #163-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/org/aspectj/aspectjrt/1.6.9/aspectjrt-1.6.9.jar
+2012-06-19 12:02:49,349 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+2012-06-19 12:02:49,654 [New I/O client worker #164-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/codehaus/btm/btm/2.1.0/btm-2.1.0.jar
+2012-06-19 12:02:49,770 [New I/O client worker #164-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar
+2012-06-19 12:02:49,896 [New I/O client worker #164-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/commons-lang/commons-lang/2.5/commons-lang-2.5.jar
+2012-06-19 12:02:49,898 [New I/O client worker #164-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/cglib/cglib-nodep/2.2/cglib-nodep-2.2.jar
+2012-06-19 12:02:49,899 [New I/O client worker #164-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar
+2012-06-19 12:02:50,059 [New I/O client worker #164-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/milestone/org/springframework/spring-context-support/3.1.0.M2/spring-context-support-3.1.0.M2.jar
+2012-06-19 12:02:50,144 [New I/O client worker #164-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+2012-06-19 12:02:50,158 [New I/O client worker #164-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/milestone/org/springframework/spring-beans/3.1.0.M2/spring-beans-3.1.0.M2.jar
+2012-06-19 12:02:50,163 [New I/O client worker #164-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/milestone/org/springframework/spring-core/3.1.0.M2/spring-core-3.1.0.M2.jar
+2012-06-19 12:02:50,200 [New I/O client worker #164-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/milestone/org/springframework/spring-context/3.1.0.M2/spring-context-3.1.0.M2.jar
+2012-06-19 12:02:50,273 [New I/O client worker #164-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+2012-06-19 12:02:50,276 [New I/O client worker #164-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/milestone/org/springframework/spring-aop/3.1.0.M2/spring-aop-3.1.0.M2.jar
+2012-06-19 12:02:50,401 [New I/O client worker #164-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/milestone/org/springframework/spring-expression/3.1.0.M2/spring-expression-3.1.0.M2.jar
+2012-06-19 12:02:50,527 [New I/O client worker #164-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/milestone/org/springframework/spring-asm/3.1.0.M2/spring-asm-3.1.0.M2.jar
+2012-06-19 12:02:50,554 [New I/O client worker #164-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/milestone/org/springframework/spring-jdbc/3.1.0.M2/spring-jdbc-3.1.0.M2.jar
+2012-06-19 12:02:50,689 [New I/O client worker #164-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.springframework.org/milestone/org/springframework/spring-tx/3.1.0.M2/spring-tx-3.1.0.M2.jar
+2012-06-19 12:02:50,794 [New I/O client worker #164-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/slf4j/slf4j-api/1.5.10/slf4j-api-1.5.10.jar
+2012-06-19 12:02:50,960 [New I/O client worker #164-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/slf4j/slf4j-log4j12/1.5.10/slf4j-log4j12-1.5.10.jar
+2012-06-19 12:02:50,964 [New I/O client worker #164-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/log4j/log4j/1.2.9/log4j-1.2.9.jar
+2012-06-19 12:02:51,247 [New I/O client worker #164-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/springframework/spring-context-support/3.1.0.M2/spring-context-support-3.1.0.M2.jar
+2012-06-19 12:02:51,383 [New I/O client worker #164-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/springframework/spring-asm/3.1.0.M2/spring-asm-3.1.0.M2.jar
+2012-06-19 12:02:52,238 [New I/O client worker #164-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar
+2012-06-19 12:02:52,240 [New I/O client worker #164-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/junit/junit/4.8.2/junit-4.8.2.jar
+2012-06-19 12:02:52,249 [New I/O client worker #164-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/com/atomikos/atomikos-util/3.6.4/atomikos-util-3.6.4.jar
+2012-06-19 12:02:52,251 [New I/O client worker #164-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/com/atomikos/transactions-jdbc-deprecated/3.6.4/transactions-jdbc-deprecated-3.6.4.jar
+2012-06-19 12:02:52,265 [New I/O client worker #164-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/javax/transaction/jta/1.1/jta-1.1.jar
+2012-06-19 12:02:52,386 [New I/O client worker #164-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/com/atomikos/transactions-jms-deprecated/3.6.4/transactions-jms-deprecated-3.6.4.jar
+2012-06-19 12:02:52,388 [New I/O client worker #164-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/com/atomikos/transactions-jdbc/3.6.4/transactions-jdbc-3.6.4.jar
+2012-06-19 12:02:52,392 [New I/O client worker #164-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/com/atomikos/transactions-jms/3.6.4/transactions-jms-3.6.4.jar
+2012-06-19 12:02:52,523 [New I/O client worker #164-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/com/atomikos/transactions-hibernate3/3.6.4/transactions-hibernate3-3.6.4.jar
+2012-06-19 12:02:52,526 [New I/O client worker #164-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/hibernate/hibernate/3.2.5.ga/hibernate-3.2.5.ga.jar
+2012-06-19 12:02:52,530 [New I/O client worker #164-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/net/sf/ehcache/ehcache/1.2.3/ehcache-1.2.3.jar
+2012-06-19 12:02:52,538 [New I/O client worker #164-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/asm/asm-attrs/1.5.3/asm-attrs-1.5.3.jar
+2012-06-19 12:02:52,542 [New I/O client worker #164-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
+2012-06-19 12:02:52,555 [New I/O client worker #164-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/antlr/antlr/2.7.6/antlr-2.7.6.jar
+2012-06-19 12:02:52,562 [New I/O client worker #164-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/cglib/cglib/2.1_3/cglib-2.1_3.jar
+2012-06-19 12:02:52,583 [New I/O client worker #164-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/springframework/spring-expression/3.1.0.M2/spring-expression-3.1.0.M2.jar
+2012-06-19 12:02:52,695 [New I/O client worker #164-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/asm/asm/1.5.3/asm-1.5.3.jar
+2012-06-19 12:02:52,702 [New I/O client worker #164-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/com/atomikos/transactions/3.6.4/transactions-3.6.4.jar
+2012-06-19 12:02:52,703 [New I/O client worker #164-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/commons-collections/commons-collections/2.1.1/commons-collections-2.1.1.jar
+2012-06-19 12:02:52,706 [New I/O client worker #164-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/com/atomikos/transactions-api/3.6.4/transactions-api-3.6.4.jar
+2012-06-19 12:02:52,710 [New I/O client worker #164-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/com/atomikos/transactions-jta/3.6.4/transactions-jta-3.6.4.jar
+2012-06-19 12:02:52,711 [New I/O client worker #164-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/apache/geronimo/specs/geronimo-jta_1.0.1B_spec/1.0.1/geronimo-jta_1.0.1B_spec-1.0.1.jar
+2012-06-19 12:02:52,718 [New I/O client worker #164-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/apache/derby/derby/10.8.2.2/derby-10.8.2.2.jar
+2012-06-19 12:02:53,763 [New I/O client worker #164-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/springframework/spring-aop/3.1.0.M2/spring-aop-3.1.0.M2.jar
+2012-06-19 12:02:54,414 [New I/O client worker #164-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/springframework/spring-jdbc/3.1.0.M2/spring-jdbc-3.1.0.M2.jar
+2012-06-19 12:02:54,445 [New I/O client worker #164-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/springframework/spring-core/3.1.0.M2/spring-core-3.1.0.M2.jar
+2012-06-19 12:02:54,987 [New I/O client worker #164-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/springframework/spring-beans/3.1.0.M2/spring-beans-3.1.0.M2.jar
+2012-06-19 12:02:54,991 [New I/O client worker #164-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/springframework/spring-tx/3.1.0.M2/spring-tx-3.1.0.M2.jar
+2012-06-19 12:02:55,391 [New I/O client worker #164-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/org/springframework/spring-context/3.1.0.M2/spring-context-3.1.0.M2.jar
+2012-06-19 12:02:56,510 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+2012-06-19 12:02:56,888 [New I/O client worker #165-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/btm/btm/2.1.0/btm-2.1.0.jar
+2012-06-19 12:02:56,906 [New I/O client worker #165-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar
+2012-06-19 12:02:56,933 [New I/O client worker #165-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar
+2012-06-19 12:02:56,979 [New I/O client worker #165-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/commons-lang/commons-lang/2.5/commons-lang-2.5.jar
+2012-06-19 12:02:56,997 [New I/O client worker #165-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/cglib/cglib-nodep/2.2/cglib-nodep-2.2.jar
+2012-06-19 12:02:57,033 [New I/O client worker #165-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+2012-06-19 12:02:57,057 [New I/O client worker #165-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+2012-06-19 12:02:57,058 [New I/O client worker #165-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+2012-06-19 12:02:57,089 [New I/O client worker #165-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.5.10/slf4j-api-1.5.10.jar
+2012-06-19 12:02:57,123 [New I/O client worker #165-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.5.10/slf4j-log4j12-1.5.10.jar
+2012-06-19 12:02:57,148 [New I/O client worker #165-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.5.10/slf4j-log4j12-1.5.10.jar
+2012-06-19 12:02:57,154 [New I/O client worker #165-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/log4j/log4j/1.2.9/log4j-1.2.9.jar
+2012-06-19 12:02:57,169 [New I/O client worker #165-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar
+2012-06-19 12:02:57,224 [New I/O client worker #165-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/junit/junit/4.8.2/junit-4.8.2.jar
+2012-06-19 12:02:57,274 [New I/O client worker #165-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/javax/transaction/jta/1.1/jta-1.1.jar
+2012-06-19 12:02:57,282 [New I/O client worker #165-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/atomikos/atomikos-util/3.6.4/atomikos-util-3.6.4.jar
+2012-06-19 12:02:57,309 [New I/O client worker #165-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/atomikos/transactions-jdbc-deprecated/3.6.4/transactions-jdbc-deprecated-3.6.4.jar
+2012-06-19 12:02:57,328 [New I/O client worker #165-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/javax/transaction/jta/1.1/jta-1.1.jar
+2012-06-19 12:02:57,378 [New I/O client worker #165-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/atomikos/transactions-jdbc/3.6.4/transactions-jdbc-3.6.4.jar
+2012-06-19 12:02:57,420 [New I/O client worker #165-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/atomikos/transactions-jms-deprecated/3.6.4/transactions-jms-deprecated-3.6.4.jar
+2012-06-19 12:02:57,480 [New I/O client worker #165-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/atomikos/transactions-jms/3.6.4/transactions-jms-3.6.4.jar
+2012-06-19 12:02:57,532 [New I/O client worker #165-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/hibernate/hibernate/3.2.5.ga/hibernate-3.2.5.ga.jar
+2012-06-19 12:02:57,540 [New I/O client worker #165-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.5.10/slf4j-api-1.5.10.jar
+2012-06-19 12:02:57,594 [New I/O client worker #165-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/net/sf/ehcache/ehcache/1.2.3/ehcache-1.2.3.jar
+2012-06-19 12:02:57,600 [New I/O client worker #165-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/atomikos/transactions-hibernate3/3.6.4/transactions-hibernate3-3.6.4.jar
+2012-06-19 12:02:57,601 [New I/O client worker #165-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/atomikos/transactions-hibernate3/3.6.4/transactions-hibernate3-3.6.4.jar
+2012-06-19 12:02:57,634 [New I/O client worker #165-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/asm/asm-attrs/1.5.3/asm-attrs-1.5.3.jar
+2012-06-19 12:02:57,693 [New I/O client worker #165-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
+2012-06-19 12:02:57,698 [New I/O client worker #165-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/antlr/antlr/2.7.6/antlr-2.7.6.jar
+2012-06-19 12:02:57,752 [New I/O client worker #165-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/cglib/cglib/2.1_3/cglib-2.1_3.jar
+2012-06-19 12:02:57,756 [New I/O client worker #165-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/asm/asm/1.5.3/asm-1.5.3.jar
+2012-06-19 12:02:57,807 [New I/O client worker #165-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/commons-collections/commons-collections/2.1.1/commons-collections-2.1.1.jar
+2012-06-19 12:02:57,862 [New I/O client worker #165-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/atomikos/transactions/3.6.4/transactions-3.6.4.jar
+2012-06-19 12:02:57,923 [New I/O client worker #165-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/atomikos/transactions-api/3.6.4/transactions-api-3.6.4.jar
+2012-06-19 12:02:58,002 [New I/O client worker #165-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/atomikos/transactions-jta/3.6.4/transactions-jta-3.6.4.jar
+2012-06-19 12:02:58,057 [New I/O client worker #165-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/asm/asm-attrs/1.5.3/asm-attrs-1.5.3.jar
+2012-06-19 12:02:58,078 [New I/O client worker #165-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-jta_1.0.1B_spec/1.0.1/geronimo-jta_1.0.1B_spec-1.0.1.jar
+2012-06-19 12:02:58,136 [New I/O client worker #165-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/derby/derby/10.8.2.2/derby-10.8.2.2.jar
+2012-06-19 12:02:58,257 [New I/O client worker #165-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-jta_1.0.1B_spec/1.0.1/geronimo-jta_1.0.1B_spec-1.0.1.jar
+2012-06-19 12:02:58,586 [New I/O client worker #165-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/asm/asm/1.5.3/asm-1.5.3.jar
+2012-06-19 12:02:59,028 [New I/O client worker #165-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/atomikos/transactions-api/3.6.4/transactions-api-3.6.4.jar
+2012-06-19 12:02:59,031 [New I/O client worker #165-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar
+2012-06-19 12:02:59,130 [New I/O client worker #165-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/atomikos/transactions-jdbc/3.6.4/transactions-jdbc-3.6.4.jar
+2012-06-19 12:02:59,145 [New I/O client worker #165-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/atomikos/transactions-jms/3.6.4/transactions-jms-3.6.4.jar
+2012-06-19 12:02:59,355 [New I/O client worker #165-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/atomikos/transactions-jdbc-deprecated/3.6.4/transactions-jdbc-deprecated-3.6.4.jar
+2012-06-19 12:02:59,409 [New I/O client worker #165-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/atomikos/transactions-jms-deprecated/3.6.4/transactions-jms-deprecated-3.6.4.jar
+2012-06-19 12:02:59,535 [New I/O client worker #165-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar
+2012-06-19 12:02:59,643 [New I/O client worker #165-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/atomikos/atomikos-util/3.6.4/atomikos-util-3.6.4.jar
+2012-06-19 12:03:00,373 [New I/O client worker #165-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar
+2012-06-19 12:03:00,797 [New I/O client worker #165-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/atomikos/transactions-jta/3.6.4/transactions-jta-3.6.4.jar
+2012-06-19 12:03:01,461 [New I/O client worker #165-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/commons-collections/commons-collections/2.1.1/commons-collections-2.1.1.jar
+2012-06-19 12:03:01,493 [New I/O client worker #165-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/atomikos/transactions/3.6.4/transactions-3.6.4.jar
+2012-06-19 12:03:01,838 [New I/O client worker #165-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar
+2012-06-19 12:03:02,213 [New I/O client worker #165-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/net/sf/ehcache/ehcache/1.2.3/ehcache-1.2.3.jar
+2012-06-19 12:03:02,330 [New I/O client worker #165-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/junit/junit/4.8.2/junit-4.8.2.jar
+2012-06-19 12:03:02,429 [New I/O client worker #165-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/commons-lang/commons-lang/2.5/commons-lang-2.5.jar
+2012-06-19 12:03:02,675 [New I/O client worker #165-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/btm/btm/2.1.0/btm-2.1.0.jar
+2012-06-19 12:03:03,052 [New I/O client worker #165-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/cglib/cglib/2.1_3/cglib-2.1_3.jar
+2012-06-19 12:03:03,101 [New I/O client worker #165-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/cglib/cglib-nodep/2.2/cglib-nodep-2.2.jar
+2012-06-19 12:03:03,339 [New I/O client worker #165-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
+2012-06-19 12:03:03,959 [New I/O client worker #165-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/log4j/log4j/1.2.9/log4j-1.2.9.jar
+2012-06-19 12:03:04,054 [New I/O client worker #165-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/antlr/antlr/2.7.6/antlr-2.7.6.jar
+2012-06-19 12:03:09,414 [New I/O client worker #165-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/hibernate/hibernate/3.2.5.ga/hibernate-3.2.5.ga.jar
+2012-06-19 12:03:10,023 [New I/O client worker #165-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/derby/derby/10.8.2.2/derby-10.8.2.2.jar
+2012-06-19 12:03:10,979 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+2012-06-19 12:03:12,056 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+2012-06-19 12:03:13,022 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+2012-06-19 12:03:14,222 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+2012-06-19 12:03:15,044 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+2012-06-19 12:03:16,065 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+2012-06-19 12:03:17,164 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+2012-06-19 12:03:17,881 [New I/O client worker #166-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.4.3/maven-resources-plugin-2.4.3.pom
+2012-06-19 12:03:17,882 [New I/O client worker #166-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.4.3/maven-resources-plugin-2.4.3.pom
+2012-06-19 12:03:17,938 [New I/O client worker #167-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.4.3/maven-resources-plugin-2.4.3.jar
+2012-06-19 12:03:17,960 [New I/O client worker #167-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.4.3/maven-resources-plugin-2.4.3.jar
+2012-06-19 12:03:18,165 [New I/O client worker #168-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.7.1/maven-surefire-plugin-2.7.1.pom
+2012-06-19 12:03:18,166 [New I/O client worker #168-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.7.1/maven-surefire-plugin-2.7.1.pom
+2012-06-19 12:03:18,208 [New I/O client worker #169-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire/2.7.1/surefire-2.7.1.pom
+2012-06-19 12:03:18,209 [New I/O client worker #169-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire/2.7.1/surefire-2.7.1.pom
+2012-06-19 12:03:18,257 [New I/O client worker #170-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-parent/18/maven-parent-18.pom
+2012-06-19 12:03:18,258 [New I/O client worker #170-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-parent/18/maven-parent-18.pom
+2012-06-19 12:03:18,328 [New I/O client worker #171-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/apache/8/apache-8.pom
+2012-06-19 12:03:18,329 [New I/O client worker #171-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/apache/8/apache-8.pom
+2012-06-19 12:03:18,392 [New I/O client worker #172-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.7.1/maven-surefire-plugin-2.7.1.jar
+2012-06-19 12:03:18,417 [New I/O client worker #172-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.7.1/maven-surefire-plugin-2.7.1.jar
+2012-06-19 12:03:18,595 [New I/O client worker #173-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.3.1/maven-jar-plugin-2.3.1.pom
+2012-06-19 12:03:18,595 [New I/O client worker #173-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.3.1/maven-jar-plugin-2.3.1.pom
+2012-06-19 12:03:18,658 [New I/O client worker #174-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.3.1/maven-jar-plugin-2.3.1.jar
+2012-06-19 12:03:18,684 [New I/O client worker #174-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.3.1/maven-jar-plugin-2.3.1.jar
+2012-06-19 12:03:19,233 [New I/O client worker #175-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.pom
+2012-06-19 12:03:19,234 [New I/O client worker #175-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.pom
+2012-06-19 12:03:19,349 [New I/O client worker #176-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-archiver/1.0/plexus-archiver-1.0.jar
+2012-06-19 12:03:19,385 [New I/O client worker #176-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-io/1.0/plexus-io-1.0.jar
+2012-06-19 12:03:19,455 [New I/O client worker #176-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.jar
+2012-06-19 12:03:19,514 [New I/O client worker #176-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-io/1.0/plexus-io-1.0.jar
+2012-06-19 12:03:19,828 [New I/O client worker #176-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-archiver/1.0/plexus-archiver-1.0.jar
+2012-06-19 12:03:19,974 [New I/O client worker #176-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.jar
+2012-06-19 12:03:26,603 [Worker-18] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pl.edu.agh.sr:dtransactions:1.0.0-SNAPSHOT @ /home/jar/Pulpit/studia/Rozprochy/DistributedTransactionsDist/pom.xml.
+2012-06-19 12:03:26,740 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:03:26,808 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-06-19 12:03:26,869 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:03:26,883 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 12:03:30,506 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:03:30,531 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-06-19 12:03:30,579 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:03:30,582 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 12:04:27,645 [Worker-18] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pl.edu.agh.sr:dtransactions:1.0.0-SNAPSHOT @ /home/jar/Pulpit/studia/Rozprochy/DistributedTransactionsDist/pom.xml.
+2012-06-19 12:05:18,278 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:05:18,278 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 12:05:18,281 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:05:18,298 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 12:20:27,077 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:20:27,079 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-06-19 12:20:27,090 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:20:27,090 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 12:20:59,802 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:20:59,804 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-06-19 12:20:59,806 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:20:59,807 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 12:21:02,793 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:21:02,796 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-06-19 12:21:02,799 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:21:02,799 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 12:21:18,312 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:21:18,314 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-06-19 12:21:18,316 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:21:18,317 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 12:25:22,831 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:25:22,832 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-06-19 12:25:22,843 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:25:22,843 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 12:27:28,715 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:27:28,719 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-06-19 12:27:28,724 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:27:28,725 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 12:29:38,535 [New I/O client worker #177-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/release/com/atomikos/transactions-jta/3.6.4/transactions-jta-3.6.4-sources.jar
+2012-06-19 12:29:38,790 [New I/O client worker #178-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.springframework.org/milestone/com/atomikos/transactions-jta/3.6.4/transactions-jta-3.6.4-sources.jar
+2012-06-19 12:29:39,136 [New I/O client worker #179-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/atomikos/transactions-jta/3.6.4/transactions-jta-3.6.4-sources.jar
+2012-06-19 12:29:39,319 [New I/O client worker #179-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/atomikos/transactions-jta/3.6.4/transactions-jta-3.6.4-sources.jar
+2012-06-19 12:29:39,554 [Worker-13] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.atomikos:transactions-jta:3.6.4
+2012-06-19 12:29:39,829 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:29:39,836 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 12:29:39,859 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:29:39,860 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 12:30:48,454 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:30:48,455 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-06-19 12:30:48,459 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 12:30:48,460 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:12:53,459 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:12:53,460 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-06-19 13:12:53,462 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:12:53,463 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:22:35,094 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:22:35,260 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-06-19 13:22:35,262 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:22:35,263 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:23:03,236 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:23:03,238 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-06-19 13:23:03,240 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:23:03,241 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:23:08,350 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:23:08,351 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-06-19 13:23:08,353 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:23:08,369 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:23:21,071 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:23:21,086 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-06-19 13:23:21,089 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:23:21,089 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:25:10,815 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:25:10,817 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-06-19 13:25:10,820 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:25:10,820 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:25:24,303 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:25:24,305 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-06-19 13:25:24,307 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:25:24,314 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:25:38,404 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:25:38,406 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-06-19 13:25:38,412 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:25:38,413 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:26:49,909 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:26:49,910 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-06-19 13:26:49,912 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:26:49,913 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:27:50,276 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:27:50,285 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-06-19 13:27:50,299 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:27:50,300 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:29:50,267 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:29:50,270 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-06-19 13:29:50,272 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:29:50,272 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:32:39,853 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:32:39,857 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:32:39,862 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:32:39,863 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:33:09,335 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:33:09,349 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:33:09,363 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:33:09,364 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:34:05,336 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:34:05,338 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:34:05,349 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:34:05,350 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:34:10,688 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:34:10,690 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:34:10,692 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:34:10,692 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:34:29,763 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:34:29,765 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:34:29,768 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:34:29,769 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:34:41,180 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:34:41,182 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:34:41,184 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:34:41,185 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:34:43,163 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:34:43,164 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:34:43,166 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:34:43,167 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:37:55,498 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:37:55,500 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:37:55,502 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:37:55,503 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:39:02,811 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:39:02,813 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:39:02,815 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:39:02,816 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:39:08,100 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:39:08,102 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:39:08,104 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:39:08,104 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:40:00,344 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:40:00,346 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:40:00,348 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:40:00,348 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:46:19,523 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:46:19,525 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:46:19,526 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:46:19,527 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:46:51,847 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:46:51,850 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:46:51,852 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:46:51,853 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:49:49,260 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:49:49,262 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:49:49,264 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:49:49,265 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:50:06,208 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:50:06,210 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:50:06,214 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:50:06,215 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:50:17,596 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:50:17,597 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:50:17,599 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:50:17,601 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:50:23,888 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:50:23,891 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:50:23,896 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:50:23,899 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:50:28,888 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:50:28,892 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:50:28,896 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:50:28,896 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:50:39,220 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:50:39,221 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:50:39,223 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:50:39,224 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:50:41,267 [Worker-51] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:50:41,268 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:50:41,270 [Worker-51] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:50:41,271 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:55:04,890 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:55:04,892 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:55:04,894 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:55:04,895 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:55:32,573 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:55:32,574 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:55:32,577 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:55:32,578 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:56:18,275 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:56:18,277 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:56:18,279 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:56:18,279 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:56:24,132 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:56:24,134 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:56:24,136 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:56:24,137 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:57:40,277 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:57:40,279 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2012-06-19 13:57:40,280 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:57:40,281 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-06-19 13:58:45,172 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:58:45,173 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-06-19 13:58:45,175 [Worker-50] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-06-19 13:58:45,176 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

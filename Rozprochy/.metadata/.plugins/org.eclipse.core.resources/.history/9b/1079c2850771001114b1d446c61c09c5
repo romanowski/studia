@@ -1,0 +1,103 @@
+package zad3;
+
+import java.io.ByteArrayInputStream;
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.security.AllPermission;
+import java.security.acl.LastOwnerException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class PartialChatMessage {
+
+	String author;
+	List<String> messageDatas = new ArrayList<String>();
+	int id;
+	boolean complete = false;
+	boolean last = false;
+
+	public PartialChatMessage() {
+	}
+
+	public void addPart(byte flag, int in_id, InputStream data)
+			throws IOException {
+
+		//dla wygody
+		DataInputStream input = new DataInputStream(data);
+
+		//calosc miesci sie w jednym "parcie"
+		if(flag == Flags.NonParted){
+			
+			//testowanie
+			if(messageDatas.size() != 0){
+				throw new RuntimeException("bad flag!");
+			}
+			
+			//pytamy gdzie pociąć
+			int splitPos = input.readInt();
+			String stringData = input.readUTF();
+			
+			author = stringData.substring(0, splitPos);
+			messageDatas.add(stringData.substring(splitPos));
+			
+			complete = true;
+			last = true;
+			return;
+		}
+		
+		//sprawdzamy id
+		if(messageDatas.size() != 0){
+			id = in_id;
+		}
+		else{
+			if(in_id != id){
+				throw new RuntimeException("id dont match!");
+			}
+		}
+		//która cześć wiadomości
+		int pos = input.readInt();
+
+		if (flag == Flags.FirstPart) {
+			if(pos != 0){
+				throw new RuntimeException("bad flag!");
+			}
+			int splitPos = input.readInt();
+			String stringData = input.readUTF();
+			author = stringData.substring(0, splitPos);
+			messageDatas.add(0, stringData.substring(splitPos));
+		} else {
+			messageDatas.add(pos, input.readUTF());
+		}
+
+		//sprawdzamy czy mamy luki
+		complete = true;
+		for (String part : messageDatas) {
+			if(part == null){
+				complete = false;
+				break;
+			}
+		}
+		
+		if (flag == Flags.LastPart) {
+			last = true;
+		}
+
+	}
+
+	public boolean isAll() {
+		return complete && last;
+	}
+	
+
+	public ChatMessage createMessage(){
+		if(!isAll()){
+			throw new RuntimeException("Message is not complete!");
+		}
+		StringBuilder builder = new StringBuilder();
+		for (String part : messageDatas) {
+			builder.append(part);
+		}
+		return new ChatMessage(builder.toString(), author);
+	}
+}

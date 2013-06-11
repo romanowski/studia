@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Functional Tests" verbose="1">
+	<test name="Test indexes">
+		<classes>
+			<class name="pl.edu.agh.semantic.tests.TestAddNamedGraph"/>
+		</classes>
+	</test>
+
+	<test name="Test storage">
+		<classes>
+			<class name="pl.edu.agh.semantic.tests.TestAddData"/>
+		</classes>
+	</test>
+</suite>

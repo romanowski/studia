@@ -1,0 +1,29 @@
+what,kind,bundleId,bundleVersion,description,time
+java.vendor,sysinfo,,,"Oracle Corporation",1339239686723
+java.version,sysinfo,,,"1.7.0_04",1339239686723
+java.vm.info,sysinfo,,,"mixed mode",1339239686723
+java.vm.name,sysinfo,,,"Java HotSpot(TM) 64-Bit Server VM",1339239686723
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1339239686723
+java.vm.specification.vendor,sysinfo,,,"Oracle Corporation",1339239686723
+java.vm.specification.version,sysinfo,,,"1.7",1339239686723
+java.vm.vendor,sysinfo,,,"Oracle Corporation",1339239686723
+java.vm.version,sysinfo,,,"23.0-b21",1339239686723
+opened,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.ProblemView",1339239687278
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1339239691334
+started,bundle,org.eclipse.cdt.mylyn.ui,3.6.0.v20110608-1400,"org.eclipse.cdt.mylyn.ui",1339239698618
+closed,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1339239698702
+started,bundle,org.eclipse.compare,3.5.202.R37x_v20111109-0800,"org.eclipse.compare",1339239698977
+stopped,bundle,org.eclipse.cdt.build.crossgcc,1.0.2.201202111925,"org.eclipse.cdt.build.crossgcc",1339239699208
+stopped,bundle,org.eclipse.cdt.codan.checkers.ui,1.0.0.201202111925,"org.eclipse.cdt.codan.checkers.ui",1339239699209
+stopped,bundle,org.eclipse.cdt.codan.checkers,1.0.1.201202111925,"org.eclipse.cdt.codan.checkers",1339239699209
+stopped,bundle,org.eclipse.cdt.codan.ui.cxx,2.0.0.201202111925,"org.eclipse.cdt.codan.ui.cxx",1339239699209
+stopped,bundle,org.eclipse.cdt.codan.core.cxx,1.0.0.201202111925,"org.eclipse.cdt.codan.core.cxx",1339239699210
+stopped,bundle,org.eclipse.cdt.launch.remote,2.3.0.201202111925,"org.eclipse.cdt.launch.remote",1339239699210
+stopped,bundle,org.eclipse.cdt.debug.mi.ui,6.1.1.201202111925,"org.eclipse.cdt.debug.mi.ui",1339239699211
+stopped,bundle,org.eclipse.cdt.debug.mi.core,7.1.1.201202111925,"org.eclipse.cdt.debug.mi.core",1339239699212
+stopped,bundle,org.eclipse.cdt.debug.ui.memory.memorybrowser,1.2.100.201202111925,"org.eclipse.cdt.debug.ui.memory.memorybrowser",1339239699215
+stopped,bundle,org.eclipse.cdt.debug.ui.memory.search,1.2.1.201202111925,"org.eclipse.cdt.debug.ui.memory.search",1339239699216
+stopped,bundle,org.eclipse.cdt.dsf.gdb.ui,2.2.1.201202111925,"org.eclipse.cdt.dsf.gdb.ui",1339239699217
+stopped,bundle,org.eclipse.cdt.dsf.ui,2.2.1.201202111925,"org.eclipse.cdt.dsf.ui",1339239699218
+stopped,bundle,org.eclipse.cdt.gdb.ui,7.0.0.201202111925,"org.eclipse.cdt.gdb.ui",1339239699225
+stopped,bundle,org.eclipse.cdt.dsf.gdb,4.0.2.201202111925,"org.eclipse.cdt.dsf.gdb",1339239699272

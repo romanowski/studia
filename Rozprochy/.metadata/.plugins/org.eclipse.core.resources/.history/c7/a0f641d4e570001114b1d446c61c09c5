@@ -1,0 +1,66 @@
+package zad3;
+
+import java.io.ByteArrayInputStream;
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.MulticastSocket;
+import java.net.Socket;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class UDPChatManager {
+
+	private Map<Integer, PartialChatMessage> currentMessages = new HashMap<Integer, PartialChatMessage>();
+
+	
+	//TODO dobierz zeby sie utf miesciły
+	private static final int maxPartSize = 1024;
+	//1 bajt na flage, 4 bajty na id, 4 bajty na koniec autora
+	private static final int firstHeaderSize = 1 + 4 + 4;
+	private static final int nextHeaderSize = 1 + 4;
+	
+	/**
+	 * returns chat message when chat message is complete or null
+	 * 
+	 * @param packet
+	 * @return
+	 * @throws IOException
+	 */
+	public ChatMessage manageDatagram(DatagramPacket packet) throws IOException {
+		DataInputStream input = null;
+		try {
+			input = new DataInputStream(new ByteArrayInputStream(
+					packet.getData(), 0, packet.getLength()));
+			byte flag = input.readByte();
+			int id = input.readInt();
+
+			PartialChatMessage tmp = currentMessages.get(id);
+			if (tmp == null) {
+				tmp = new PartialChatMessage();
+				currentMessages.put(id, tmp);
+			}
+			tmp.addPart(flag, id, input);
+			if (tmp.isAll()) {
+				return tmp.createMessage();
+			}
+			return null;
+
+		} finally {
+			if (input != null)
+				input.close();
+		}
+	}
+	
+	public static List<DatagramPacket> sendMessage(ChatMessage message){
+		List<DatagramPacket> list = new ArrayList<DatagramPacket>();
+		
+		return list;
+	}
+	
+	public static boolean checkAuthor(String author){
+		return author.length() < 100;
+	}
+}

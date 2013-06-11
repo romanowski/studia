@@ -1,0 +1,14 @@
+# example query for o1 and o2, copy this to query to see results
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX o3: <http://localhost:8080/ontology-node1/o3#>
+
+SELECT ?ksiazka ?tytul ?osoba ?nazwisko ?laureatNobla WHERE
+{
+  ?osoba o3:nazwisko ?nazwisko .
+  ?osoba o3:laureatNobla ?laureatNobla .
+  ?ksiazka o3:autorstwo ?osoba.
+  ?ksiazka o3:tytul ?tytul.
+}

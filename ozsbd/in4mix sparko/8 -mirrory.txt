@@ -1,0 +1,2 @@
+onspaces -m  danekr2 -p "C:\ol_kr_data\danekr2_1" -o 0 -m "C:\ol_kr_mirror\danekr2_1.mir" 0  -p "C:\ol_kr_data\danekr2_2" -o 0 -m "C:\ol_kr_mirror\danekr2_2.mir" 0
+

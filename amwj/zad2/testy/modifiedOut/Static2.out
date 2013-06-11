@@ -1,0 +1,14 @@
+aload_0    100
+aload_2    100
+astore_2    100
+bipush    3
+dup    100
+getstatic    200
+goto    100
+ifle    101
+iinc    100
+ireturn    200
+new    100
+pop    200
+putstatic    3
+return    102

@@ -1,0 +1,48 @@
+/* CSS file */
+Application {
+  color: "0xFEFEFE";
+}
+
+VRule {
+  border-thickness: 1;
+}
+
+TabNavigator {
+  horizontal-align: right;
+  tab-height: 30;
+  color: "0x000000";
+  background-color: "0xEEEEEE";
+}
+
+ComboBox, NumericStepper, TextInput {
+  color: "0x000000";
+}
+
+LinkButton {
+  theme-color: "0x00000";
+}
+
+.topBox {
+  
+}
+
+.bottomBar {
+  color: "0xFFFFFF";
+  background-color: "0x000000";
+  padding-top: 5;
+  padding-bottom: 5;
+  vertical-align: middle;
+}
+
+.logo {
+  font-size: 50;
+}
+
+.logoBox {
+  vertical-align: middle;  
+}
+
+.namesBox {
+  vertical-align: middle;
+  vertical-gap: 0; 
+}

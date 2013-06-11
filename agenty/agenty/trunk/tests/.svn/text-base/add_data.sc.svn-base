@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link rel="selenium.base" href="http://localhost:8080/"/>
+	<title>TestAddData</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+	<thead>
+	<tr>
+		<td rowspan="1" colspan="3">TestAddData</td>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>open</td>
+		<td>/storage-node1/</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td>id=file</td>
+		<td>/home/tomek/uczelnia/AGH/agenty/repo/src/app/scripts/b1_data.ttl</td>
+	</tr>
+	<tr>
+		<td>clickAndWait</td>
+		<td>css=input[type=&quot;submit&quot;]</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>open</td>
+		<td>/storage-node2/</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>type</td>
+		<td>id=file</td>
+		<td>/home/tomek/uczelnia/AGH/agenty/repo/src/app/scripts/b2_data.ttl</td>
+	</tr>
+	<tr>
+		<td>clickAndWait</td>
+		<td>css=input[type=&quot;submit&quot;]</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>open</td>
+		<td>/query-node1/query-service.html</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>clickAndWait</td>
+		<td>css=input[type=&quot;submit&quot;]</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>verifyTextPresent</td>
+		<td>Jan Kowalski</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>verifyTextPresent</td>
+		<td>John Smith</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>verifyTextPresent</td>
+		<td>Stephen King</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>verifyTextPresent</td>
+		<td>J. R. R. Tolkien</td>
+		<td></td>
+	</tr>
+
+	</tbody>
+</table>
+</body>
+</html>

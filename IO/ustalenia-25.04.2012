@@ -1,0 +1,26 @@
+Ustalenia:
+
+abstrakcja tygodnii
+
+mamy tabliczki
+tabliczka -> (Typ przedmiotu, Prowadzacy)
+
+typ_przedmiotu-> czas trwania, max min uczestników, preferencje sal, ilość
+
+
+nasza aplikacja
+
+daty - dyskretne - mapowane
+
+!!!!!!!!!!!!!!!!!!!!!!
+(T*, (S, D)* ) -> (T, Data, Sala)*
+!!!!!!!!!!!!!!!!!!!!
+
+
+OSTRZEZENIA!
+
+
+Sale maja grafiki!
+
+
+Wyjscie - przygotowanie 

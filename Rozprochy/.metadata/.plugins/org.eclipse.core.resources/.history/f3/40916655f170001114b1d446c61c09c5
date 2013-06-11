@@ -1,0 +1,79 @@
+package zad3;
+
+import java.io.ByteArrayInputStream;
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.security.acl.LastOwnerException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class PartialChatMessage {
+
+	String author;
+	List<String> messageDatas = new ArrayList<String>();
+	int id;
+	boolean complete = false;
+	boolean last = false;
+
+	public PartialChatMessage() {
+	}
+
+	public void addPart(byte flag, int in_id, InputStream data)
+			throws IOException {
+
+		DataInputStream input = new DataInputStream(data);
+
+		if(flag == Flags.NonParted){
+			if(messageDatas.size() != 0){
+				throw new RuntimeException("bad flag!");
+			}
+			int splitPos = input.readInt();
+			String stringData = input.readUTF();
+			author = stringData.substring(0, splitPos);
+			messageDatas.add(stringData.substring(splitPos));
+			complete = true;
+			return;
+		}
+		
+		if(messageDatas.size() != 0){
+			id = in_id;
+		}
+		else{
+			if(in_id != id){
+				throw new RuntimeException("id dont match!");
+			}
+		}
+		
+		int pos = input.readInt();
+
+		if (flag == Flags.FirstPart) {
+			if(pos != 0){
+				throw new RuntimeException("bad flag!");
+			}
+			int splitPos = input.readInt();
+			String stringData = input.readUTF();
+			author = stringData.substring(0, splitPos);
+			messageDatas.add(0, stringData.substring(splitPos));
+		} else {
+			messageDatas.add(pos, input.readUTF());
+		}
+
+		if (flag == Flags.LastPart) {
+			
+			complete = true;
+		}
+
+	}
+
+	public boolean isAll() {
+		return complete;
+	}
+
+	public ChatMessage createMessage(){
+		if(!isAll()){
+			throw new RuntimeException("Message is not complete!");
+		}
+		return new ChatMessage(messageData.toString(), author);
+	}
+}

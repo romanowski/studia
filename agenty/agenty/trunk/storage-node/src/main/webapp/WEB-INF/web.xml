@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE web-app
+		PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN"
+		"http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+
+<web-app>
+
+	<display-name>Jena RDF Server</display-name>
+	
+	<context-param> 
+	    <description>a</description> 
+		<param-name>configFile</param-name>
+		<param-value>/tmp/b1</param-value>
+	</context-param>
+	
+	<context-param> 
+	    <description>b</description> 
+		<param-name>endpointURI</param-name>
+		<param-value>http://localhost:8080/storage-node/b1</param-value>
+	</context-param>
+	
+	<context-param> 
+	    <description>b</description> 
+		<param-name>endpointURI</param-name>
+		<param-value>http://localhost:8080/storage-node/b1</param-value>
+	</context-param>
+				
+	<!-- SERVLETS -->
+
+	<servlet>
+		<servlet-name>StorageService</servlet-name>
+		<servlet-class>pl.edu.agh.semantic.servlet.StorageServiceServlet</servlet-class>
+
+		<init-param>
+			<param-name>configFile</param-name>
+			<param-value>/tmp/b1</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>endpointURI</param-name>
+			<param-value>http://localhost:8080/storage-node/b1</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>graphURI</param-name>
+			<param-value>http://localhost:8080/storage-node/graph</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet>
+		<servlet-name>GraphService</servlet-name>
+		<servlet-class>pl.edu.agh.semantic.servlet.GraphServlet</servlet-class>
+
+		<init-param>
+			<param-name>configFile</param-name>
+			<param-value>/tmp/b1</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>endpointURI</param-name>
+			<param-value>http://localhost:8080/storage-node/b1</param-value>
+		</init-param>
+
+		<init-param>
+			<param-name>graphURI</param-name>
+			<param-value>http://localhost:8080/storage-node/graph</param-value>
+		</init-param>
+	</servlet>
+
+	<!-- The Joseki SPARQL servlet -->
+
+	<servlet>
+		<servlet-name>SPARQL service processor</servlet-name>
+		<servlet-class>org.joseki.http.Servlet</servlet-class>
+
+		<!-- Configuration file -->
+		<init-param>
+			<param-name>org.joseki.rdfserver.config</param-name>
+			<param-value>storage-node-joseki-config.ttl</param-value>
+		</init-param>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SPARQL service processor</servlet-name>
+		<url-pattern>/b1</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>StorageService</servlet-name>
+		<url-pattern>/storageService</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>GraphService</servlet-name>
+		<url-pattern>/graph/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- StorageService -->
+	<listener>
+		<listener-class>com.sun.xml.ws.transport.http.servlet.WSServletContextListener</listener-class>
+	</listener>
+	<servlet>
+		<servlet-name>Storage</servlet-name>
+		<servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Storage</servlet-name>
+		<url-pattern>/Storage</url-pattern>
+	</servlet-mapping>
+	
+	<!-- SECURIY -->
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Joseki</web-resource-name>
+			<url-pattern>/*</url-pattern>
+			<http-method>GET</http-method>
+			<http-method>POST</http-method>
+			<!-- <http-method>OPTIONS</http-method> -->
+		</web-resource-collection>
+	</security-constraint>
+
+</web-app>

@@ -1,0 +1,36 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="SmartJavaCode:jar">
+    <output-path>$USER_HOME$/Desktop/SmartJavaCode - Krzysztof Romanowski</output-path>
+    <root id="archive" name="JavaGeniueCode.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/scala/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="JavaGeniueCode" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/antlr/antlr/2.7.7/antlr-2.7.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/antlr/stringtemplate/3.2.1/stringtemplate-3.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/thoughtworks/paranamer/paranamer/2.3/paranamer-2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/scala-lang/scala-compiler/2.9.1/scala-compiler-2.9.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/joda-time/joda-time/1.6.2/joda-time-1.6.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/antlr/ST4/4.0.4/ST4-4.0.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/liftweb/lift-actor_2.9.1/2.4/lift-actor_2.9.1-2.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/liftweb/lift-json_2.9.1/2.4/lift-json_2.9.1-2.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/liftweb/lift-common_2.9.1/2.4/lift-common_2.9.1-2.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/antlr/antlr-runtime/3.4/antlr-runtime-3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/nu/validator/htmlparser/htmlparser/1.2.1/htmlparser-1.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/antlr/antlr/3.4/antlr-3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/scala-lang/scalap/2.9.1/scalap-2.9.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.4/commons-codec-1.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/mail/mail/1.4.4/mail-1.4.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/liftweb/lift-util_2.9.1/2.4/lift-util_2.9.1-2.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.9.1/scala-library-2.9.1.jar" path-in-jar="/" />
+      <element id="directory" name="css">
+        <element id="dir-copy" path="$PROJECT_DIR$/css" />
+      </element>
+      <element id="directory" name="js">
+        <element id="dir-copy" path="$PROJECT_DIR$/js" />
+      </element>
+    </root>
+  </artifact>
+</component>

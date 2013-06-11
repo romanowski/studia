@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/agenty/!svn/ver/101/trunk/services
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/agenty/!svn/ver/46/trunk/services/.project
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/agenty/!svn/ver/60/trunk/services/pom.xml
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/agenty/!svn/ver/80/trunk/services/.classpath
+END

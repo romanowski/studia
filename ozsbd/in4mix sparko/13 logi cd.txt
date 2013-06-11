@@ -1,0 +1,9 @@
+dodajemy logi logiczne
+
+onparams -a -l -d logkr
+
+usuwamy logi z rootdbspace
+
+onparams -d -l 1
+onparams -d -l 2
+

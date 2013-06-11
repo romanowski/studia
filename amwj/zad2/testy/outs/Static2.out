@@ -1,0 +1,11 @@
+aload_2    100
+astore_2    100
+dup    100
+getstatic    200
+goto    100
+ifle    101
+iinc    100
+iload_1    101
+ireturn    200
+new    100
+pop    200

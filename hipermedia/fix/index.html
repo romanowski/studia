@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Hipermedia - zasoby</title>
+    <script type="text/javascript" src="/js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/ui-lightness/jquery-ui-1.9.2.custom.css">
+
+</head>
+<body>
+
+<div id="tabs">
+    <ul>
+        <li><a href="#sensors">Sensory</a></li>
+        <li><a href="#monitors">Monitory</a></li>
+    </ul>
+    <div id="monitors">
+
+        <ul id="monitors-list"></ul>
+
+    </div>
+    <div id="sensors">
+        <h2>Wyszukaj</h2>
+        Pole: <input type="text" id="search-field" onblur="search();"/>
+        wartosc: <input type="text" id="search-value" onkeyup="search()"/>
+
+        <div id="sensors-list"></div>
+
+    </div>
+</div>
+
+<div style="display: none" id="repo">
+    <li class="monitor-sample"><a class="monitor-link">Monitory</a></li>
+
+    <div class="sensor-sample">
+        <ol class="sensor-list">
+        </ol>
+    </div>
+
+    <div class="attribute-sample">
+        <span class="name"></span>:
+        <span class="value"></span>
+    </div>
+
+    <a class="new-aggregation">Dodaj</a>
+    <a class="view-results">Zobacz pomiary</a>
+
+
+</div>
+
+<script type="text/javascript">
+    $("#tabs").tabs({
+        activate:fixAll
+    })
+</script>
+
+</body>
+</html>

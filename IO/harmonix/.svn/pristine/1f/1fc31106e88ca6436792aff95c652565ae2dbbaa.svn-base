@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml" width="400" height="300" xmlns:container="pl.flexable.harmonix.container.*">
+  <mx:Script>
+    <![CDATA[
+      import pl.flexable.harmonix.layout.VerticalSeriesLayout;
+      import pl.flexable.harmonix.layout.CoverFlowLayout;
+      import pl.flexable.harmonix.layout.HorizontalSeriesLayout;
+      import mx.collections.ArrayCollection;
+
+      [Bindable]
+      private var dataProvider : ArrayCollection = new ArrayCollection();
+
+      [Bindable]
+      private var layoutsArrayAll : Array = [{label: "VerticalSeriesLayout", factory: new ClassFactory(VerticalSeriesLayout)},
+        {label: "HorizontalSeriesLayout", factory: new ClassFactory(HorizontalSeriesLayout)},
+        {label: "CoverFlowLayout", factory: new ClassFactory(CoverFlowLayout)}];
+
+
+      private function addToDataProvider(value : String) : void {
+        dataProvider.addItem(value);
+      }
+    ]]>
+  </mx:Script>
+  <mx:HBox width="100%" height="100%">
+    <container:DataContainer id="dataContainer" itemRenderer="renderers.DataItemRenderer" dataProvider="{dataProvider}"
+                             width="100%" height="100%" layoutClass="{ClassFactory(layoutsComboData.selectedItem.factory)}"
+                             horizontalGap="{numStepperData2.value}" verticalGap="{numStepperData.value}"/>
+    <mx:List dataProvider="{dataProvider}" width="200" height="100%"/>
+  </mx:HBox>
+  <mx:HBox width="100%" horizontalAlign="center" styleName="bottomBar">
+    <mx:Button label="add data" click="addToDataProvider(dataInput.text); dataInput.text = ''"/>
+    <mx:TextInput width="150" id="dataInput"/>
+    <mx:FormItem label="select layout">
+      <mx:ComboBox id="layoutsComboData" selectedIndex="0" dataProvider="{layoutsArrayAll}"/>
+    </mx:FormItem>
+    <mx:FormItem label="vertical gap">
+      <mx:NumericStepper id="numStepperData" minimum="0" maximum="100" stepSize="5" value="30"/>
+    </mx:FormItem>
+    <mx:FormItem label="horizontal gap">
+      <mx:NumericStepper id="numStepperData2" minimum="0" maximum="100" stepSize="5" value="30"/>
+    </mx:FormItem>
+  </mx:HBox>
+</mx:VBox>

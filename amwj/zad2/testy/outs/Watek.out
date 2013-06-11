@@ -1,0 +1,5 @@
+bipush    10
+goto    9
+if_icmpge    10
+iinc    18
+iload_2    10

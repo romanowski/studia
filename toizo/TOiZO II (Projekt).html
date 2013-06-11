@@ -1,0 +1,319 @@
+
+<!-- saved from url=(0043)http://home.agh.edu.pl/~faliszew/toizo2012/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<title>TOiZO II (Projekt)</title> 
+ 
+<style type="text/css"></style></head> 
+ 
+ 
+<body> 
+ 
+<h1>Projekt z przedmiotu Teoria Obliczeń i Złożoności Obliczeniowej</h1> 
+ 
+<hr> 
+ 
+<h2> Sprawy organizacyjne</h2> 
+
+ 
+<p> 
+<b>Prowadzący przedmiot:</b> 
+</p><ul> 
+<li> dr Piotr Faliszewski
+</li><li> dr Piotr Pisarek
+</li></ul> 
+ 
+ 
+<p> 
+<b>Terminy oddania projektu:</b> 
+</p><ul> 
+<li> Pierwszy termin: <b>23 czerwca 2012, godz 23.59.</b> 
+</li><li> Drugi termin: 6 lipca 2012, godz 23.59.
+</li><li> Trzeci termin: 23 września 2012, godz 23.59.
+</li></ul> 
+Zaliczenie projektu w terminie późniejszym niż pierwszy
+skutkuje ocena końcową z przedmiotu nie wyższą niż <b>3.0</b>.
+ 
+ 
+<p> 
+<b>Do wykonania w ramach projektu:</b> 
+</p><ul> 
+  <li> Należy napisać program, który rozwiązuje zadanie opisane
+       poniżej oraz wysłać go do systemu arbitrażowego dla zadania.
+  </li><li> Należy także dostarczyć dokumentacje programu. Dokumentacja 
+       <i>nie może</i> przekraczać 8 stron tekstu czcionką 11pt, przy
+       rozsądnych marginesach. Dokumentacja powinna zawierać wyłącznie
+       informacje na temat użytych algorytmów i pomysłów rozwiązania
+       zadania, a nie szczegółów technicznych implementacji.
+       Dokumentacja istotnie krótsza wcale nie musi być wadą projektu.
+</li></ul> 
+ 
+<p><b>Języki programowania:</b> Jedyne dwa dopuszczalne języki programowania
+to C oraz C++.
+
+
+</p><p><b>Współbieżność:</b> Programy nie mogą być wielowątkowe, wieloprocesorowe,
+itp.
+ 
+ 
+</p><p> 
+<b>Oceny:</b> 
+</p><ul> 
+  <li> Na Państwa ocenę największy wpływ ma jakość działania
+       zgłoszonego programu, a w drugim rzędzie jakość dokumentacji.
+ 
+  </li><li> Aby uzyskać zaliczenie, Państwa program musi być w stanie
+       rozwiązywać zestaw podstawowych testów, który udostępnimy
+       Państwu przez system arbitrażowy.
+ 
+  </li><li> Aby uzyskać wyższą ocenę, program musi być w stanie rozwiązywać
+       odpowiednio trudniejsze testy. Oceny powstaną na podstawie
+       porównania jakości programów.
+ 
+  </li><li> Bardzo dobra dokumentacja może podnieść ocenę projektu (o pół
+       stopnia), a bardzo słaba (w tym jej brak) może ocenę obniżyć
+       (także o pół stopnia).
+ 
+  </li><li> Kod źródłowy państwa programów nie jest oceniany, ale 
+       może być przeglądany, więc proszę stosować komentarze i wcięcia.
+ 
+  </li><li> W przypadku wykrycia plagiatu, obie zaangażowane osoby otrzymują
+       ocenę 2.0 z wszystkich trzech terminów. 
+
+  </li><li> Państwa programy powinny się skupić na rozwiązywaniu zadania w
+pamięci, bez odwoływania się do dodatkowych zasobów.  W szczególności
+niedopuszczalne są odwołania do systemu plików oraz do sieci. Złamanie
+tych zasad, w szczególności odwołania do sieci oraz próby hackowania
+systemu arbitrażowego, mogą być traktowane jako równoważne plagiatowi.
+ 
+</li></ul> 
+
+<h3> Wymagania na ocenę 3.5</h3>
+
+Plansze na oceny 3.5 będą ograniczone do rozmiarów <i>6x6</i> (tj.,
+dopuszczalne są, na przykład, plansze o rozmiarach <i>3x6</i>, <i>5x5</i>,
+<i>6x1</i>, ale---na 3.5---nie będzie plansz o rozmiarach <i>7x7</i>,
+<i>2x7</i> itp.).
+
+
+<!--
+Poniżej znajduje się plik z kilkoma przykładowymi planszami podobnymi
+do tych, które będą wymagane na ocenę 3.5.
+<ul>
+  <li> <a href="example.zip">example.zip</a>
+</ul>
+-->
+
+<h3>Dodatkowe informacje, programy i dane</h3>
+<ul>
+<li> Skrypt wizualizujący plansze (wersja alfa): <a href="http://home.agh.edu.pl/~faliszew/toizo2012/viewer.zip">viewer.zip</a>.
+</li><li> Program sędziego: <a href="http://home.agh.edu.pl/~faliszew/toizo2012/judge.zip">judge.zip</a>
+</li></ul>
+
+Program sedziego został zaimplementowany w języku Python, dla interpreterów
+z rodziny 2.7. Sedzia korzysta z biblioteki <a href="http://www.pythonware.com/products/pil/">
+Python Imaging Library</a> do graficznego przedstawienia planszy z przepływem
+zasilania. Aby wyłączyć graficzną prezentację, należy w jego kodzie ustawić
+zmienną <tt>viewer</tt> na <tt>False</tt>.
+ 
+<hr> 
+
+
+
+<h2 style="color: red">System arbitrażowy</h2>
+
+System arbitrażowy dostępny jest pod następującymi adresami:
+<ul>
+  <li> Adres dostępny spoza KI: <a href="http://149.156.100.139/">149.156.100.139</a>.
+  </li><li> Adres wewnętrzny w KI: <a href="http://172.29.128.10/">172.29.128.10</a>.
+</li></ul>
+
+
+<hr>
+ 
+<h2>Treść zadania</h2> 
+
+Należy napisać program, który wczytuje ze standardowego wejścia opis
+planszy z
+gry <a href="http://www.puzzlefactory.com/x/play.php?game=40770">ConFusebox
+2</a>, znajduje dla niej rozwiązanie i wypisuje je.
+
+<p>
+W grze <i>ConFusebox 2</i> mamy dany prostokątny obszar podzielony
+na jednakowe kwadratowe komórki. W każdej komórce znajduje się
+jedno z następujących urządzeń:
+</p><ul>
+  <li> źródło zasilania,
+  </li><li> przewód lub rozgałęzienie przewodów,
+  </li><li> żarówka.
+</li></ul>
+Każde z urządzeń można obrócić o 0, 90, 180 lub 270 stopni. Zadanie polega
+na obróceniu urządzeń tak, by każda żarówka była podpięta do źródła
+zasilania. Na planszy zawsze znajduje się dokładnie jedno źródło
+zasilania.
+
+<p>Dla danej planszy może istnieć kilka poprawnych rozwiązań. Państwa
+program musi znaleźć jedno z nich (obojętne które). Jeśli program nie
+potrafi znaleźć pełnego rozwiązania, powinien spróbować zwrócić
+rozwiązanie, które dostarcza zasilanie do możliwie jak największej
+ilości żarówek.
+
+
+
+
+</p><h3> Opis wejścia i wyjścia </h3> Wejście i wyjście ma taki sam
+format. W pierwszym wierszu znajdują się dwie dodatnie
+liczby, <i>x</i> oraz <i>y</i>, oznaczające rozmiary planszy.  Plansza
+zawiera <i>y</i> wierszy po <i>x</i> urządzeń w każdym.  Można
+założyć, że zachodzi:
+<ul>
+<li> <i> 1 ≤ x,y ≤ 500</i>.
+</li></ul>
+
+Kolejne <i>y</i> wierszy zawiera opis planszy gry. Każdy wiersz
+zawiera <i>x</i> opisów kolejnych urządządzeń znajdujących się w tym
+wierszu. Opis każdego urządzenia składa się z dużej litery
+oznaczającej typ urządzenia oraz z cyfry oznaczającej jego
+położenie. Pomiędzy kolejnymi opisami urządzeń znajdują się pojedyncze
+odstępy. Możliwe są następujące kombinacje urządzeń i położenia:
+<ul>
+<li> <img src="./TOiZO II (Projekt)_files/a1.png" align="middle" vspace="2"> A1 -- rozgałęzienie przewodów na cztery strony
+</li><li> <img src="./TOiZO II (Projekt)_files/b1.png" align="middle" vspace="2"> B1 -- przewód
+</li><li> <img src="./TOiZO II (Projekt)_files/b2.png" align="middle" vspace="2"> B2 -- przewód
+</li><li> <img src="./TOiZO II (Projekt)_files/c1.png" align="middle" vspace="2"> C1 -- przewód zakręcający
+</li><li> <img src="./TOiZO II (Projekt)_files/c2.png" align="middle" vspace="2"> C2 -- przewód zakręcający
+</li><li> <img src="./TOiZO II (Projekt)_files/c3.png" align="middle" vspace="2"> C3 -- przewód zakręcający
+</li><li> <img src="./TOiZO II (Projekt)_files/c4.png" align="middle" vspace="2"> C4 -- przewód zakręcający
+</li><li> <img src="./TOiZO II (Projekt)_files/d1.png" align="middle" vspace="2"> D1 -- źródło zasilania z przewodami na cztery strony
+</li><li> <img src="./TOiZO II (Projekt)_files/e1.png" align="middle" vspace="2"> E1 -- źródło zasilania z przewodami w dwie strony 
+</li><li> <img src="./TOiZO II (Projekt)_files/e2.png" align="middle" vspace="2"> E2 -- źródło zasilania z przewodami w dwie strony 
+</li><li> <img src="./TOiZO II (Projekt)_files/f1.png" align="middle" vspace="2"> F1 -- źródło zasilania z przewodami w dwie strony (kąt 90 stopni)
+</li><li> <img src="./TOiZO II (Projekt)_files/f2.png" align="middle" vspace="2"> F2 -- źródło zasilania z przewodami w dwie strony (kąt 90 stopni)
+</li><li> <img src="./TOiZO II (Projekt)_files/f3.png" align="middle" vspace="2"> F3 -- źródło zasilania z przewodami w dwie strony (kąt 90 stopni)
+</li><li> <img src="./TOiZO II (Projekt)_files/f4.png" align="middle" vspace="2"> F4 -- źródło zasilania z przewodami w dwie strony (kąt 90 stopni)
+</li><li> <img src="./TOiZO II (Projekt)_files/g1.png" align="middle" vspace="2"> G1 -- rozgałęzienie typu T
+</li><li> <img src="./TOiZO II (Projekt)_files/g2.png" align="middle" vspace="2"> G2 -- rozgałęzienie typu T
+</li><li> <img src="./TOiZO II (Projekt)_files/g3.png" align="middle" vspace="2"> G3 -- rozgałęzienie typu T
+</li><li> <img src="./TOiZO II (Projekt)_files/g4.png" align="middle" vspace="2"> G4 -- rozgałęzienie typu T
+</li><li> <img src="./TOiZO II (Projekt)_files/h1.png" align="middle" vspace="2"> H1 -- źródło zasilania typu T
+</li><li> <img src="./TOiZO II (Projekt)_files/h2.png" align="middle" vspace="2"> H2 -- źródło zasilania typu T
+</li><li> <img src="./TOiZO II (Projekt)_files/h3.png" align="middle" vspace="2"> H3 -- źródło zasilania typu T
+</li><li> <img src="./TOiZO II (Projekt)_files/h4.png" align="middle" vspace="2"> H4 -- źródło zasilania typu T
+</li><li> <img src="./TOiZO II (Projekt)_files/i1.png" align="middle" vspace="2"> I1 -- żarówka
+</li><li> <img src="./TOiZO II (Projekt)_files/i2.png" align="middle" vspace="2"> I2 -- żarówka
+</li><li> <img src="./TOiZO II (Projekt)_files/i3.png" align="middle" vspace="2"> I3 -- żarówka
+</li><li> <img src="./TOiZO II (Projekt)_files/i4.png" align="middle" vspace="2"> I4 -- żarówka
+
+</li></ul>
+
+
+
+
+<hr><hr>
+<h3> Przykładowe wejścia i wyjścia </h3>
+
+<p>
+Poniżej znajdują się przykładowe wejścia i wyjścia.
+</p>
+
+Wejście:
+<pre>5 4
+I1 C1 I1 I1 C1
+C1 H1 A1 C1 B1
+G1 I1 B1 G1 G1
+G1 B1 I1 I1 I1
+</pre>
+
+Ten opis reprezentuje następującą planszę:
+<p>
+<img src="./TOiZO II (Projekt)_files/sample1.in.png">
+</p>
+
+
+<hr>
+Przykładowe poprawne wyjście:
+
+<pre>5 4
+I1 C2 I2 I1 C2
+C1 H3 A1 C2 B2
+G4 I3 B2 G4 G2
+G4 B1 I4 I4 I4
+</pre>
+
+Ten opis reprezentuje następującą planszę:
+<p>
+<img src="./TOiZO II (Projekt)_files/sample1.out.png">
+</p>
+
+
+
+<hr>
+Przykładowe niepoprawne wyjście (uzycie nieistniejących
+urządzeń):
+<pre>5 4
+I1 C2 I2 I1 C2
+C1 H3 A3 C2 B2
+G4 I3 B2 G4 G2
+G4 B1 I4 I4 I4
+</pre>
+
+Ten opis reprezentuje następującą planszę:
+<p>
+<img src="./TOiZO II (Projekt)_files/sample1.err1.png">
+</p>
+
+
+<hr>
+Przykładowe niepoprawne wyjście (złe rozmiary, nie wszystkie zarówki zasilane):
+<pre>4 4
+I1 C2 I2 I1 
+C1 H3 A1 C2 
+G4 I3 B2 G4 
+G4 B1 I4 I4 
+</pre>
+
+Ten opis reprezentuje następującą planszę:
+<p>
+<img src="./TOiZO II (Projekt)_files/sample1.err2.png">
+</p>
+
+
+
+<hr>
+Przykładowe niepoprawne wyjście (urządzenia się nie zgadzają):
+<pre>5 4
+I1 C2 I2 I1 C2
+C1 D1 G2 B1 B2
+C4 G2 G4 G1 G2
+C2 I4 I4 I4 I4
+</pre>
+
+Ten opis reprezentuje następującą planszę:
+<p>
+<img src="./TOiZO II (Projekt)_files/sample1.err3.png">
+</p>
+
+
+<hr>
+Przykładowe niepoprawne wyjście (nie wszystkie żarówki podpięte):
+
+
+<pre>5 4
+I4 C2 I2 I1 C2
+C1 H3 A1 C2 B2
+G4 I3 B2 G4 G2
+G4 B1 I4 I4 I2
+</pre>
+
+Ten opis reprezentuje następującą planszę:
+<p>
+<img src="./TOiZO II (Projekt)_files/sample1.err4.png">
+</p>
+
+
+<hr>
+
+<small><i> Kraków, Kwiecień 2012</i></small>
+
+
+
+</body></html>

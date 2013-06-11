@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+Tue Jun 19 13:59:36 CEST 2012:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-0138-049c-b710-00000339f8f0 
+on database directory /home/jar/Pulpit/studia/Rozprochy/DistributedTransactionsDist/PRODUCT_DB  with class loader sun.misc.Launcher$AppClassLoader@4c5a9c6e 
+Loaded from file:/home/jar/.m2/repository/org/apache/derby/derby/10.8.2.2/derby-10.8.2.2.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_04-b20
+user.dir=/home/jar/Pulpit/studia/Rozprochy/DistributedTransactionsDist
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

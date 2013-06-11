@@ -1,0 +1,20 @@
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+
+@prefix o1:		<http://localhost:8080/ontology-node1/o1#> .
+@prefix :		<http://localhost:8080/ontology-node1/o1#> .
+
+:autor1
+	rdf:type			o1:autor ;
+	o1:dataurodzenia	"1970-04-30"^^xsd:date ;
+	o1:nazwisko			"Jan Kowalski"^^xsd:string
+	.
+
+:autor2
+	rdf:type			o1:autor ;
+	o1:dataurodzenia	"1980-01-01"^^xsd:date ;
+	o1:nazwisko			"John Smith"^^xsd:string
+	.
+
+# etc ...

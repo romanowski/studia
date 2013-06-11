@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/agenty/!svn/ver/94/trunk/services/src/main/java/pl/edu/agh/semantic/utils
+END
+RdfNamespaceContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/agenty/!svn/ver/94/trunk/services/src/main/java/pl/edu/agh/semantic/utils/RdfNamespaceContext.java
+END
+Result.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/agenty/!svn/ver/66/trunk/services/src/main/java/pl/edu/agh/semantic/utils/Result.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/agenty/!svn/ver/46/trunk/services/src/main/java/pl/edu/agh/semantic/utils/package-info.java
+END
+OntologyUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/agenty/!svn/ver/94/trunk/services/src/main/java/pl/edu/agh/semantic/utils/OntologyUtil.java
+END
+PrefixUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/agenty/!svn/ver/94/trunk/services/src/main/java/pl/edu/agh/semantic/utils/PrefixUtil.java
+END
+WebServiceUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/agenty/!svn/ver/91/trunk/services/src/main/java/pl/edu/agh/semantic/utils/WebServiceUtil.java
+END

@@ -1,0 +1,12 @@
+{
+    "monitors": [
+        {   "id": 1,
+            "name": "ala ma kota",
+            "href": "http://hipermedia.iisg.agh.edu.pl:8080/monitor/rest"
+        },
+        {   "id": 2,
+                    "name": "ola ma kota",
+                    "href": "http://hipermedia.iisg.agh.edu.pl:8080/monitor/rest"
+                }
+    ]
+}

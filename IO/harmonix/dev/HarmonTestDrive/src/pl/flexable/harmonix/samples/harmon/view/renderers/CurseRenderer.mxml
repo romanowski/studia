@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Panel title="{data.name}" toolTip="{data.name}" xmlns:mx="http://www.adobe.com/2006/mxml"
+          width="200" height="150" horizontalScrollPolicy="off" verticalScrollPolicy="off"
+          styleName="curseRenderer">
+  <mx:VBox width="100%" height="100%" styleName="curseContent">
+    <mx:Label text="{data.teacher}" width="90%"/>
+  </mx:VBox>
+</mx:Panel>

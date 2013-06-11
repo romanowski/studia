@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/agenty/!svn/ver/75/branches/mapping/tests
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/agenty/!svn/ver/75/branches/mapping/tests/pom.xml
+END
+suite.ss
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/agenty/!svn/ver/75/branches/mapping/tests/suite.ss
+END
+add_named_graph.sc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/agenty/!svn/ver/75/branches/mapping/tests/add_named_graph.sc
+END
+testng.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/agenty/!svn/ver/75/branches/mapping/tests/testng.xml
+END
+add_data.sc.orig
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/agenty/!svn/ver/75/branches/mapping/tests/add_data.sc.orig
+END
+add_data.sc
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/agenty/!svn/ver/75/branches/mapping/tests/add_data.sc
+END

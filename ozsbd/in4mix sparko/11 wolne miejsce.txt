@@ -1,0 +1,19 @@
+address  chunk/dbs     offset     size       free       bpages     flags pathname
+0EE0C990 1      1      0          51200      18236                 PO-B-D C:\IFMXDATA\ol_kr\rootdbs_dat.000
+0F3C2468 2      2      0          51200      51147                 PO-B-D C:\IFMXDATA\ol_kr\ol_kr_dat.000
+0F3C35B8 2      2      0          51200      0                     MO-B-D C:\IFMXDATA\ol_kr\ol_kr_mirr.000
+0F3C2648 3      3      0          51200      47745      47745      POSB-D C:\IFMXDATA\ol_kr\sbspace_dat.000
+                         Metadata 3402       2194       3402
+0F3C3798 3      3      0          51200      0          0          MOSB-D C:\IFMXDATA\ol_kr\sbspace_mirr.000
+0F3C2828 4      4      0          12800      11729                 PO-B-D c:\ol_kr_data/danekr1_1
+0F3C2A08 5      4      5120       250        247                   PO-B-D c:\ol_kr_data/danekr1_2
+0F3C2BE8 6      5      0          10240      9169                  PO-B-D C:\ol_kr_data\danekr2_1
+0F3C3978 6      5      0          10240      0                     MO-B-D C:\ol_kr_mirror\danekr2_1.mir
+0F3C2DC8 7      5      0          7680       7677                  PO-B-D C:\ol_kr_data\danekr2_2
+0F3C3B58 7      5      0          7680       0                     MO-B-D C:\ol_kr_mirror\danekr2_2.mir
+0F3C3018 8      6      0          7680       7627                  PO-B-D C:\ol_kr_log\logkr
+0F3C3D38 8      6      0          7680       0                     MO-B-D C:\ol_kr_mirror\logkr.mir
+0F3C31F8 9      7      0          7680       7627                  PO-B-D c:\ol_kr_tmp\tmp1_wf
+0F3C33D8 10     8      0          7680       7627                  PO-B-D c:\ol_kr_tmp\tmp2_kr
+ 
+trzeba pododawaæ dla chunków

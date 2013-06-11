@@ -1,0 +1,37 @@
+// **********************************************************************
+//
+// Copyright (c) 2003-2011 ZeroC, Inc. All rights reserved.
+//
+// This copy of Ice is licensed to you under the terms described in the
+// ICE_LICENSE file included in this distribution.
+//
+// **********************************************************************
+
+#ifndef DEV_ICE
+#define DEV_ICE
+
+module Demo
+{
+
+	interface Dev
+	{
+	    idempotent string state();
+		idempotent string ID();
+		
+	};
+	
+	interface Rotate{
+		void rotate(int degree);
+	};
+	
+	interface Move{
+		void move(int x, int y);	
+	};
+	
+	interface Zoom{
+		void zoom(int zoom);
+	}
+
+};
+
+#endif

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml" width="400" height="300" xmlns:container="pl.flexable.harmonix.container.*">
+  <mx:Script>
+    <![CDATA[
+      import pl.flexable.harmonix.layout.CoverFlowLayout;
+      import pl.flexable.harmonix.layout.VerticalSeriesLayout;
+      import pl.flexable.harmonix.samples.harmon.view.renderers.CurseRenderer;
+      import mx.collections.ArrayCollection;
+      import pl.flexable.harmonix.samples.harmon.model.TestDriveModel;
+
+      [Bindable]
+      private var curses : ArrayCollection = TestDriveModel.getInstance().curses;
+
+      [Bindable]
+      private var layoutsArray : Array = [{label: "kartoteka", factory: new ClassFactory(VerticalSeriesLayout)},
+        {label: "cover flow", factory: new ClassFactory(CoverFlowLayout)}];
+    ]]>
+  </mx:Script>
+  <mx:HBox>
+    <mx:FormItem label="wybierz widok:">
+      <mx:ComboBox id="layoutProvider" dataProvider="{layoutsArray}"/>
+    </mx:FormItem>
+  </mx:HBox>
+  <container:DataContainer dataProvider="{curses}" itemRenderer="pl.flexable.harmonix.samples.harmon.view.renderers.CurseRenderer"
+                           layoutClass="{ClassFactory(layoutProvider.selectedItem.factory)}"
+                           selectable="true" selectionColor="0xe0c140" clipboardEnabled="true"
+                           verticalGap="50" paddingLeft="10" paddingTop="10" paddingBottom="10"
+                           width="100%" height="100%" itemWidth="200" itemHeight="200" dropEnabled="false"/>
+</mx:VBox>

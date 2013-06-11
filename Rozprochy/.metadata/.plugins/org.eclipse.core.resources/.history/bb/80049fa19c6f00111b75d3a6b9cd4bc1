@@ -1,0 +1,32 @@
+package zad3;
+
+import java.io.ByteArrayInputStream;
+
+public class PartialChatMessage {
+
+	String author;
+	StringBuilder data;
+	int id;
+	boolean complete;
+	
+	public PartialChatMessage() {
+	}
+
+	public void addPart(byte[] message, int lenght){
+		
+		ByteArrayInputStream input = new ByteArrayInputStream(message, 0, lenght);
+		
+		
+	}
+	
+	public boolean isAll(){
+		return complete;
+	}
+	
+	public ChatMessage createMessage(){
+		if(!isAll()){
+			throw new RuntimeException("Message is not complete!");
+		}
+		return new ChatMessage(message, author)
+	}
+}

@@ -1,0 +1,11 @@
+package zad3;
+
+public class PartialChatMessage {
+
+	public PartialChatMessage() {
+	}
+
+	public void addPart(byte data){
+		
+	}
+}

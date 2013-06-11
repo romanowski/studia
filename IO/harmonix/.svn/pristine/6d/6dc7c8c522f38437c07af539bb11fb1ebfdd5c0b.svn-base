@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index>
+	<title>Source of harmonix_overview</title>
+	<nodes>
+		<node label="libs">
+		</node>
+		<node label="src" icon="classpathIcon" expanded="true">
+			<node label="assets">
+				<node label="styles.css" icon="cssIcon" url="source/assets/styles.css.html"/>
+			</node>
+			<node label="examples" icon="packageIcon" expanded="true">
+				<node label="ClipboardManagerExample.mxml" icon="mxmlIcon" url="source/examples/ClipboardManagerExample.mxml.html"/>
+				<node label="CoverFlowLayoutExample.mxml" icon="mxmlIcon" url="source/examples/CoverFlowLayoutExample.mxml.html"/>
+				<node label="DataContainerExample.mxml" icon="mxmlIcon" url="source/examples/DataContainerExample.mxml.html"/>
+				<node label="DragDropExample.mxml" icon="mxmlIcon" url="source/examples/DragDropExample.mxml.html"/>
+				<node label="LayoutContainerExample.mxml" icon="mxmlIcon" url="source/examples/LayoutContainerExample.mxml.html"/>
+				<node label="ResizeablePanelExample.mxml" icon="mxmlIcon" url="source/examples/ResizeablePanelExample.mxml.html"/>
+				<node label="SeriesLayoutExample.mxml" icon="mxmlIcon" url="source/examples/SeriesLayoutExample.mxml.html"/>
+			</node>
+			<node label="renderers" icon="packageIcon" expanded="true">
+				<node label="DataItemRenderer.mxml" icon="mxmlIcon" url="source/renderers/DataItemRenderer.mxml.html"/>
+				<node label="ItemRenderer.mxml" icon="mxmlIcon" url="source/renderers/ItemRenderer.mxml.html"/>
+			</node>
+			<node selected="true" label="harmonix_overview.mxml" icon="mxmlAppIcon" url="source/harmonix_overview.mxml.html"/>
+		</node>
+	</nodes>
+</index>

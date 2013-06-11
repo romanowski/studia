@@ -1,0 +1,57 @@
+package zad3;
+
+import java.io.ByteArrayInputStream;
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.security.acl.LastOwnerException;
+
+public class PartialChatMessage {
+
+	String author;
+	StringBuilder data;
+	int id;
+	boolean complete = true;
+	
+	public PartialChatMessage() {
+	}
+
+	public void addPart(byte flag, int in_id, InputStream data) throws IOException{
+
+		byte flag = message[0];
+		
+		//1 bajt to flaga - juz nas nie intersuje
+		DataInputStream input = new DataInputStream(data);
+		int in_id = input.readInt();
+		
+		if(flag == Flags.FirstPart || flag == Flags.NonParted){
+			id = in_id;
+		}
+		else{
+			if(id!= in_id){
+				throw new RuntimeException()
+			}
+		}
+		
+		
+		
+		if(flag == Flags.LastPart){
+			complete = true;
+		}
+		
+		}
+		
+		
+	}
+	
+	public boolean isAll(){
+		return complete;
+	}
+	
+	public ChatMessage createMessage(){
+		if(!isAll()){
+			throw new RuntimeException("Message is not complete!");
+		}
+		return new ChatMessage(message, author)
+	}
+}

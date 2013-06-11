@@ -1,0 +1,17 @@
+CREATE PROCEDURE sampleData21()
+  DEFINE i INTEGER;
+  FOR i = 1 TO 10
+	INSERT INTO db1_kr:tab2_kr VALUES(i, "ala ma psa");
+  END FOR;
+END PROCEDURE;
+
+call sampleData21();
+
+CREATE PROCEDURE sampleData122()
+  DEFINE i INTEGER;
+  FOR i = 1 TO 5000
+	INSERT INTO db1_kr:tab1_kr VALUES(i + 30000, "ala ma psa");
+  END FOR;
+END PROCEDURE;
+
+call sampleData122();

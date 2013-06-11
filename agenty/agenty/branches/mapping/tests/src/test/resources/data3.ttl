@@ -1,0 +1,27 @@
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+
+@prefix dc:		<http://purl.org/dc/elements/1.1/> .
+@prefix o1:		<http://localhost:8080/ontology-node1/o1#> .
+@prefix o2:		<http://localhost:8080/ontology-node2/o2#> .
+
+o1:autor20
+	rdf:type			o1:autor ;
+	o1:dataurodzenia	"1947-09-21"^^xsd:date ;
+	o1:nazwisko			"Stieg Larsson"^^xsd:string
+	.
+
+o1:autor21
+	rdf:type			o1:autor ;
+	o1:dataurodzenia	"1892-01-02"^^xsd:date ;
+	o1:nazwisko			"Donald Knuth"^^xsd:string
+	.
+
+o2:ksiazka21
+	rdf:type			o2:ksiazka ;
+	o2:datawydania		"2002-03-16"^^xsd:date ;
+	o2:tytul			"The Art of Programming"^^xsd:string ;
+	dc:creator			o1:autor21
+
+# etc ...

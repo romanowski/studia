@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE web-app
+		PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN"
+		"http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+
+<web-app>
+
+	<display-name>ontology-node</display-name>
+
+	<servlet>
+		<servlet-name>OntologyServlet</servlet-name>
+		<servlet-class>pl.edu.agh.semantic.servlet.OntologyServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>OntologyServlet</servlet-name>
+		<url-pattern>/ontologyService</url-pattern>
+	</servlet-mapping>
+</web-app>

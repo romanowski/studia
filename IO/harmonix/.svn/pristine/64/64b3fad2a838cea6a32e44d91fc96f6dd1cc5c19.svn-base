@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" width="400" height="300" xmlns:ui="pl.flexable.harmonix.ui.*">
+
+  <ui:ResizeablePanel id="resizablePanel" title="ResizeablePanel" minHeight="200" minWidth="200"
+                      mouseDown="resizablePanel.startDrag()" mouseUp="resizablePanel.stopDrag()"/>
+</mx:Canvas>

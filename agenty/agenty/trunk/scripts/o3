@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://localhost:8080/ontology-node1/o3#"
+     xml:base="http://localhost:8080/ontology-node1/o3"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://localhost:8080/ontology-node1/o3#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:8080/ontology-node1/o3#autorstwo -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology-node1/o3#autorstwo">
+        <rdfs:range rdf:resource="http://localhost:8080/ontology-node1/o3#Autor"/>
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology-node1/o3#Ksiazka"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology-node1/o3#redakcja -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology-node1/o3#redakcja">
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology-node1/o3#Czasopismo"/>
+        <rdfs:range rdf:resource="http://localhost:8080/ontology-node1/o3#Redaktor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology-node1/o3#tlumaczenie -->
+
+    <owl:ObjectProperty rdf:about="http://localhost:8080/ontology-node1/o3#tlumaczenie">
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology-node1/o3#Pozycja_bibliograficzna"/>
+        <rdfs:range rdf:resource="http://localhost:8080/ontology-node1/o3#Tlumacz"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:8080/ontology-node1/o3#laureatNobla -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/ontology-node1/o3#laureatNobla">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology-node1/o3#Autor"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology-node1/o3#nazwisko -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/ontology-node1/o3#nazwisko">
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology-node1/o3#Osoba"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology-node1/o3#tytul -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/ontology-node1/o3#tytul">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology-node1/o3#Pozycja_bibliograficzna"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://localhost:8080/ontology-node1/o3#ukazuje_sie_od -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost:8080/ontology-node1/o3#ukazuje_sie_od">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://localhost:8080/ontology-node1/o3#Czasopismo"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost:8080/ontology-node1/o3#Autor -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology-node1/o3#Autor">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology-node1/o3#Osoba"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology-node1/o3#Czasopismo -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology-node1/o3#Czasopismo">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology-node1/o3#Pozycja_bibliograficzna"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology-node1/o3#Ksiazka -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology-node1/o3#Ksiazka">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology-node1/o3#Pozycja_bibliograficzna"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology-node1/o3#Osoba -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology-node1/o3#Osoba"/>
+    
+
+
+    <!-- http://localhost:8080/ontology-node1/o3#Pozycja_bibliograficzna -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology-node1/o3#Pozycja_bibliograficzna"/>
+    
+
+
+    <!-- http://localhost:8080/ontology-node1/o3#Redaktor -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology-node1/o3#Redaktor">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology-node1/o3#Osoba"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost:8080/ontology-node1/o3#Tlumacz -->
+
+    <owl:Class rdf:about="http://localhost:8080/ontology-node1/o3#Tlumacz">
+        <rdfs:subClassOf rdf:resource="http://localhost:8080/ontology-node1/o3#Osoba"/>
+    </owl:Class>
+	
+	    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+	 
+	<!-- http://localhost:8080/ontology-node1/o3#indexingService -->
+
+    <owl:NamedIndividual rdf:about="http://localhost:8080/ontology-node1/o3#indexingService">
+        <owl:topDataProperty>http://localhost:8080/index-node1/Index?wsdl</owl:topDataProperty>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+

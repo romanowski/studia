@@ -1,0 +1,9 @@
+VarDeclT t1;
+VarDeclT t2;
+VarDeclT t3;
+t1.data = 1111;
+t2.data = 2222;
+t3.data = 3333;
+t1.f1 = t2;
+t2 = t1;
+t3 = t1;

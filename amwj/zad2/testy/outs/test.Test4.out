@@ -1,0 +1,12 @@
+aload_0    16
+aload_1    4
+getfield    7
+goto    3
+if_icmpge    4
+iinc    3
+iload_1    4
+iload_2    4
+invokespecial    4
+invokevirtual    4
+putfield    3
+return    7

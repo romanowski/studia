@@ -1,0 +1,21 @@
+package zad3;
+
+public class PartialChatMessage {
+
+	public PartialChatMessage() {
+	}
+
+	public void addPart(byte data){
+		
+	}
+	
+	public boolean isAll(){
+		return false;
+	}
+	
+	public ChatMessage createMessage(){
+		if(!isAll()){
+			throw new RuntimeException("Message is not complete!");
+		}
+	}
+}

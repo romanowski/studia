@@ -1,0 +1,55 @@
+module Laboratory
+{
+
+	exception ApplicationException{
+	    string message;
+	};
+
+	exception BadOperation{
+	};
+
+    typedef sequence<string> StrSeq;
+    typedef string Str;
+
+    struct DevS{
+      string ID;
+      string devType;
+    };
+
+    struct Operation{
+     string ID;
+     StrSeq paramsTypes;
+    };
+
+	interface State{
+        StrSeq states();
+        void setState(in string newState);
+	};
+
+    typedef sequence<Operation> OperationSeq;
+
+	interface Dev{
+      DevS info();
+      void doOperation(in string name, in StrSeq params) raises(BadOperation);
+      OperationSeq operations();
+	};
+
+    typedef sequence<DevS> DevSeq;
+
+    interface DevManager
+    	{
+    	    DevSeq  getDevsInfo();
+
+    		DevS viewDev(in string ID);
+
+    		Dev reserveDev(in string ID,in string accessToken) raises(ApplicationException);
+
+    		void relaseDev(in string ID,in string accessToken) raises(ApplicationException);
+
+    		void disconnect(in string accessToken) raises(ApplicationException);
+
+            Str connect()  raises(ApplicationException);
+
+            State devState(in string ID);
+    	};
+};

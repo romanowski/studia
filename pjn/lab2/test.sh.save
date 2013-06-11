@@ -1,0 +1,6 @@
+ #cat test/mistakes.txt
+#echo "\n"
+(cd classes &&\
+ cat test/mistakes.txt | scala -cp out/production/lab2 SpellCheckApp 
+#echo "\n"
+#cat test/correct.txt

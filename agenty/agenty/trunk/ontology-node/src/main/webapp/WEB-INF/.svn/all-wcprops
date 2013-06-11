@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/agenty/!svn/ver/91/trunk/ontology-node/src/main/webapp/WEB-INF
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/agenty/!svn/ver/91/trunk/ontology-node/src/main/webapp/WEB-INF/web.xml
+END
+sun-jaxws.xml
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/agenty/!svn/ver/91/trunk/ontology-node/src/main/webapp/WEB-INF/sun-jaxws.xml
+END

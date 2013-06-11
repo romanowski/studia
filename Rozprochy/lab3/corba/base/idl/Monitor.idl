@@ -1,0 +1,9 @@
+#include   "Laboratory.idl"
+module Displays
+{
+
+ 	interface Monitor: Laboratory::Dev{
+
+	    void rotate(in long degree);
+ 	};
+};

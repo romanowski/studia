@@ -1,0 +1,17 @@
+package zad3;
+
+public class ChatMessage {
+
+	public static ChatMessage fromBytes(byte[] buf, int lengh){
+		
+	}
+	
+	
+	public ChatMessage(String message, String author) {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+	
+}

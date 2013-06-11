@@ -1,0 +1,4 @@
+aload_1    6
+invokevirtual    6
+ireturn    3
+pop    4

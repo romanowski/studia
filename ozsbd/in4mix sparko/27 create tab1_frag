@@ -1,0 +1,24 @@
+create table tab1_frag_kr(
+id int,
+nazwa char(200),
+kod char(1))
+FRAGMENT BY EXPRESSION
+kod = "C" IN danekr2,
+REMAINDER in danekr1
+
+alter table tab1_frag_kr( ADD CONSTRAINT PRIMARY KEY (id);
+
+
+CREATE PROCEDURE insert_tab1_frag4()
+ DEFINE i INTEGER;
+ FOR i = 1 TO 10000
+	INSERT INTO tab1_frag_kr VALUES(i, "ala ma kod A", "A");
+ END FOR;
+ FOR i = 10001 TO 60001
+	INSERT INTO tab1_frag_kr VALUES(i, "ala ma kod B", "B");
+ END FOR;
+ FOR i = 60002 TO 67002
+	INSERT INTO tab1_frag_kr VALUES(i, "ala ma kod C", "C");
+ END FOR;
+END PROCEDURE;
+CALL insert_tab1_frag4();

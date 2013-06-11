@@ -1,0 +1,59 @@
+package zad3;
+
+import java.io.ByteArrayInputStream;
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.security.acl.LastOwnerException;
+
+public class PartialChatMessage {
+
+	String author;
+	StringBuilder messageData = new StringBuilder();
+	int id;
+	boolean complete = true;
+
+	public PartialChatMessage() {
+	}
+
+	public void addPart(byte flag, int in_id, InputStream data)
+			throws IOException {
+
+		DataInputStream input = new DataInputStream(data);
+
+
+
+		if (flag == Flags.FirstPart || flag == Flags.NonParted) {
+			id = in_id;
+
+			int splitPos = input.readInt();
+			String stringData = input.readUTF();
+			author = stringData.substring(splitPos);
+			messageData.append(stringData.substring(splitPos,
+					stringData.length()));
+		} else {
+			String stringData = input.readUTF();
+			if (id != in_id) {
+				// cos sie pomyliło
+				throw new RuntimeException("bad part of message");
+			}
+			messageData.append(stringData);
+		}
+
+		if (flag == Flags.LastPart || flag == Flags.NonParted) {
+			complete = true;
+		}
+
+	}
+
+	public boolean isAll() {
+		return complete;
+	}
+
+	public ChatMessage createMessage(){
+		if(!isAll()){
+			throw new RuntimeException("Message is not complete!");
+		}
+		return new ChatMessage(messageData.toString(), author);
+	}
+}

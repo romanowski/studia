@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/agenty/!svn/ver/99/trunk/services/src/main/java/pl/edu/agh/semantic/service
+END
+StorageService.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/agenty/!svn/ver/96/trunk/services/src/main/java/pl/edu/agh/semantic/service/StorageService.java
+END
+NodesManagementService.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/agenty/!svn/ver/97/trunk/services/src/main/java/pl/edu/agh/semantic/service/NodesManagementService.java
+END
+QueryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/agenty/!svn/ver/46/trunk/services/src/main/java/pl/edu/agh/semantic/service/QueryService.java
+END
+IndexService.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/agenty/!svn/ver/92/trunk/services/src/main/java/pl/edu/agh/semantic/service/IndexService.java
+END
+OntologyWebService.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/agenty/!svn/ver/91/trunk/services/src/main/java/pl/edu/agh/semantic/service/OntologyWebService.java
+END
+OntologyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/agenty/!svn/ver/91/trunk/services/src/main/java/pl/edu/agh/semantic/service/OntologyService.java
+END
+AutomaticIndexingService.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/agenty/!svn/ver/99/trunk/services/src/main/java/pl/edu/agh/semantic/service/AutomaticIndexingService.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/agenty/!svn/ver/46/trunk/services/src/main/java/pl/edu/agh/semantic/service/package-info.java
+END

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../ice-classes/Ice-classes.iml" filepath="$PROJECT_DIR$/../ice-classes/Ice-classes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../JavaClient/JavaClient.iml" filepath="$PROJECT_DIR$/../JavaClient/JavaClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaClient/JavaClient.iml" filepath="$PROJECT_DIR$/JavaClient/JavaClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ScalaServer/ScalaServer.iml" filepath="$PROJECT_DIR$/../ScalaServer/ScalaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ScalaServer/ScalaServer.iml" filepath="$PROJECT_DIR$/ScalaServer/ScalaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled/ice-classes.iml" filepath="$PROJECT_DIR$/untitled/ice-classes.iml" />
+    </modules>
+  </component>
+</project>
+

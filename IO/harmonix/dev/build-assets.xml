@@ -1,0 +1,3 @@
+<project name="Antennae.assets">
+    <import file="harmonix/build-assets.xml"/>
+</project>

@@ -1,0 +1,33 @@
+package zad3;
+
+import java.io.ByteArrayInputStream;
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.MulticastSocket;
+import java.net.Socket;
+import java.util.HashMap;
+import java.util.Map;
+
+public class UDPChatManager {
+
+	private Map<Integer, PartialChatMessage> currentMessages = new HashMap<Integer, PartialChatMessage>();
+
+	MulticastSocket socket;
+	
+	public UDPChatManager(MulticastSocket socket) {
+		this.socket = socket;
+	}
+	
+	public void manageDatagram(DatagramPacket packet) throws IOException{
+		DataInputStream input = null;
+		try{
+			input = new DataInputStream(new ByteArrayInputStream(packet.getData(), 0, packet.getLength()));
+		
+		}
+		finally{
+			if(input != null)
+				input.close();
+		}
+	}
+}

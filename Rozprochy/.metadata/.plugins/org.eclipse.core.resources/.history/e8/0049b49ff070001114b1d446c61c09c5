@@ -1,0 +1,66 @@
+package zad3;
+
+import java.io.ByteArrayInputStream;
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.security.acl.LastOwnerException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class PartialChatMessage {
+
+	String author;
+	List<String> messageDatas = new ArrayList<String>();
+	int id;
+	boolean complete = false;
+
+	public PartialChatMessage() {
+	}
+
+	public void addPart(byte flag, int in_id, InputStream data)
+			throws IOException {
+
+		DataInputStream input = new DataInputStream(data);
+
+		if(flag == Flags.NonParted){
+			int splitPos = input.readInt();
+			String stringData = input.readUTF();
+			author = stringData.substring(0, splitPos);
+			messageDatas.add(stringData.substring(splitPos));
+			complete = false;
+			
+		}
+		
+
+		if (flag == Flags.FirstPart) {
+			id = in_id;
+
+			messageData.append(stringData.substring(splitPos,
+					stringData.length()));
+		} else {
+			String stringData = input.readUTF();
+			if (id != in_id) {
+				// cos sie pomyliło
+				throw new RuntimeException("bad part of message");
+			}
+			messageData.append(stringData);
+		}
+
+		if (flag == Flags.LastPart || flag == Flags.NonParted) {
+			complete = true;
+		}
+
+	}
+
+	public boolean isAll() {
+		return complete;
+	}
+
+	public ChatMessage createMessage(){
+		if(!isAll()){
+			throw new RuntimeException("Message is not complete!");
+		}
+		return new ChatMessage(messageData.toString(), author);
+	}
+}

@@ -1,0 +1,271 @@
+/*
+ * main.c
+ *
+ *  Created on: 08-06-2012
+ *      Author: jar
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+struct BOARD {
+	int w;
+	int h;
+	char** fields;
+};
+
+/* kodowanie Oxabcdefg
+ *
+ * gdzie
+ * a - przewod u góry
+ * b - przewod po prawej
+ * c - na dole
+ * d - po lewej
+ * e - zarówka
+ * f - zasilanie
+ * g - nie potrzeby
+ */
+char TOP = 64;
+char RIGHT = 32;
+char BOTTOM = 16;
+char LEFT = 8;
+char LIGHT = 4;
+char SOURCE = 2;
+char NEED = 1;
+
+char ALL;
+
+inline char is_need(char c) {
+	return c & NEED;
+}
+
+inline char is_source(char c) {
+	return c & SOURCE;
+}
+
+inline char is_light(char c) {
+	return c & LIGHT;
+}
+
+inline char is_left(char c) {
+	return c & LEFT;
+}
+
+inline char is_bottom(char c) {
+	return c & BOTTOM;
+}
+inline char is_right(char c) {
+	return c & RIGHT;
+}
+inline char is_top(char c) {
+	return c & TOP;
+}
+
+struct mapping {
+	char name;
+	char index;
+	char symbol;
+
+};
+
+struct mapping *mappingString;
+
+struct BOARD board;
+
+char convert(char* what) {
+
+	int i = 0;
+	while (!(mappingString[i].name == what[0]
+			&& mappingString[i].index == what[1])) {
+		i++;
+	}
+	return mappingString[i].symbol;
+}
+
+char* toStr(char sym) {
+
+	if ((sym & NEED) == 0) {
+		return "NN";
+	}
+
+	int i = 0;
+	while (sym != mappingString[i].symbol) {
+		i++;
+	}
+	char* tmp = (char*) malloc(3 * sizeof(char));
+	tmp[0] = mappingString[i].name;
+	tmp[1] = mappingString[i].index;
+	tmp[2] = 0;
+	return tmp;
+}
+
+void fill(int i, char name, char index, char symbol) {
+	mappingString[i].name = name;
+	mappingString[i].index = index;
+	mappingString[i].symbol = symbol;
+}
+
+char line(char c) {
+
+
+	printf("%d\n", (c & (LEFT | RIGHT)));
+
+	return ((c & LEFT) & (c & RIGHT)) | (c & (TOP | BOTTOM));
+}
+
+char lShape(char c) {
+	return ((c & (LEFT | TOP) > 0) || (c & (LEFT | BOTTOM) > 0)
+			|| (c & (RIGHT | TOP) > 0) || (c & (RIGHT | BOTTOM) > 0));
+}
+
+char needed(int x, int y) {
+
+	char val = board.fields[x][y];
+
+	if (2
+			> ((board.fields[x - 1][y] & 1) + (board.fields[x + 1][y] & 1)
+					+ (board.fields[x][y + 1] & 1)
+					+ (board.fields[x][y - 1] & 1))) {
+		return 0;
+	}
+
+	if (line(board.fields[x][y])) {
+		if (board.fields[x - 1][y] & NEED) {
+			if ((board.fields[x][y + 1] & NEED)
+					| (board.fields[x][y - 1] & NEED)) {
+				return 0;
+			}
+		}
+		if (board.fields[x + 1][y] & NEED) {
+			if ((board.fields[x][y + 1] & NEED)
+					| (board.fields[x][y - 1] & NEED)) {
+				return 0;
+			}
+		}
+	} else {
+		if ((board.fields[x][y + 1] & NEED) & (board.fields[x][y - 1] & NEED)) {
+			return 0;
+		}
+		if ((board.fields[x + 1][y] & NEED) & (board.fields[x - 1][y] & NEED)) {
+			return 0;
+		}
+	}
+
+	return 1;
+}
+
+void import() {
+
+	mappingString = (struct mapping*) malloc(26 * sizeof(struct mapping));
+	ALL = LEFT | RIGHT | TOP | BOTTOM | NEED;
+
+	int i = 0;
+	fill(i++, 'A', '1', ALL | NEED);
+	fill(i++, 'B', '1', LEFT | RIGHT | NEED);
+	fill(i++, 'B', '2', TOP | BOTTOM | NEED);
+	fill(i++, 'C', '1', BOTTOM | RIGHT | NEED);
+	fill(i++, 'C', '2', BOTTOM | LEFT | NEED);
+	fill(i++, 'C', '3', TOP | LEFT | NEED);
+	fill(i++, 'C', '4', TOP | RIGHT | NEED);
+	fill(i++, 'D', '1', ALL | SOURCE | NEED);
+	fill(i++, 'E', '1', SOURCE | TOP | BOTTOM | NEED);
+	fill(i++, 'E', '2', LEFT | RIGHT | SOURCE | NEED);
+	fill(i++, 'F', '1', BOTTOM | RIGHT | NEED | SOURCE);
+	fill(i++, 'F', '2', BOTTOM | LEFT | NEED | SOURCE);
+	fill(i++, 'F', '3', TOP | LEFT | NEED | SOURCE);
+	fill(i++, 'F', '4', TOP | RIGHT | NEED | SOURCE);
+	fill(i++, 'G', '1', (ALL ^ TOP) | NEED);
+	fill(i++, 'G', '2', (ALL ^ RIGHT) | NEED);
+	fill(i++, 'G', '3', (ALL ^ BOTTOM) | NEED);
+	fill(i++, 'G', '4', (ALL ^ LEFT) | NEED);
+	fill(i++, 'H', '1', (ALL ^ TOP) | NEED | SOURCE);
+	fill(i++, 'H', '2', (ALL ^ RIGHT) | NEED | SOURCE);
+	fill(i++, 'H', '3', (ALL ^ BOTTOM) | NEED | SOURCE);
+	fill(i++, 'H', '4', (ALL ^ LEFT) | NEED | SOURCE);
+	fill(i++, 'I', '1', RIGHT | NEED | LIGHT);
+	fill(i++, 'I', '2', BOTTOM | NEED | LIGHT);
+	fill(i++, 'I', '3', LEFT | NEED | LIGHT);
+	fill(i++, 'I', '4', TOP | NEED | LIGHT);
+
+	char* tmp = (char*) malloc(124);
+	scanf("%s", tmp);
+	board.w = atoi(tmp);
+
+	scanf("%s", tmp);
+	board.h = atoi(tmp);
+
+	i = 0;
+
+	board.fields = (char**) malloc((board.w + 2) * sizeof(char*));
+
+	for (i = 0; i <= (board.w + 1); ++i) {
+		board.fields[i] = malloc((board.h + 2) * sizeof(char));
+	}
+
+	for (i = 0; i < (board.w + 2); i++) {
+		board.fields[i][0] = 0;
+		board.fields[i][board.h + 1] = 0;
+
+	}
+
+	for (i = 0; i < (board.h + 2); i++) {
+		board.fields[0][i] = 0;
+		board.fields[board.w + 1][0] = 0;
+
+	}
+
+	i = 0;
+	int j = 0;
+	for (i = 1; i <= board.h; ++i) {
+		for (j = 1; j <= board.w; ++j) {
+			scanf("%s", tmp);
+			board.fields[j][i] = convert(tmp);
+		}
+	}
+
+	for (i = 1; i <= board.w; ++i) {
+		for (j = 1; j <= board.h; ++j) {
+			if (needed(i, j) == 0) {
+				board.fields[j][i] = board.fields[j][i] - 1;
+			}
+		}
+	}
+
+}
+
+void printBoard() {
+
+	int i;
+	int j;
+
+	for (j = 0; j <= (board.h + 1); ++j) {
+		for (i = 0; i <= (board.w + 1); ++i) {
+			printf("%s ", toStr(board.fields[i][j]));
+		}
+		printf("\n");
+	}
+
+}
+
+void test(char* t) {
+	char tmp = convert(t);
+	printf("%s -> %d -> %s\n", t, tmp, toStr(tmp));
+}
+
+int main(int argc, char **argv) {
+
+	//import();
+
+	//printBoard();
+
+	printf("\n");
+
+	printf("LR %d, TB %d ", line(LEFT | RIGHT), line(TOP | BOTTOM));
+
+	printf("TR %d, TL %d ", line(TOP | RIGHT), line(TOP | LEFT));
+
+	printf("BR %d, lB %d ", line(BOTTOM | RIGHT), line(LEFT | BOTTOM));
+
+	return 0;
+
+}

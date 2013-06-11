@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" width="400" height="300">
+  <mx:Script>
+    <![CDATA[
+      import pl.flexable.harmonix.samples.harmon.model.TestDriveModel;
+      import mx.collections.ArrayCollection;
+      import pl.flexable.harmonix.samples.harmon.view.renderers.DayRenderer;
+
+      [Bindable]
+      private var days : ArrayCollection = TestDriveModel.getInstance().days;
+    ]]>
+  </mx:Script>
+  <mx:TileList height="100%" width="100%" direction="vertical" rowCount="1" dataProvider="{days}"
+               itemRenderer="pl.flexable.harmonix.samples.harmon.view.renderers.DayRenderer"/>
+</mx:HBox>

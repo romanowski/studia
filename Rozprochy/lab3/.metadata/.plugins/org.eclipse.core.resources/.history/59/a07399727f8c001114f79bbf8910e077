@@ -1,0 +1,139 @@
+package org.corba.impl;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+import javax.management.RuntimeErrorException;
+
+import org.corba.generated.S1;
+import org.corba.generated.I1;
+import org.corba.generated.I1Helper;
+import org.corba.generated.I2;
+import org.corba.generated.I2Ext;
+import org.corba.generated.I2ExtHelper;
+import org.omg.CORBA.ORB;
+import org.omg.CORBA.StringHolder;
+import org.omg.CosNaming.NameComponent;
+import org.omg.CosNaming.NamingContextExt;
+import org.omg.CosNaming.NamingContextExtHelper;
+import org.omg.CosNaming.NamingContextPackage.CannotProceed;
+import org.omg.CosNaming.NamingContextPackage.InvalidName;
+import org.omg.CosNaming.NamingContextPackage.NotFound;
+
+public class Client1 {
+	I1 i1 = null;
+	ORB orb = null;
+
+	public void base1(String[] args) throws InvalidName, NotFound,
+			CannotProceed, org.omg.CORBA.ORBPackage.InvalidName {
+		// create and initialize the ORB
+		orb = ORB.init(args, null);
+
+		String path = null;
+
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(
+					"Test.IOR"));
+			path = reader.readLine();
+		} catch (Exception e) {
+			throw new RuntimeException("while reading from file", e);
+		}
+
+		// get the Object Reference from IOR
+		org.omg.CORBA.Object objRef = orb
+				.string_to_object(path);
+
+		// narrow the reference
+		i1 = I1Helper.narrow(objRef);
+	}
+
+	public void base2(String[] args) throws InvalidName, NotFound,
+			CannotProceed, org.omg.CORBA.ORBPackage.InvalidName {
+		// create and initialize the ORB
+		orb = ORB.init(args, null);
+
+		// get the Name Service Object Reference from IOR
+
+		String path = null;
+
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(
+					"Test.IOR"));
+			path = reader.readLine();
+		} catch (Exception e) {
+			throw new RuntimeException("while reading from file", e);
+		}
+
+		// org.omg.CORBA.Object nsRef =
+		// orb.resolve_initial_references("NameService");
+		// org.omg.CORBA.Object nsRef = orb.string_to_object("corbaloc:iiop:
+		org.omg.CORBA.Object nsRef = orb.string_to_object(path);
+
+		// narrow NS reference
+		NamingContextExt ncRef = NamingContextExtHelper.narrow(nsRef);
+
+		org.omg.CORBA.Object objRef = ncRef
+				.resolve_str("alamakota/TextFunctionsServerxx");
+
+		System.out.println("OBJ= " + objRef);
+
+		i1 = I1Helper.narrow(objRef);
+	}
+
+	void callI1() {
+		StringHolder text2 = new StringHolder("bolek");
+		StringHolder text3 = new StringHolder();
+		S1 s1 = new S1();
+		s1.a = 77;
+		s1.b = 'r';
+
+		String res = i1.op2("zenek", text2, text3, s1);
+
+		System.out.println("I1::op2 returned: " + text2.value + " "
+				+ text3.value + " " + res);
+	}
+
+	void callFactory() {
+		I2 i21 = i1.getI2();
+		System.out.println("I2::op returned: " + i21.op());
+		System.out.println("i21 = " + orb.object_to_string(i21));
+
+		I2 i22 = i1.getI2();
+		System.out.println("I2::op returned: " + i22.op());
+		if (i22._is_a("IDL:sr/I2Ext:1.0")) {
+			I2Ext i22e = I2ExtHelper.narrow(i1.getI2());
+			System.out.println("I2Ext::opExt returned: " + i22e.opExt());
+		}
+		System.out.println("i22 = " + orb.object_to_string(i22));
+	}
+
+	void callDII() {
+		org.omg.CORBA.Request r = i1._request("op1");
+		r.add_in_arg().insert_long(77);
+		r.set_return_type(orb.get_primitive_tc(org.omg.CORBA.TCKind.tk_short));
+
+		r.invoke();
+
+		if (r.env().exception() == null) {
+			System.out.println("I1::op1 (DII request) returned: "
+					+ r.return_value().extract_short());
+		}
+	}
+
+	/**
+	 * @param args
+	 * @throws CannotProceed
+	 * @throws NotFound
+	 * @throws InvalidName
+	 * @throws org.omg.CORBA.ORBPackage.InvalidName
+	 */
+	public static void main(String[] args) throws InvalidName, NotFound,
+			CannotProceed, org.omg.CORBA.ORBPackage.InvalidName {
+		Client1 c1 = new Client1();
+		c1.base2(args);
+		c1.callI1();
+		c1.callFactory();
+		c1.callDII();
+	}
+
+}

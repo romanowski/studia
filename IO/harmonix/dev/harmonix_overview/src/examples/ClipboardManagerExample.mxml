@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml" width="400" height="300" xmlns:container="pl.flexable.harmonix.container.*">
+  <mx:Script>
+    <![CDATA[
+      import pl.flexable.harmonix.layout.VerticalSeriesLayout;
+      import mx.collections.ArrayCollection;
+
+      [Bindable]
+      private var dataProvider2 : ArrayCollection = new ArrayCollection();
+
+      [Bindable]
+      private var dataProvider3 : ArrayCollection = new ArrayCollection();
+
+
+
+
+      private function addToDataProvider2(value : String) : void {
+        dataProvider2.addItem(value);
+      }
+
+
+      private function addToDataProvider3(value : String) : void {
+        dataProvider3.addItem(value);
+      }
+    ]]>
+  </mx:Script>
+  <mx:HDividedBox width="100%" height="100%" dividerColor="#000000">
+    <mx:HBox width="50%" height="100%">
+      <mx:List dataProvider="{dataProvider2}" width="150" height="100%"/>
+      <container:DataContainer id="dataContainerLeft" itemRenderer="renderers.DataItemRenderer"
+                               dataProvider="{dataProvider2}" width="100%" height="100%" layoutClass="{new ClassFactory(VerticalSeriesLayout)}"
+                               horizontalGap="50" verticalGap="50" allowMultipleSelection="true"
+                               selectable="true" borderThickness="1" paddingLeft="20"/>
+    </mx:HBox>
+    <mx:HBox width="50%" height="100%">
+      <container:DataContainer id="dataContainerRight" itemRenderer="renderers.DataItemRenderer"
+                               dataProvider="{dataProvider3}" width="100%" height="100%" layoutClass="{new ClassFactory(VerticalSeriesLayout)}"
+                               horizontalGap="50" verticalGap="50" allowMultipleSelection="true"
+                               selectable="true" borderThickness="1" paddingLeft="20"/>
+      <mx:List dataProvider="{dataProvider3}" width="150" height="100%"/>
+    </mx:HBox>
+
+  </mx:HDividedBox>
+  <mx:HBox width="100%" horizontalAlign="center" styleName="bottomBar">
+    <mx:Button label="add data" click="addToDataProvider2(dataInput2.text); dataInput2.text = ''"/>
+    <mx:TextInput width="150" id="dataInput2"/>
+    <mx:Button label="add data" click="addToDataProvider3(dataInput3.text); dataInput3.text = ''"/>
+    <mx:TextInput width="150" id="dataInput3"/>
+  </mx:HBox>
+</mx:VBox>

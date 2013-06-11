@@ -1,0 +1,10 @@
+package zad3;
+
+public class PartialChatMessage extends ChatMessage {
+
+	public PartialChatMessage(String message, String author) {
+		super(message, author);
+		// TODO Auto-generated constructor stub
+	}
+
+}

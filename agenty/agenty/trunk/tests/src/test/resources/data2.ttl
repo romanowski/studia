@@ -1,0 +1,35 @@
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+
+@prefix dc:		<http://purl.org/dc/elements/1.1/> .
+@prefix o1:		<http://localhost:8080/ontology-node1/o1#> .
+@prefix o2:		<http://localhost:8080/ontology-node2/o2#> .
+
+o2:ksiazka201
+	rdf:type			o2:ksiazka ;
+	o2:datawydania		"1600-07-10"^^xsd:date ;
+	o2:tytul			"Macbeth"^^xsd:string ;
+	dc:creator			o1:autor201
+	.
+
+o2:ksiazka202
+	rdf:type			o2:ksiazka ;
+	o2:datawydania		"1615-10-10"^^xsd:date ;
+	o2:tytul			"Hamlet"^^xsd:string ;
+	dc:creator			o1:autor201
+	.
+
+o1:autor201
+	rdf:type			o1:autor ;
+	o1:dataurodzenia	"1564-04-26"^^xsd:date ;
+	o1:nazwisko			"William Shakespeare"^^xsd:string
+	.
+
+o1:autor202
+	rdf:type			o1:autor ;
+	o1:dataurodzenia	"1757-11-28"^^xsd:date ;
+	o1:nazwisko			"William Blake"^^xsd:string
+	.
+
+# etc ...

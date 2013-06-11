@@ -1,0 +1,36 @@
+package zad3;
+
+import java.io.ByteArrayInputStream;
+import java.security.acl.LastOwnerException;
+
+public class PartialChatMessage {
+
+	String author;
+	StringBuilder data;
+	int id;
+	boolean complete = true;
+	
+	public PartialChatMessage() {
+	}
+
+	public void addPart(byte[] message, int lenght){
+		
+		ByteArrayInputStream input = new ByteArrayInputStream(message, 0, lenght);
+		byte flag = message[0];
+		if(flag == Flags.LastPart){
+			complete = true;
+		}
+		
+	}
+	
+	public boolean isAll(){
+		return complete;
+	}
+	
+	public ChatMessage createMessage(){
+		if(!isAll()){
+			throw new RuntimeException("Message is not complete!");
+		}
+		return new ChatMessage(message, author)
+	}
+}

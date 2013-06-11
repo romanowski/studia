@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="zad2" default="all">
+  
+  
+  <property file="Build.xml.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="128m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/SCCS/**"/>
+    <exclude name="**/RCS/**"/>
+    <exclude name="**/rcs/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/.pyc/**"/>
+    <exclude name="**/.pyo/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/*.lib/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/.bundle/**"/>
+    <exclude name="**/*.rbc/**"/>
+    <exclude name="**/vssver.scc/**"/>
+    <exclude name="**/vssver2.scc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.war"/>
+    <include name="*.ear"/>
+    <include name="*.apk"/>
+    <include name="*.zip"/>
+    <include name="*.swc"/>
+    <include name="*.ane"/>
+    <include name="*.egg"/>
+    <include name="*.jar"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <include name="**/?*.properties"/>
+    <include name="**/?*.xml"/>
+    <include name="**/?*.gif"/>
+    <include name="**/?*.png"/>
+    <include name="**/?*.jpeg"/>
+    <include name="**/?*.jpg"/>
+    <include name="**/?*.html"/>
+    <include name="**/?*.dtd"/>
+    <include name="**/?*.tld"/>
+    <include name="**/?*.ftl"/>
+  </patternset>
+  
+  
+  <!-- Project Libraries -->
+  
+  <path id="library.bcel-5.2.classpath">
+    <pathelement location="${basedir}/lib/bcel-5.2.jar"/>
+  </path>
+  
+  <!-- Modules -->
+  
+  
+  <!-- Module zad2 -->
+  
+  <dirname property="module.zad2.basedir" file="${ant.file}"/>
+  
+  
+  
+  <property name="compiler.args.zad2" value="${compiler.args}"/>
+  
+  <property name="zad2.output.dir" value="${module.zad2.basedir}/out/production/zad2"/>
+  <property name="zad2.testoutput.dir" value="${module.zad2.basedir}/out/test/zad2"/>
+  
+  <path id="zad2.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="zad2.module.production.classpath">
+    <path refid="library.bcel-5.2.classpath"/>
+  </path>
+  
+  <path id="zad2.runtime.production.module.classpath">
+    <pathelement location="${zad2.output.dir}"/>
+    <path refid="library.bcel-5.2.classpath"/>
+  </path>
+  
+  <path id="zad2.module.classpath">
+    <pathelement location="${zad2.output.dir}"/>
+    <path refid="library.bcel-5.2.classpath"/>
+  </path>
+  
+  <path id="zad2.runtime.module.classpath">
+    <pathelement location="${zad2.testoutput.dir}"/>
+    <pathelement location="${zad2.output.dir}"/>
+    <path refid="library.bcel-5.2.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.zad2">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.zad2">
+    <patternset refid="excluded.from.module.zad2"/>
+  </patternset>
+  
+  <path id="zad2.module.sourcepath">
+    <dirset dir="${module.zad2.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.zad2" depends="compile.module.zad2.production,compile.module.zad2.tests" description="Compile module zad2"/>
+  
+  <target name="compile.module.zad2.production" description="Compile module zad2; production classes">
+    <mkdir dir="${zad2.output.dir}"/>
+    <javac destdir="${zad2.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true">
+      <compilerarg line="${compiler.args.zad2}"/>
+      <bootclasspath refid="zad2.module.bootclasspath"/>
+      <classpath refid="zad2.module.production.classpath"/>
+      <src refid="zad2.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.zad2"/>
+    </javac>
+    
+    <copy todir="${zad2.output.dir}">
+      <fileset dir="${module.zad2.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.zad2.tests" depends="compile.module.zad2.production" description="compile module zad2; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.zad2" description="cleanup module">
+    <delete dir="${zad2.output.dir}"/>
+    <delete dir="${zad2.testoutput.dir}"/>
+  </target>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.zad2" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.zad2" description="build all modules"/>
+  
+  <target name="all" depends="build.modules" description="build all"/>
+</project>

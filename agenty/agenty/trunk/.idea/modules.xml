@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/index-node/index-node.iml" filepath="$PROJECT_DIR$/index-node/index-node.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ontology-node/ontology-node.iml" filepath="$PROJECT_DIR$/ontology-node/ontology-node.iml" />
+      <module fileurl="file://$PROJECT_DIR$/query-node/query-node.iml" filepath="$PROJECT_DIR$/query-node/query-node.iml" />
+      <module fileurl="file://$PROJECT_DIR$/semantic.iml" filepath="$PROJECT_DIR$/semantic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/services.iml" filepath="$PROJECT_DIR$/services/services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/storage-node/storage-node.iml" filepath="$PROJECT_DIR$/storage-node/storage-node.iml" />
+    </modules>
+  </component>
+</project>
+

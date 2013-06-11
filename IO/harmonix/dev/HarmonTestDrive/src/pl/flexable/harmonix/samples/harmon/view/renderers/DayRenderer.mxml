@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Panel title="{data.name}" xmlns:mx="http://www.adobe.com/2006/mxml" width="200" height="100%"
+          xmlns:container="pl.flexable.harmonix.container.*" styleName="dayRenderer">
+  <mx:Script>
+    <![CDATA[
+      import pl.flexable.harmonix.layout.VerticalSeriesLayout;
+    ]]>
+  </mx:Script>
+  <container:DataContainer layoutClass="{new ClassFactory(VerticalSeriesLayout)}" width="100%"
+                           height="100%" dataProvider="{data.curses}" clipboardEnabled="true"
+                           itemRenderer="pl.flexable.harmonix.samples.harmon.view.renderers.CurseRenderer"
+                           selectable="true" itemWidth="160" styleName="dayCurseContainer"
+                           allowMultipleSelection="true" selectionColor="0xe0c140" backgroundColor="0xdff9fb"
+                           paddingLeft="7" dragEnabled="false" paddingTop="10" verticalGap="100"
+                           deleteEnabled="true"/>
+</mx:Panel>

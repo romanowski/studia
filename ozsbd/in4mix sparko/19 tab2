@@ -1,0 +1,6 @@
+create table db1_kr:tab2_kr(
+	id int,
+	nazwa char(2400)
+)
+
+alter table db1_kr:tab2_kr ADD CONSTRAINT PRIMARY KEY (id);

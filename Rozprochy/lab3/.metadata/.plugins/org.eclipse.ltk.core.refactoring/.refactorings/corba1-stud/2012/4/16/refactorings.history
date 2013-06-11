@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;sr&apos; to &apos;org.corba.generated&apos;&#x0A;- Original project: &apos;corba1-stud&apos;&#x0A;- Original element: &apos;corba1-stud/generated/sr&apos;&#x0A;- Renamed element: &apos;corba1-stud/generated/org.corba.generated&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;sr&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/generated&lt;sr" name="org.corba.generated" qualified="false" references="true" stamp="1335100837133" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/agenty/!svn/ver/101/trunk/services/src/main/java/pl/edu/agh/semantic/servlet
+END
+GraphServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/agenty/!svn/ver/46/trunk/services/src/main/java/pl/edu/agh/semantic/servlet/GraphServlet.java
+END
+NodesManagementServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/agenty/!svn/ver/101/trunk/services/src/main/java/pl/edu/agh/semantic/servlet/NodesManagementServlet.java
+END
+StorageServiceServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/agenty/!svn/ver/93/trunk/services/src/main/java/pl/edu/agh/semantic/servlet/StorageServiceServlet.java
+END
+FederatedSPARQLServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/agenty/!svn/ver/46/trunk/services/src/main/java/pl/edu/agh/semantic/servlet/FederatedSPARQLServlet.java
+END
+IndexServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/agenty/!svn/ver/92/trunk/services/src/main/java/pl/edu/agh/semantic/servlet/IndexServlet.java
+END
+OntologyServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/agenty/!svn/ver/91/trunk/services/src/main/java/pl/edu/agh/semantic/servlet/OntologyServlet.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/agenty/!svn/ver/46/trunk/services/src/main/java/pl/edu/agh/semantic/servlet/package-info.java
+END

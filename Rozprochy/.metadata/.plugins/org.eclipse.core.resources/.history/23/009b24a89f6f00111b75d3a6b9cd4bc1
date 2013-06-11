@@ -1,0 +1,48 @@
+package zad3;
+
+import java.io.ByteArrayInputStream;
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.MulticastSocket;
+import java.net.Socket;
+import java.util.HashMap;
+import java.util.Map;
+
+public class UDPChatManager {
+
+	private Map<Integer, PartialChatMessage> currentMessages = new HashMap<Integer, PartialChatMessage>();
+
+	MulticastSocket socket;
+
+	public UDPChatManager(MulticastSocket socket) {
+		this.socket = socket;
+	}
+
+	/**
+	 * returns chat message when chat message is complete or null
+	 * @param packet
+	 * @return
+	 * @throws IOException
+	 */
+	public ChatMessage manageDatagram(DatagramPacket packet) throws IOException {
+		DataInputStream input = null;
+		try {
+			input = new DataInputStream(new ByteArrayInputStream(
+					packet.getData(), 0, packet.getLength()));
+			byte flag = input.readByte();
+			int id = input.readInt();
+			
+			PartialChatMessage tmp = currentMessages.get(id);
+			if(tmp == null){
+				tmp = new PartialChatMessage();
+				currentMessages.put(id, tmp);
+			}
+			tmp.addPart(flag, id, input);
+
+		} finally {
+			if (input != null)
+				input.close();
+		}
+	}
+}

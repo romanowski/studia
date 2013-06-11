@@ -1,0 +1,41 @@
+package agh.sr.dtransactions.orderprocessing.logic.impl;
+
+import javax.transaction.TransactionManager;
+import javax.transaction.UserTransaction;
+
+import agh.sr.dtransactions.orderprocessing.dao.ProductDao;
+import agh.sr.dtransactions.orderprocessing.logic.Customer;
+import agh.sr.dtransactions.orderprocessing.logic.Order;
+import agh.sr.dtransactions.orderprocessing.logic.OrderWarhouseException;
+import agh.sr.dtransactions.orderprocessing.logic.WarehouseManagerService;
+
+public class WarehouseManagerImpl_GlobalMultipleTx implements WarehouseManagerService {
+	
+	
+	ProductDao dao;
+	UserTransaction transaction;
+	TransactionManager mgr;
+
+	public WarehouseManagerImpl_GlobalMultipleTx(ProductDao productDao,
+			UserTransaction userTransaction,
+			TransactionManager transactionManager) {
+
+	this.dao = productDao;
+	this.transaction = userTransaction;
+	this.mgr = transactionManager;
+	
+	}
+
+	@Override
+	public int prepareProductsForShipment(Order order, Customer customer)
+			throws OrderWarhouseException {
+		
+
+	}
+
+	@Override
+	public void setProductDao(ProductDao productDao) {
+		dao = productDao;
+	}
+
+}

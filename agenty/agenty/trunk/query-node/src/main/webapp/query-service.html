@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>SPARQLer</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+<h1>Query Node</h1>
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="node-content.jsp">Node content</a></li>
+	<li><a href="node-management.jsp">Node managment</a></li>
+	<li><a href="fast-node-management.jsp">Fast demo node management</a></li>	
+	<li><a href="query-service.html">General purpose federated SPARQL processor</a></li>
+</ul>
+<hr/>
+<div id="container" style="width: 666px;">
+	<form action="query-service.jsp" method="get">
+		<fieldset>
+			<legend>Federated SPARQL query</legend>
+			<div class="fm-opt">
+				<label for="query">Query string:</label>
+				<textarea name="query" id="query" cols="70" rows="5">
+PREFIX o1: &lt;http://localhost:8080/ontology-node1/o1#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+SELECT ?autor ?nazwisko
+WHERE
+{ ?autor o1:nazwisko ?nazwisko }
+				</textarea>
+			</div>
+
+			<div class="fm-opt">
+				<label for="debug">Show debug information:</label>
+				<input type="checkbox" name="debug" id="debug" checked="checked" style="width: auto;" value="debug">
+			</div>
+			<div class="fm-submit">
+				<input type="submit" id="submit" value="Get Results"/>
+			</div>
+			<div class="fm-opt">
+			<label for="query">Another query example:</label>
+				<textarea name="query-examples" id="query-examples" cols="70" rows="5">
+# example query for o3, copy this to query to see results
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX o3: <http://localhost:8080/ontology-node1/o3#>
+
+SELECT ?ksiazka ?tytul ?osoba ?nazwisko ?laureatNobla WHERE
+{
+  ?osoba o3:nazwisko ?nazwisko .
+  ?osoba o3:laureatNobla ?laureatNobla .
+  ?ksiazka o3:autorstwo ?osoba.
+  ?ksiazka o3:tytul ?tytul.
+}
+
+#################
+# example query for o1 and o2, copy this to query to see results
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX o2: <http://localhost:8080/ontology-node2/o2#>
+PREFIX o1: <http://localhost:8080/ontology-node1/o1#>
+
+SELECT *
+WHERE
+{
+  ?autor o1:nazwisko ?nazwisko .
+  ?autor o1:dataurodzenia ?data_urodzenia .
+  ?ksiazka o2:tytul ?tytul .
+  ?ksiazka dc:creator ?autor .
+}
+				</textarea>
+			</div>
+		</fieldset>
+	</form>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://www.example.org/nodes-schema"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.example.org/index-schema nodes-schema.xsd">
+	<!--<ontology-index>-->
+	<!--<ontology>http://localhost:8080/ontology-node1/o1#</ontology>-->
+	<!--<entries>-->
+	<!--<entry>-->
+	<!--<type>SPARQL_ENDPOINT</type>-->
+	<!--<url>http://localhost:8080/storage-node1/b1</url>-->
+	<!--</entry>-->
+	<!--<entry>-->
+	<!--<type>SPARQL_ENDPOINT</type>-->
+	<!--<url>http://localhost:8080/storage-node2/b2</url>-->
+	<!--</entry>-->
+	<!--<entry>-->
+	<!--<type>RDF_NAMED_GRAPH</type>-->
+	<!--<url>http://localhost:8080/storage-node2/named.ttl</url>-->
+	<!--</entry>-->
+	<!--</entries>-->
+	<!--</ontology-index>-->
+</index>

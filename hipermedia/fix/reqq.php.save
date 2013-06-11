@@ -1,0 +1,13 @@
+<?php 
+// Print file_get_contents("http://hipermedia.iisg.agh.edu.pl:8080/monitor/rest/sensor");
+
+
+
+
+ $get_string = "pg_id=2&parent_id=2&document&video";
+
+ parse_str($get_string, $get_array);
+Print  $get_array['path'];
+Print file_get_contents($get_array['path']);
+
+ ?> 

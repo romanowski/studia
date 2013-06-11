@@ -1,0 +1,86 @@
+10
+
+dir
+101
+http://semanticexperiments.com/agenty/branches/mapping
+http://semanticexperiments.com/agenty
+
+
+
+2012-11-01T12:22:44.191728Z
+79
+integracje
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d7c2d860-3801-46e3-92da-2f3bb5c1d082
+
+mapping-node
+dir
+
+tests
+dir
+
+services
+dir
+
+scripts
+dir
+
+storage-node
+dir
+
+query-node
+dir
+
+index-node
+dir
+
+pom.xml
+file
+
+
+
+
+2013-04-23T21:11:29.561294Z
+b9b562e43dd1867ce9b62b8643254492
+2012-11-01T12:22:44.191728Z
+79
+integracje
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1198
+
+ontology-node
+dir
+

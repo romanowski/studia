@@ -1,0 +1,82 @@
+12-06-19 12:25:34,433 [main] Logfile closed: /home/jar/Pulpit/studia/Rozprochy/DistributedTransactionsDist/./tmlog-1.log
+12-06-19 12:25:36,340 [main] PRODUCT_DB: refreshed XAResource
+12-06-19 12:25:37,146 [main] This method needs a transaction for the calling thread and none exists.
+Possible causes: either you didn't start a transaction,
+it rolledback due to timeout, or it was committed already.
+ACTIONS: You can try one of the following: 
+1. Make sure you started a transaction for the thread.
+2. Make sure you didn't terminate it yet.
+3. Increase the transaction timeout to avoid automatic rollback of long transactions;
+   check http://www.atomikos.com/Documentation/JtaProperties for how to do this.
+12-06-19 12:25:37,147 [main] This method needs a transaction for the calling thread and none exists.
+Possible causes: either you didn't start a transaction,
+it rolledback due to timeout, or it was committed already.
+ACTIONS: You can try one of the following: 
+1. Make sure you started a transaction for the thread.
+2. Make sure you didn't terminate it yet.
+3. Increase the transaction timeout to avoid automatic rollback of long transactions;
+   check http://www.atomikos.com/Documentation/JtaProperties for how to do this.
+12-06-19 12:25:37,468 [main] This method needs a transaction for the calling thread and none exists.
+Possible causes: either you didn't start a transaction,
+it rolledback due to timeout, or it was committed already.
+ACTIONS: You can try one of the following: 
+1. Make sure you started a transaction for the thread.
+2. Make sure you didn't terminate it yet.
+3. Increase the transaction timeout to avoid automatic rollback of long transactions;
+   check http://www.atomikos.com/Documentation/JtaProperties for how to do this.
+12-06-19 12:25:37,468 [main] This method needs a transaction for the calling thread and none exists.
+Possible causes: either you didn't start a transaction,
+it rolledback due to timeout, or it was committed already.
+ACTIONS: You can try one of the following: 
+1. Make sure you started a transaction for the thread.
+2. Make sure you didn't terminate it yet.
+3. Increase the transaction timeout to avoid automatic rollback of long transactions;
+   check http://www.atomikos.com/Documentation/JtaProperties for how to do this.
+12-06-19 12:29:06,710 [main] Starting read of logfile /home/jar/Pulpit/studia/Rozprochy/DistributedTransactionsDist/./tmlog0.log
+12-06-19 12:29:06,711 [main] Done read of logfile
+12-06-19 12:29:06,711 [main] Logfile closed: /home/jar/Pulpit/studia/Rozprochy/DistributedTransactionsDist/./tmlog0.log
+12-06-19 12:29:08,096 [main] PRODUCT_DB: refreshed XAResource
+12-06-19 12:29:09,026 [main] This method needs a transaction for the calling thread and none exists.
+Possible causes: either you didn't start a transaction,
+it rolledback due to timeout, or it was committed already.
+ACTIONS: You can try one of the following: 
+1. Make sure you started a transaction for the thread.
+2. Make sure you didn't terminate it yet.
+3. Increase the transaction timeout to avoid automatic rollback of long transactions;
+   check http://www.atomikos.com/Documentation/JtaProperties for how to do this.
+12-06-19 12:29:09,026 [main] This method needs a transaction for the calling thread and none exists.
+Possible causes: either you didn't start a transaction,
+it rolledback due to timeout, or it was committed already.
+ACTIONS: You can try one of the following: 
+1. Make sure you started a transaction for the thread.
+2. Make sure you didn't terminate it yet.
+3. Increase the transaction timeout to avoid automatic rollback of long transactions;
+   check http://www.atomikos.com/Documentation/JtaProperties for how to do this.
+12-06-19 13:11:52,657 [main] Starting read of logfile /home/jar/Pulpit/studia/Rozprochy/DistributedTransactionsDist/./tmlog1.log
+12-06-19 13:11:52,658 [main] Done read of logfile
+12-06-19 13:11:52,659 [main] Logfile closed: /home/jar/Pulpit/studia/Rozprochy/DistributedTransactionsDist/./tmlog1.log
+12-06-19 13:11:53,966 [main] PRODUCT_DB: refreshed XAResource
+12-06-19 13:11:54,816 [main] This method needs a transaction for the calling thread and none exists.
+Possible causes: either you didn't start a transaction,
+it rolledback due to timeout, or it was committed already.
+ACTIONS: You can try one of the following: 
+1. Make sure you started a transaction for the thread.
+2. Make sure you didn't terminate it yet.
+3. Increase the transaction timeout to avoid automatic rollback of long transactions;
+   check http://www.atomikos.com/Documentation/JtaProperties for how to do this.
+12-06-19 13:11:54,817 [main] This method needs a transaction for the calling thread and none exists.
+Possible causes: either you didn't start a transaction,
+it rolledback due to timeout, or it was committed already.
+ACTIONS: You can try one of the following: 
+1. Make sure you started a transaction for the thread.
+2. Make sure you didn't terminate it yet.
+3. Increase the transaction timeout to avoid automatic rollback of long transactions;
+   check http://www.atomikos.com/Documentation/JtaProperties for how to do this.
+12-06-19 13:12:58,061 [main] Starting read of logfile /home/jar/Pulpit/studia/Rozprochy/DistributedTransactionsDist/./tmlog2.log
+12-06-19 13:12:58,062 [main] Done read of logfile
+12-06-19 13:12:58,062 [main] Logfile closed: /home/jar/Pulpit/studia/Rozprochy/DistributedTransactionsDist/./tmlog2.log
+12-06-19 13:12:59,437 [main] PRODUCT_DB: refreshed XAResource
+12-06-19 13:29:52,801 [main] Starting read of logfile /home/jar/Pulpit/studia/Rozprochy/DistributedTransactionsDist/./tmlog3.log
+12-06-19 13:29:52,888 [main] Done read of logfile
+12-06-19 13:29:52,889 [main] Logfile closed: /home/jar/Pulpit/studia/Rozprochy/DistributedTransactionsDist/./tmlog3.log
+12-06-19 13:29:54,397 [main] PRODUCT_DB: refreshed XAResource

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:HBox xmlns:mx="http://www.adobe.com/2006/mxml" width="100%" height="100%" styleName="topBannerBox">
+  <mx:HBox styleName="logoBox">
+    <mx:Label text="HARMON TestDrive" styleName="logoLabel">
+      <mx:filters>
+        <mx:GlowFilter color="0x000000" blurX="5" blurY="5" alpha="0.5"/>
+      </mx:filters>
+    </mx:Label>
+    <mx:VRule height="50"/>
+    <mx:VBox styleName="namesBox" height="100%">
+      <mx:Label text="Mateusz Bilski"/>
+      <mx:Label text="Michał Furman"/>
+    </mx:VBox>
+  </mx:HBox>
+</mx:HBox>

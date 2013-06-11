@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/agenty/!svn/ver/78/branches/mapping/scripts
+END
+create_store.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/agenty/!svn/ver/75/branches/mapping/scripts/create_store.sh
+END
+b1_config.ttl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/agenty/!svn/ver/75/branches/mapping/scripts/b1_config.ttl
+END
+b2_config.ttl
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/agenty/!svn/ver/75/branches/mapping/scripts/b2_config.ttl
+END
+b1_data.ttl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/agenty/!svn/ver/75/branches/mapping/scripts/b1_data.ttl
+END
+b2_data.ttl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/agenty/!svn/ver/75/branches/mapping/scripts/b2_data.ttl
+END
+o1
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/agenty/!svn/ver/78/branches/mapping/scripts/o1
+END
+o2
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/agenty/!svn/ver/78/branches/mapping/scripts/o2
+END

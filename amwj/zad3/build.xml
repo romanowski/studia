@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="zad3" default="all">
+
+
+    <property file="out.properties"/>
+    <!-- Uncomment the following property if no tests compilation is needed -->
+    <!--
+   <property name="skip.tests" value="true"/>
+    -->
+
+    <!-- Compiler options -->
+
+    <property name="compiler.debug" value="on"/>
+    <property name="compiler.generate.no.warnings" value="off"/>
+    <property name="compiler.args" value=""/>
+    <property name="compiler.max.memory" value="128m"/>
+    <patternset id="ignored.files">
+        <exclude name="**/CVS/**"/>
+        <exclude name="**/SCCS/**"/>
+        <exclude name="**/RCS/**"/>
+        <exclude name="**/rcs/**"/>
+        <exclude name="**/.DS_Store/**"/>
+        <exclude name="**/.svn/**"/>
+        <exclude name="**/.pyc/**"/>
+        <exclude name="**/.pyo/**"/>
+        <exclude name="**/*.pyc/**"/>
+        <exclude name="**/*.pyo/**"/>
+        <exclude name="**/.git/**"/>
+        <exclude name="**/*.hprof/**"/>
+        <exclude name="**/_svn/**"/>
+        <exclude name="**/.hg/**"/>
+        <exclude name="**/*.lib/**"/>
+        <exclude name="**/*~/**"/>
+        <exclude name="**/__pycache__/**"/>
+        <exclude name="**/.bundle/**"/>
+        <exclude name="**/*.rbc/**"/>
+        <exclude name="**/vssver.scc/**"/>
+        <exclude name="**/vssver2.scc/**"/>
+    </patternset>
+    <patternset id="library.patterns">
+        <include name="*.war"/>
+        <include name="*.ear"/>
+        <include name="*.apk"/>
+        <include name="*.zip"/>
+        <include name="*.swc"/>
+        <include name="*.ane"/>
+        <include name="*.egg"/>
+        <include name="*.jar"/>
+    </patternset>
+    <patternset id="compiler.resources">
+        <include name="**/?*.properties"/>
+        <include name="**/?*.xml"/>
+        <include name="**/?*.gif"/>
+        <include name="**/?*.png"/>
+        <include name="**/?*.jpeg"/>
+        <include name="**/?*.jpg"/>
+        <include name="**/?*.html"/>
+        <include name="**/?*.dtd"/>
+        <include name="**/?*.tld"/>
+        <include name="**/?*.ftl"/>
+    </patternset>
+
+
+    <!-- Project Libraries -->
+
+    <path id="library.scala-compiler.classpath">
+        <pathelement location="${basedir}/lib/scala-compiler-2.9.1.jar"/>
+        <pathelement location="${basedir}/lib/scala-library-2.9.1.jar"/>
+    </path>
+
+    <path id="library.scala-library-2.9.1.classpath">
+        <pathelement location="${basedir}/lib/scala-library-2.9.1.jar"/>
+    </path>
+
+    <!-- Modules -->
+
+
+    <!-- Module zad3 -->
+
+    <dirname property="module.zad3.basedir" file="${ant.file}"/>
+
+
+    <property name="compiler.args.zad3" value="${compiler.args}"/>
+
+    <property name="zad3.output.dir" value="${module.zad3.basedir}/out/production/zad3"/>
+    <property name="zad3.testoutput.dir" value="${module.zad3.basedir}/out/test/zad3"/>
+
+    <path id="zad3.module.bootclasspath">
+        <!-- Paths to be included in compilation bootclasspath -->
+    </path>
+
+    <path id="zad3.module.production.classpath">
+        <path refid="library.scala-library-2.9.1.classpath"/>
+        <path refid="library.scala-compiler.classpath"/>
+    </path>
+
+    <path id="zad3.runtime.production.module.classpath">
+        <pathelement location="${zad3.output.dir}"/>
+        <path refid="library.scala-library-2.9.1.classpath"/>
+        <path refid="library.scala-compiler.classpath"/>
+    </path>
+
+    <path id="zad3.module.classpath">
+        <pathelement location="${zad3.output.dir}"/>
+        <path refid="library.scala-library-2.9.1.classpath"/>
+        <path refid="library.scala-compiler.classpath"/>
+    </path>
+
+    <path id="zad3.runtime.module.classpath">
+        <pathelement location="${zad3.testoutput.dir}"/>
+        <pathelement location="${zad3.output.dir}"/>
+        <path refid="library.scala-library-2.9.1.classpath"/>
+        <path refid="library.scala-compiler.classpath"/>
+    </path>
+
+
+    <patternset id="excluded.from.module.zad3">
+        <patternset refid="ignored.files"/>
+    </patternset>
+
+    <patternset id="excluded.from.compilation.zad3">
+        <patternset refid="excluded.from.module.zad3"/>
+    </patternset>
+
+    <path id="zad3.module.sourcepath">
+        <dirset dir="${module.zad3.basedir}">
+            <include name="src"/>
+        </dirset>
+    </path>
+
+
+    <target name="compile.module.zad3" depends="compile.module.zad3.production,compile.module.zad3.tests"
+            description="Compile module zad3"/>
+
+    <target name="compile.module.zad3.production" description="Compile module zad3; production classes" depends="init">
+        <mkdir dir="${zad3.output.dir}"/>
+        <javac destdir="${zad3.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}"
+               memorymaximumsize="${compiler.max.memory}" fork="true">
+            <compilerarg line="${compiler.args.zad3}"/>
+            <bootclasspath refid="zad3.module.bootclasspath"/>
+            <classpath refid="zad3.module.production.classpath"/>
+            <src refid="zad3.module.sourcepath"/>
+            <patternset refid="excluded.from.compilation.zad3"/>
+        </javac>
+
+        <scalac srcdir="src" destdir="${zad3.output.dir}"
+                classpathref="zad3.module.production.classpath" force="changed">
+            <!-- addparams="-Yclosure-elim -optimise" -->
+            <include name="**/*.scala"/>
+        </scalac>
+
+        <copy todir="${zad3.output.dir}">
+            <fileset dir="${module.zad3.basedir}/src">
+                <patternset refid="compiler.resources"/>
+                <type type="file"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="compile.module.zad3.tests" depends="compile.module.zad3.production"
+            description="compile module zad3; test classes" unless="skip.tests"/>
+
+    <target name="clean.module.zad3" description="cleanup module">
+        <delete dir="${zad3.output.dir}"/>
+        <delete dir="${zad3.testoutput.dir}"/>
+    </target>
+
+    <target name="init" description="Build initialization">
+        <property
+                name="scala-library.jar"
+                value="lib/scala-library-2.9.1.jar"
+                />
+        <path id="build.classpath">
+            <pathelement location="${scala-library.jar}"/>
+            <!--<pathelement location="${your.path}"   />-->
+            <pathelement location="classes"/>
+        </path>
+        <taskdef resource="scala/tools/ant/antlib.xml">
+            <classpath>
+                <pathelement location="lib/scala-compiler-2.9.1.jar"/>
+                <pathelement location="${scala-library.jar}"/>
+            </classpath>
+        </taskdef>
+    </target>
+
+    <target name="clean" depends="clean.module.zad3" description="cleanup all"/>
+
+    <target name="build.modules" depends="init, clean, compile.module.zad3" description="build all modules"/>
+
+    <target name="all" depends="build.modules" description="build all"/>
+</project>

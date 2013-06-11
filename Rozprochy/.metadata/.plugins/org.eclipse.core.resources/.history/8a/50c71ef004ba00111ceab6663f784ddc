@@ -1,0 +1,8 @@
+package agh.sr.dtransactions.orderprocessing.logic.impl;
+
+public class Snippet {
+	public static void main(String[] args) {
+		WarehouseManagerImpl_SpringMultipleTx
+	}
+}
+

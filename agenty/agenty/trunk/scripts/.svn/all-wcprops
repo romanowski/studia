@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/agenty/!svn/ver/101/trunk/scripts
+END
+example query.txt
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/agenty/!svn/ver/101/trunk/scripts/example%20query.txt
+END
+o1
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/agenty/!svn/ver/54/trunk/scripts/o1
+END
+o2
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/agenty/!svn/ver/55/trunk/scripts/o2
+END
+o3
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/agenty/!svn/ver/95/trunk/scripts/o3
+END
+o4
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/agenty/!svn/ver/95/trunk/scripts/o4
+END
+o3_turtles.owl
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/agenty/!svn/ver/94/trunk/scripts/o3_turtles.owl
+END
+create_store.sh
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/agenty/!svn/ver/51/trunk/scripts/create_store.sh
+END
+b1_config.ttl
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/agenty/!svn/ver/51/trunk/scripts/b1_config.ttl
+END
+b2_config.ttl
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/agenty/!svn/ver/51/trunk/scripts/b2_config.ttl
+END
+b1_data.ttl
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/agenty/!svn/ver/51/trunk/scripts/b1_data.ttl
+END
+b2_data.ttl
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/agenty/!svn/ver/51/trunk/scripts/b2_data.ttl
+END

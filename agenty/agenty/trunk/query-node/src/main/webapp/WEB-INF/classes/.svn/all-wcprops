@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/agenty/!svn/ver/101/trunk/query-node/src/main/webapp/WEB-INF/classes
+END
+storage-node.war
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/agenty/!svn/ver/101/trunk/query-node/src/main/webapp/WEB-INF/classes/storage-node.war
+END
+index-node.war
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/agenty/!svn/ver/101/trunk/query-node/src/main/webapp/WEB-INF/classes/index-node.war
+END
+ontology-node.war
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/agenty/!svn/ver/101/trunk/query-node/src/main/webapp/WEB-INF/classes/ontology-node.war
+END
+nodes.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/agenty/!svn/ver/62/trunk/query-node/src/main/webapp/WEB-INF/classes/nodes.xml
+END
+joseki-config.ttl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/agenty/!svn/ver/82/trunk/query-node/src/main/webapp/WEB-INF/classes/joseki-config.ttl
+END

@@ -1,0 +1,48 @@
+
+server.Endpoints=tcp -p 10001:udp -p 10001
+#server.Endpoints=ssl -p 10001
+
+#
+# Warn about connection exceptions
+#
+Ice.Warn.Connections=1
+Ice.ThreadPool.Client.Size=3
+
+#
+# Network Tracing
+#
+# 0 = no network tracing
+# 1 = trace connection establishment and closure
+# 2 = like 1, but more detailed
+# 3 = like 2, but also trace data transfer
+#
+Ice.Trace.Network=3
+
+#
+# Protocol Tracing
+#
+# 0 = no protocol tracing
+# 1 = trace protocol messages
+#
+Ice.Trace.Protocol=1
+
+
+#more threads
+
+
+
+#
+# Security Tracing
+#
+# 0 = no security tracing
+# 1 = trace messages
+#
+IceSSL.Trace.Security=1
+
+#
+# SSL Configuration
+#
+Ice.Plugin.IceSSL=IceSSL.PluginFactory
+IceSSL.DefaultDir=keys
+IceSSL.Keystore=keystore.jks
+IceSSL.Password=alamakota

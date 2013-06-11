@@ -1,0 +1,1 @@
+onspaces -m  logkr -p "C:\ol_kr_log\logkr" -o 0 -m "C:\ol_kr_mirror\logkr.mir" 0

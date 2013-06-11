@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact name="IceServer:jar">
+    <output-path>$PROJECT_DIR$/../../../../out</output-path>
+    <root id="root">
+      <element id="archive" name="iceServer.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/ScalaServer/src/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="ScalaServer" />
+        <element id="module-output" name="Ice-classes" />
+      </element>
+      <element id="library" level="application" name="scala-library-2.9.0.1" />
+      <element id="file-copy" path="/usr/share/java/Ice.jar" />
+    </root>
+  </artifact>
+</component>

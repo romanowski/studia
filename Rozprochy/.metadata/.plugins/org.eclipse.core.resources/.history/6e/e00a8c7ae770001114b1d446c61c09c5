@@ -1,0 +1,90 @@
+package zad3;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.MulticastSocket;
+import java.net.Socket;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class UDPChatManager {
+
+	private Map<Integer, PartialChatMessage> currentMessages = new HashMap<Integer, PartialChatMessage>();
+
+	private static final int maxCharInPart = 1024;
+	// 1 bajt na flage, 4 bajty na id, 4 bajty na koniec autora
+	private static final int firstHeaderSize = 1 + 4 + 4;
+	// 1 bajt na flagi + 4 bajty na id
+	private static final int nextHeaderSize = 1 + 4;
+
+	// w UFT-8 char to max 3 bajty
+	private static final int bufLenght = maxCharInPart * 3 + firstHeaderSize;
+
+	/**
+	 * returns chat message when chat message is complete or null
+	 * 
+	 * @param packet
+	 * @return
+	 * @throws IOException
+	 */
+	public ChatMessage manageDatagram(DatagramPacket packet) throws IOException {
+		DataInputStream input = null;
+		try {
+			input = new DataInputStream(new ByteArrayInputStream(
+					packet.getData(), 0, packet.getLength()));
+			byte flag = input.readByte();
+			int id = input.readInt();
+
+			PartialChatMessage tmp = currentMessages.get(id);
+			if (tmp == null) {
+				tmp = new PartialChatMessage();
+				currentMessages.put(id, tmp);
+			}
+			tmp.addPart(flag, id, input);
+			if (tmp.isAll()) {
+				return tmp.createMessage();
+			}
+			return null;
+
+		} finally {
+			if (input != null)
+				input.close();
+		}
+	}
+
+	public static List<DatagramPacket> sendMessage(ChatMessage message) {
+		List<DatagramPacket> list = new ArrayList<DatagramPacket>();
+
+		int stringLenght = message.getMessage().length()
+				+ message.getAuthor().length();
+
+		int dataCount = stringLenght / maxCharInPart + 1;
+		int pos = 0;
+		
+		
+		ByteArrayOutputStream out = new ByteArrayOutputStream(bufLenght);
+
+		pos = maxCharInPart - message.getAuthor().length();
+		String messageBody = message.getAuthor()
+				+ message.getMessage().substring(0, pos);
+		
+		
+		
+		for (int i = 1; i < dataCount; i++) {
+
+		}
+
+		byte[] buff = new byte[bufLenght];
+
+		return list;
+	}
+
+	public static boolean checkAuthor(String author) {
+		return author.length() < 100;
+	}
+}

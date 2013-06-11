@@ -1,0 +1,6 @@
+<project name="harmonix.assets">
+    <dirname property="harmonix.assets.dir" file="${ant.file.harmonix.src.assets}"/>
+
+    <!-- Define SWC exported by this library. -->
+    <property name="harmonix.swc" location="${harmonix.assets.dir}/${build.compc.dir}/harmonix.swc"/>
+</project>

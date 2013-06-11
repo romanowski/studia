@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/agenty/!svn/ver/79/branches/mapping/services/src/main/java/pl/edu/agh/semantic/servlet
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/agenty/!svn/ver/75/branches/mapping/services/src/main/java/pl/edu/agh/semantic/servlet/package-info.java
+END
+GraphServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/agenty/!svn/ver/75/branches/mapping/services/src/main/java/pl/edu/agh/semantic/servlet/GraphServlet.java
+END
+MapperServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/agenty/!svn/ver/79/branches/mapping/services/src/main/java/pl/edu/agh/semantic/servlet/MapperServlet.java
+END
+NodesManagementServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/agenty/!svn/ver/75/branches/mapping/services/src/main/java/pl/edu/agh/semantic/servlet/NodesManagementServlet.java
+END
+StorageServiceServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/agenty/!svn/ver/75/branches/mapping/services/src/main/java/pl/edu/agh/semantic/servlet/StorageServiceServlet.java
+END
+FederatedSPARQLServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/agenty/!svn/ver/75/branches/mapping/services/src/main/java/pl/edu/agh/semantic/servlet/FederatedSPARQLServlet.java
+END
+IndexServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/agenty/!svn/ver/75/branches/mapping/services/src/main/java/pl/edu/agh/semantic/servlet/IndexServlet.java
+END
+OntologyServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/agenty/!svn/ver/75/branches/mapping/services/src/main/java/pl/edu/agh/semantic/servlet/OntologyServlet.java
+END

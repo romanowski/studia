@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>SPARQLer</title>
+	<link rel="stylesheet" type="text/css" href="StyleSheets/styles.css"/>
+</head>
+
+<body>
+<h1>Query Node</h1>
+<ul>
+	<li><a href="index.html">Home</a></li>
+	<li><a href="node-content.jsp">Node content</a></li>
+	<li><a href="node-management.jsp">Node managment</a></li>
+	<li><a href="query-service.html">General purpose federated SPARQL processor</a></li>
+	<li><a href="federated-query.html">General purpose federated SPARQL processor (Joseki Compatible)</a></li>
+	<li><a href="indexing.html">Automated RDF indexing</a></li>
+	<li><a href="query.html">SPARQLer - An RDF Query Demo</a></li>
+</ul>
+<hr/>
+
+<h1>SPARQLer - An RDF Query Demo</h1>
+
+<p>Example queries (or edit and write your own!). All the text boxes invoke the same "books" service - they just get
+	initialised with different examples.</p>
+<hr/>
+
+<div class="moreindent">
+
+	<form action="./federated-sparql" method="get">
+		<p>SELECT - get variables (apply XSLT stylesheet)</p>
+
+		<p><textarea name="query" cols="70" rows="5">
+PREFIX o1: &lt;http://localhost:8080/ontology-node1/o1#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+SELECT ?autor ?nazwisko
+WHERE
+{ ?autor o1:nazwisko ?nazwisko }
+			</textarea>
+			<br/>
+			Output XML: <input type="radio" name="output" value="xml"/>
+			with XSLT style sheet (leave blank for none):
+			<input name="stylesheet" size="25" value="/query-node/xml-to-html.xsl"/> <br/>
+			or JSON output: <input type="radio" name="output" value="json"/> <br/>
+			or text output: <input type="radio" name="output" value="text" checked/> <br/>
+			or CSV output: <input type="radio" name="output" value="csv"/> <br/>
+			or TSV output: <input type="radio" name="output" value="tsv"/> <br/>
+			Force the accept header to <tt>text/plain</tt> regardless
+			<input type="checkbox" name="force-accept" value="text/plain"/>
+			<br/>
+
+			<input type="submit" value="Get Results"/>
+		</p>
+	</form>
+
+	<hr/>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/agenty/!svn/ver/91/trunk/ontology-node
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/agenty/!svn/ver/80/trunk/ontology-node/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/agenty/!svn/ver/62/trunk/ontology-node/.project
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/agenty/!svn/ver/91/trunk/ontology-node/pom.xml
+END

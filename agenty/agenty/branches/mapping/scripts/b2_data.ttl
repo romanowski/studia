@@ -1,0 +1,43 @@
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+
+@prefix dc:		<http://purl.org/dc/elements/1.1/> .
+@prefix o1:		<http://localhost:8080/ontology-node1/o1#> .
+@prefix o2:		<http://localhost:8080/ontology-node2/o2#> .
+@prefix :		<http://localhost:8080/ontology-node2/o2#> .
+
+:ksiazka1
+	rdf:type			o2:ksiazka ;
+	o2:datawydania		"1997-07-10"^^xsd:date ;
+	o2:tytul			"Kalosze"^^xsd:string ;
+	dc:creator			o1:autor1
+	.
+
+:ksiazka2
+	rdf:type			o2:ksiazka ;
+	o2:datawydania		"2010-10-10"^^xsd:date ;
+	o2:tytul			"Trepy"^^xsd:string ;
+	dc:creator			o1:autor2
+	.
+
+:ksiazka3
+	rdf:type			o2:ksiazka ;
+	o2:datawydania		"1977-01-15"^^xsd:date ;
+	o2:tytul			"The Shining"^^xsd:string ;
+	dc:creator			o1:autor3
+	.
+
+o1:autor3
+	rdf:type			o1:autor ;
+	o1:dataurodzenia	"1947-09-21"^^xsd:date ;
+	o1:nazwisko			"Stephen King"^^xsd:string
+	.
+
+o1:autor4
+	rdf:type			o1:autor ;
+	o1:dataurodzenia	"1892-01-02"^^xsd:date ;
+	o1:nazwisko			"J. R. R. Tolkien"^^xsd:string
+	.
+
+# etc ...

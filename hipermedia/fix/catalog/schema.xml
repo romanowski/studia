@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="HiperDB" defaultIdMethod="native">
+  <table name="monitorObjects" phpName="MonitorObjects">
+		<column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" phpName="id"/>
+		<column name="name" type="varchar" size="255" required="true" phpName="name"/>
+		<column name="href" type="varchar" size="255" required="true" phpName="href"/>
+  </table>
+   <table name="sensorInfoObject" phpName="SensorInfoObject">
+		<column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" phpName="id"/>
+		<column name="name" type="varchar" size="255" required="true" phpName="name"/>
+		<column name="href" type="varchar" size="255" required="true" phpName="href"/>
+		<column name="measure" type="varchar" size="255" required="true" phpName="measure"/>
+		<column name="dataType" type="varchar" size="255" required="true" phpName="dataType"/>
+		<column name="frequency" type="integer" required="true" phpName="frequency"/>
+		<column name="resource" type="varchar" size="255" required="true" phpName="resource"/>
+		<column name="type" type="varchar" size="255" required="true" phpName="type"/>
+  </table>
+  
+</database>

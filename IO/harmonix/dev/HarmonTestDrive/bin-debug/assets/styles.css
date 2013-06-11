@@ -1,0 +1,108 @@
+/* CSS file */
+Application {
+  background-color: "0x382520"; 
+  /* background-gradient-colors: "0x2f6fc8", "0x12366a"; */
+  color: "0x000000";
+  theme-color: "0xe0c140";
+  padding-bottom: 10;
+  padding-left: 10;
+  padding-right: 10;
+  padding-top: 10;
+}
+
+ComboBox {
+  drop-down-style-name: dropDownList; 
+}
+
+.dropDownList {
+  color: "0x382520";
+}
+
+HDividedBox {
+  /* divider-color: "0x12366a"; */
+}
+
+/*
+ * TOP BANNER
+ */
+
+.topBannerBox {
+  vertical-align: middle;
+}
+
+.logoBox {
+  vertical-align: middle;
+  color: "0xffffff";
+}
+
+.logoLabel {
+  font-size: 50;
+}
+
+.namesBox {
+  vertical-align: middle;
+  padding-top: 10;
+}
+
+.mainContainer {
+  /* background-color: "0xededed"; */
+}
+
+
+/*
+ * CURSES BOX
+ */
+.cursesBox {
+  color: "0xFFFFFF";
+}
+
+.curseRenderer {  
+  color: "0x000000";
+  border-thickness: 3;
+  border-style: outset;
+}
+
+.curseContent {
+  background-color: "0xf9ffd7";
+  color: "0x000000";
+  font-style: italic;
+  border-style: inset;
+}
+
+.curseTitle {
+  color: "0x000000";
+  font-weight: bold;
+}
+ 
+/*
+ * HARMONOGRAM BOX
+ */
+.harmonogramBox {
+  /* background-color: "0xFFFFFF"; */
+}
+
+Panel {
+  title-style-name: dayRendererTitle;
+}
+
+.dayRendererTitle {
+    /* color: "0x000000"; */
+    font-weight: bold;
+}
+
+/*
+* DAY RENDERER
+*/
+.dayRenderer {
+  border-style: outset;
+  border-thickness: 2;
+  padding-left: 0;
+  padding-right: 0; 
+  background-color: "0xb59033"; 
+}
+
+.dayCurseContainer {  
+  padding-left : 2;
+  padding-right: 2;
+}
+

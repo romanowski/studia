@@ -1,0 +1,43 @@
+package zad3;
+
+import java.io.IOException;
+import java.net.InetAddress;
+import java.net.MulticastSocket;
+import java.net.UnknownHostException;
+
+public class ChatClient {
+
+	private static final String host = "228.5.6.7";
+	private static final int port = 9989;
+	public static final int bufSize = 1024;
+
+	
+	public static void main(String[] args) {
+		
+		final  MulticastSocket socket;
+		 try {
+			InetAddress group = InetAddress.getByName(host);
+			socket = new MulticastSocket(port);
+			socket.joinGroup(group);
+			
+			Thread listener = new Thread(){
+				
+				
+				public void run() {
+					while(true){
+						
+					}
+				};
+			};
+			
+			
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		
+		
+	}
+}

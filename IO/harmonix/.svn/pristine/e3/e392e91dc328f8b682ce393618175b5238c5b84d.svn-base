@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="vertical" xmlns:view="pl.flexable.harmonix.samples.harmon.view.*"
+                creationComplete="init()" viewSourceURL="srcview/index.html">
+  <mx:Style source="assets/styles.css"/>
+  <mx:Script>
+    <![CDATA[
+      import pl.flexable.harmonix.samples.harmon.util.ModelUtil;
+      import pl.flexable.harmonix.samples.harmon.model.TestDriveModel;
+
+      [Bindable]
+      private var model : TestDriveModel = TestDriveModel.getInstance();
+
+
+      private function init() : void {
+        fillModel();
+      }
+
+
+      private function fillModel() : void {
+        ModelUtil.fillCurses(model.curses);
+        ModelUtil.fillDays(model.days);
+      }
+    ]]>
+  </mx:Script>
+  <view:TopBannerBox height="80"/>
+  <mx:VBox styleName="mainContainer" width="100%" height="100%">
+    <mx:HDividedBox width="100%" height="100%">
+      <view:CursesBox width="40%" height="100%" styleName="cursesBox"/>
+      <view:HarmonogramBox width="60%" height="100%" styleName="harmonogramBox"/>
+    </mx:HDividedBox>
+  </mx:VBox>
+</mx:Application>

@@ -1,0 +1,7 @@
+n.neurons=c(11,5,1),      
+		     learning.rate.global=1e-3,        
+		     momentum.global=0.8,              
+		     error.criterium="LMLS",           
+		     Stao=NA, hidden.layer="tansig",   
+		     output.layer="pureline",           
+		     method="ADAPTgdwm")  -> 0.00362650930247305

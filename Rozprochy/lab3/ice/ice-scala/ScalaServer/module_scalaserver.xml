@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_scalaserver" default="compile.module.scalaserver">
+  <dirname property="module.scalaserver.basedir" file="${ant.file.module_scalaserver}"/>
+  
+  <property name="module.jdk.home.scalaserver" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.scalaserver" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.scalaserver" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.scalaserver" value="${compiler.args}"/>
+  
+  <property name="scalaserver.output.dir" value="${module.scalaserver.basedir}/../out/production/ScalaServer"/>
+  <property name="scalaserver.testoutput.dir" value="${module.scalaserver.basedir}/../out/test/ScalaServer"/>
+  
+  <path id="scalaserver.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="scalaserver.module.production.classpath">
+    <path refid="${module.jdk.classpath.scalaserver}"/>
+    <path refid="library.scala-library-2.9.0.1_(2).classpath"/>
+    <pathelement location="${basedir}/../../../../../../../../usr/share/java/Ice.jar"/>
+    <pathelement location="${ice-classes.output.dir}"/>
+  </path>
+  
+  <path id="scalaserver.runtime.production.module.classpath">
+    <pathelement location="${scalaserver.output.dir}"/>
+    <path refid="library.scala-library-2.9.0.1_(2).classpath"/>
+    <pathelement location="${basedir}/../../../../../../../../usr/share/java/Ice.jar"/>
+    <pathelement location="${ice-classes.output.dir}"/>
+    <pathelement location="${basedir}/../../../../../../../../usr/share/java/Ice.jar"/>
+  </path>
+  
+  <path id="scalaserver.module.classpath">
+    <path refid="${module.jdk.classpath.scalaserver}"/>
+    <pathelement location="${scalaserver.output.dir}"/>
+    <path refid="library.scala-library-2.9.0.1_(2).classpath"/>
+    <pathelement location="${basedir}/../../../../../../../../usr/share/java/Ice.jar"/>
+    <pathelement location="${ice-classes.testoutput.dir}"/>
+    <pathelement location="${ice-classes.output.dir}"/>
+  </path>
+  
+  <path id="scalaserver.runtime.module.classpath">
+    <pathelement location="${scalaserver.testoutput.dir}"/>
+    <pathelement location="${scalaserver.output.dir}"/>
+    <path refid="library.scala-library-2.9.0.1_(2).classpath"/>
+    <pathelement location="${basedir}/../../../../../../../../usr/share/java/Ice.jar"/>
+    <pathelement location="${ice-classes.testoutput.dir}"/>
+    <pathelement location="${ice-classes.output.dir}"/>
+    <pathelement location="${basedir}/../../../../../../../../usr/share/java/Ice.jar"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.scalaserver">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.scalaserver">
+    <patternset refid="excluded.from.module.scalaserver"/>
+  </patternset>
+  
+  <path id="scalaserver.module.sourcepath">
+    <dirset dir="${module.scalaserver.basedir}/../../ScalaServer">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.scalaserver" depends="compile.module.scalaserver.production,compile.module.scalaserver.tests" description="Compile module ScalaServer"/>
+  
+  <target name="compile.module.scalaserver.production" depends="register.custom.compilers,compile.module.ice-classes" description="Compile module ScalaServer; production classes">
+    <mkdir dir="${scalaserver.output.dir}"/>
+    <javac2 destdir="${scalaserver.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.scalaserver}/javac">
+      <compilerarg line="${compiler.args.scalaserver}"/>
+      <bootclasspath refid="scalaserver.module.bootclasspath"/>
+      <classpath refid="scalaserver.module.production.classpath"/>
+      <src refid="scalaserver.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.scalaserver"/>
+    </javac2>
+    
+    <copy todir="${scalaserver.output.dir}">
+      <fileset dir="${module.scalaserver.basedir}/../../ScalaServer/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.scalaserver.tests" depends="register.custom.compilers,compile.module.scalaserver.production" description="compile module ScalaServer; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.scalaserver" description="cleanup module">
+    <delete dir="${scalaserver.output.dir}"/>
+    <delete dir="${scalaserver.testoutput.dir}"/>
+  </target>
+</project>

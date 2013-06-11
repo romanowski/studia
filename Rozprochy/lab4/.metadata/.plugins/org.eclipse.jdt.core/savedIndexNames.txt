@@ -1,0 +1,14 @@
+INDEX VERSION 1.126+/home/jar/Pulpit/studia/Rozprochy/lab4/.metadata/.plugins/org.eclipse.jdt.core
+1055935993.index
+1453205435.index
+1352144582.index
+2624139878.index
+3562176183.index
+3496817468.index
+3023522874.index
+1153952606.index
+317029342.index
+1124090160.index
+3717187016.index
+3566468506.index
+2711188436.index

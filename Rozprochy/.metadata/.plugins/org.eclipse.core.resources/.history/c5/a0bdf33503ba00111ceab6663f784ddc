@@ -1,0 +1,31 @@
+package agh.sr.dtransactions.orderprocessing.logic.impl;
+
+import org.springframework.transaction.PlatformTransactionManager;
+
+import agh.sr.dtransactions.orderprocessing.dao.ProductDao;
+import agh.sr.dtransactions.orderprocessing.logic.Customer;
+import agh.sr.dtransactions.orderprocessing.logic.Order;
+import agh.sr.dtransactions.orderprocessing.logic.OrderWarhouseException;
+import agh.sr.dtransactions.orderprocessing.logic.WarehouseManagerService;
+
+public class WarehouseManagerImpl_SpringTx implements WarehouseManagerService {
+
+	public WarehouseManagerImpl_SpringTx(ProductDao productDao,
+			PlatformTransactionManager springTransactionManager) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public int prepareProductsForShipment(Order order, Customer customer)
+			throws OrderWarhouseException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void setProductDao(ProductDao productDao) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

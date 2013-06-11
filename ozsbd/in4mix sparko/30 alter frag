@@ -1,0 +1,4 @@
+ALTER FRAGMENT ON TABLE tab_frag1_kr INIT 
+   FRAGMENT BY EXPRESSION
+      kod != “A” IN danekr2,
+      kod = “A” IN danekr;

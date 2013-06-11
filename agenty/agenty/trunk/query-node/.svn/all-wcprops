@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/agenty/!svn/ver/101/trunk/query-node
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/agenty/!svn/ver/64/trunk/query-node/pom.xml
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/agenty/!svn/ver/80/trunk/query-node/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/agenty/!svn/ver/64/trunk/query-node/.project
+END

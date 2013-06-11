@@ -1,0 +1,7 @@
+/ onmode -ky
+
+server by³ wy³¹czony
+
+/ starts ol_kr
+
+w³¹cza server

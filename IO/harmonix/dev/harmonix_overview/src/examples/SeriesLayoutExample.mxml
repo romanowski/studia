@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml" width="400" height="300" verticalAlign="bottom"
+         verticalGap="0" xmlns:container="pl.flexable.harmonix.container.*" xmlns:renderers="renderers.*">
+  <mx:Script>
+    <![CDATA[
+      import pl.flexable.harmonix.layout.HorizontalSeriesLayout;
+      import pl.flexable.harmonix.layout.VerticalSeriesLayout;
+      [Bindable]
+      private var layoutsArray : Array = [{label: "VerticalSeriesLayout", factory: new ClassFactory(VerticalSeriesLayout)},
+        {label: "HorizontalSeriesLayout", factory: new ClassFactory(HorizontalSeriesLayout)}];
+
+
+      private function addToLayoutContainer() : void {
+        var item : ItemRenderer = new ItemRenderer();
+        item.title = "item renderer " + layoutContainer.numChildren;
+        layoutContainer.addChild(item);
+      }
+    ]]>
+  </mx:Script>
+  <container:LayoutContainer id="layoutContainer" layoutClass="{ClassFactory(layoutsCombo.selectedItem.factory)}"
+                             width="100%" height="100%" verticalGap="{numStepper.value}" horizontalGap="{numStepper2.value}"
+                             paddingLeft="10" paddingTop="10" paddingRight="10">
+    <renderers:ItemRenderer title="item renderer 1"/>
+    <renderers:ItemRenderer title="item renderer 2"/>
+    <renderers:ItemRenderer title="item renderer 3"/>
+    <renderers:ItemRenderer title="item renderer 4"/>
+    <renderers:ItemRenderer title="item renderer 5"/>
+    <renderers:ItemRenderer title="item renderer 6"/>
+    <renderers:ItemRenderer title="item renderer 7"/>
+    <renderers:ItemRenderer title="item renderer 8"/>
+    <renderers:ItemRenderer title="item renderer 9"/>
+    <renderers:ItemRenderer title="item renderer 10"/>
+  </container:LayoutContainer>
+  <mx:HBox width="100%" horizontalAlign="center" styleName="bottomBar">
+    <mx:Button label="add child" click="addToLayoutContainer()"/>
+    <mx:FormItem label="select layout">
+      <mx:ComboBox id="layoutsCombo" selectedIndex="0" dataProvider="{layoutsArray}"/>
+    </mx:FormItem>
+    <mx:FormItem label="vertical gap">
+      <mx:NumericStepper id="numStepper" minimum="0" maximum="100" stepSize="5" value="30"/>
+    </mx:FormItem>
+    <mx:FormItem label="horizontal gap">
+      <mx:NumericStepper id="numStepper2" minimum="0" maximum="100" stepSize="5" value="30"/>
+    </mx:FormItem>
+  </mx:HBox>
+</mx:VBox>

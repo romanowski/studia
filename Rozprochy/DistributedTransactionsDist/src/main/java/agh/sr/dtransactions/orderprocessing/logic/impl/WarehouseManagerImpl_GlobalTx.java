@@ -1,0 +1,66 @@
+package agh.sr.dtransactions.orderprocessing.logic.impl;
+
+import javax.transaction.UserTransaction;
+
+import agh.sr.dtransactions.orderprocessing.dao.ProductDao;
+import agh.sr.dtransactions.orderprocessing.logic.Customer;
+import agh.sr.dtransactions.orderprocessing.logic.Order;
+import agh.sr.dtransactions.orderprocessing.logic.OrderWarhouseException;
+import agh.sr.dtransactions.orderprocessing.logic.WarehouseManagerService;
+
+public class WarehouseManagerImpl_GlobalTx implements WarehouseManagerService {
+
+	ProductDao dao;
+	UserTransaction transaction;
+
+	public WarehouseManagerImpl_GlobalTx(ProductDao productDao,
+			UserTransaction userTransaction) {
+		dao = productDao;
+		transaction = userTransaction;
+	}
+
+	@Override
+	public int prepareProductsForShipment(Order order, Customer customer)
+			throws OrderWarhouseException {
+
+		try {
+			transaction.begin();
+
+			if (!dao.checkIfProductsAvailable(order)) {
+				throw new OrderWarhouseException("now products!");
+			}
+
+			int totalPrice = dao.calculateProductsTotalPrice(order);
+
+			dao.logLocationAndTotalPrice(customer, totalPrice);
+			
+			if (totalPrice > customer.getBalance()) {
+				throw new OrderWarhouseException("no chash!");
+			}
+
+			dao.decreaseProductsAmounts(order);
+
+
+			transaction.commit();
+
+			return totalPrice;
+
+		} catch (Exception e) {
+			try {
+				transaction.rollback();
+			} catch (Exception e1) {
+				e1.printStackTrace();
+			}
+
+			throw new OrderWarhouseException(e);
+		}
+	}
+
+	@Override
+	public void setProductDao(ProductDao productDao) {
+
+		this.dao = productDao;
+
+	}
+
+}

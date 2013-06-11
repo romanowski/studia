@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ontology-node:war">
+    <output-path>$PROJECT_DIR$/ontology-node/target</output-path>
+    <root id="archive" name="ontology-node.war">
+      <element id="artifact" artifact-name="ontology-node:war exploded" />
+    </root>
+  </artifact>
+</component>

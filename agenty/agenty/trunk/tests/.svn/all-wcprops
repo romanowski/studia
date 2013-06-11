@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/agenty/!svn/ver/51/trunk/tests
+END
+testng.xml
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/agenty/!svn/ver/51/trunk/tests/testng.xml
+END
+add_data.sc.orig
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/agenty/!svn/ver/51/trunk/tests/add_data.sc.orig
+END
+add_data.sc
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/agenty/!svn/ver/51/trunk/tests/add_data.sc
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/agenty/!svn/ver/51/trunk/tests/pom.xml
+END
+suite.ss
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/agenty/!svn/ver/51/trunk/tests/suite.ss
+END
+add_named_graph.sc
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/agenty/!svn/ver/51/trunk/tests/add_named_graph.sc
+END

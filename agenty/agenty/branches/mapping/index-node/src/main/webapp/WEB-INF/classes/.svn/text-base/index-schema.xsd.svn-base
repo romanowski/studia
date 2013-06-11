@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/index-schema"
+		   xmlns="http://www.example.org/index-schema" elementFormDefault="qualified">
+
+	<xs:element name="index">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ontology-index" type="ontology-index" maxOccurs="unbounded" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:simpleType name="type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="SPARQL_ENDPOINT"/>
+			<xs:enumeration value="RDF_NAMED_GRAPH"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="entry">
+		<xs:all>
+			<xs:element name="type" type="type"/>
+			<xs:element name="url" type="xs:string"/>
+		</xs:all>
+	</xs:complexType>
+
+	<xs:complexType name="entries">
+		<xs:sequence>
+			<xs:element name="entry" type="entry" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ontology-index">
+		<xs:all>
+			<xs:element name="ontology" type="xs:string"/>
+			<xs:element name="entries" type="entries"/>
+		</xs:all>
+	</xs:complexType>
+
+</xs:schema>

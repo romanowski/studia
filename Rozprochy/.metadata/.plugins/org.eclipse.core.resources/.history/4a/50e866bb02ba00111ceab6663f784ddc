@@ -1,0 +1,5 @@
+package agh.sr.dtransactions.orderprocessing.logic.impl;
+
+public class WarehouseManagerImpl_SpringTx {
+
+}

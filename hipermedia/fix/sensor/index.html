@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Hipermedia - zasoby</title>
+    <script type="text/javascript" src="/sensor/js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="/sensor/js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script type="text/javascript" src="/sensor/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/ui-lightness/jquery-ui-1.9.2.custom.css">
+
+</head>
+<body>
+
+<div id="tabs">
+    <ul>
+        <li><a href="#search">Z bazy</a></li>
+        <li><a href="#live">Na zywo</a></li>
+    </ul>
+    <div id="search">
+
+	<h2>Wyszukaj dane</h2>
+        Ilosc rekordow: <input type="text" id="search-field" onkeyup="search();"/>
+
+        <div id="chart-db">
+
+		<script src="/sensor/js/highcharts.js"></script>
+		<script src="/sensor/js/modules/exporting.js"></script>
+
+		<div id="dbcontainer" style="width: 100%; min-width: 1000px; height: 400px; margin: 0 auto"></div>	
+
+	</div>
+        
+
+    </div>
+    <div id="live">
+
+	<h2>Dane na Zywo<h2>        
+
+	<div id="chart-live">
+
+		<script src="/sensor/js/highcharts.js"></script>
+		<script src="/sensor/js/modules/exporting.js"></script>
+
+		<div id="livecontainer" style="width: 100%; min-width: 1000px; height: 400px; margin: 0 auto"></div>		
+
+	</div>
+	
+    </div>
+</div>
+
+<script type="text/javascript">
+    $("#tabs").tabs({
+        activate:fixAll
+    })
+</script>
+
+</body>
+</html>

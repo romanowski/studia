@@ -1,0 +1,23 @@
+{
+    "sensors":[
+    {"id":1,
+        "name":"simple2",
+        "measure":"km",
+        "dataType":"int2",
+        "frequency":15,
+        "resource":"ilość kabla2",
+        "href": "/ala/ma/kota11",
+        "type":"simple"},
+    {"id":2,
+        "name":"aggregation2",
+        "measure":"km2",
+        "dataType":"int2",
+        "frequency":16,
+        "resource":"ilość kabla srednio2",
+        "href": "/ala/ma/kota11",
+        "type":"simple2",
+        "function":"/ula/ma/kota2",
+        "arguments":["/2", "3"]
+    }
+]
+}

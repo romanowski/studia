@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JavaClient:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaClient_jar</output-path>
+    <root id="archive" name="JavaClient.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../JavaClient/src/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="JavaClient" />
+      <element id="module-output" name="Ice-classes" />
+      <element id="extracted-dir" path="/usr/share/java/Ice.jar" path-in-jar="/" />
+      <element id="directory" name="keys">
+        <element id="dir-copy" path="$PROJECT_DIR$/../JavaClient/keys" />
+      </element>
+    </root>
+  </artifact>
+</component>

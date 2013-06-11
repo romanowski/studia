@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" backgroundColor="0x060606"
+                width="100%" height="100%" xmlns:ui="pl.flexable.harmonix.ui.*" xmlns:container="pl.flexable.harmonix.container.*"
+                xmlns:renderers="renderers.*" xmlns:examples="examples.*" viewSourceURL="srcview/index.html">
+  <mx:Style source="assets/styles.css"/>
+
+  <mx:HBox styleName="topBox" width="100%">
+    <mx:HBox styleName="logoBox">
+      <mx:Label text="HARMONIX" styleName="logo"/>
+      <mx:VRule height="50"/>
+      <mx:VBox styleName="namesBox">
+        <mx:Label text="Mateusz Bilski"/>
+        <mx:Label text="Michał Furman"/>
+      </mx:VBox>
+    </mx:HBox>
+  </mx:HBox>
+  <mx:LinkButton label="dokumentacja" click="{navigateToURL(new URLRequest('docs/index.html'))}"
+                 top="65" right="850"/>
+  <mx:TabNavigator width="100%" height="100%" top="60" creationPolicy="all">
+
+    <!-- RESIZEABLE PANEL -->
+    <examples:ResizeablePanelExample label="Resizeable Panel" width="100%" height="100%"/>
+
+    <!-- SERIES LAYOUT -->
+    <examples:SeriesLayoutExample label="Series Layout" width="100%" height="100%"/>
+
+    <!-- COVER FLOW LAYOUT -->
+    <examples:CoverFlowLayoutExample label="Cover Flow Layout" width="100%" height="100%"/>
+
+    <!-- LAYOUT CONTAINER -->
+    <examples:LayoutContainerExample label="Layout Container" width="100%" height="100%"/>
+
+    <!-- DATA CONTAINER -->
+    <examples:DataContainerExample label="Data Container" width="100%" height="100%"/>
+
+    <!-- CLIPBOARD MANAGER -->
+    <examples:ClipboardManagerExample label="Clipboard Manager" width="100%" height="100%"/>
+
+    <!-- DRAG & DROP -->
+    <examples:DragDropExample label="Drag &amp; Drop" width="100%" height="100%"/>
+
+  </mx:TabNavigator>
+</mx:Application>

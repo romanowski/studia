@@ -1,0 +1,16 @@
+!SESSION 2012-09-06 13:06:00.080 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.6.0_34
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.ui 4 4 2012-09-06 13:06:26.067
+!MESSAGE Plug-in 'org.eclipse.cdt.ui' contributed an invalid Menu Extension (Path: 'project/org.eclipse.cdt.ui.prjmenu' is invalid): org.eclipse.cdt.ui.manageConfigsAction2
+
+!ENTRY org.eclipse.ui 4 4 2012-09-06 13:06:26.071
+!MESSAGE Plug-in 'org.eclipse.cdt.ui' contributed an invalid Menu Extension (Path: 'project/org.eclipse.cdt.ui.prjmenu' is invalid): org.eclipse.cdt.ui.buildConfigMenuAction
+
+!ENTRY org.eclipse.ui 4 4 2012-09-06 13:06:26.071
+!MESSAGE Plug-in 'org.eclipse.cdt.ui' contributed an invalid Menu Extension (Path: 'project/org.eclipse.cdt.ui.prjmenu' is invalid): org.eclipse.cdt.ui.wsselection
